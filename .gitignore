@@ -1,6 +1,7 @@
 # Local raw source cache / downloaded reference assets
 raw-source/
 .cache/
+.models/
 
 # Generated rough drafts are local build artifacts by default
 build/rough-worldbook/raw/
