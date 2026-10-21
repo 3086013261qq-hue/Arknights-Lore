@@ -1,0 +1,19 @@
+{
+  "schema_version": "side-timeline-batch02-v1",
+  "batch": 2,
+  "status": "final-draft",
+  "scope": "SideStory 11-20 by PRTS public-affairs order",
+  "source_policy": "PRTS plot synopsis nodes primary; chronology conservative; no invented dates",
+  "entries": [
+    {"slug":"walk-in-the-dust","title":"遗尘漫步","node_count":14,"bytes":2980,"file":"timeline/side/walk-in-the-dust.md","status":"side-timeline-final-draft"},
+    {"slug":"under-tides","title":"覆潮之下","node_count":18,"bytes":3373,"file":"timeline/side/under-tides.md","status":"side-timeline-final-draft"},
+    {"slug":"dossoles-holiday","title":"多索雷斯假日","node_count":20,"bytes":3579,"file":"timeline/side/dossoles-holiday.md","status":"side-timeline-final-draft"},
+    {"slug":"near-light","title":"长夜临光","node_count":24,"bytes":4521,"file":"timeline/side/near-light.md","status":"side-timeline-final-draft"},
+    {"slug":"break-the-ice","title":"风雪过境","node_count":20,"bytes":3685,"file":"timeline/side/break-the-ice.md","status":"side-timeline-final-draft"},
+    {"slug":"invitation-to-wine","title":"将进酒","node_count":19,"bytes":3297,"file":"timeline/side/invitation-to-wine.md","status":"side-timeline-final-draft"},
+    {"slug":"guiding-ahead","title":"吾导先路","node_count":18,"bytes":3254,"file":"timeline/side/guiding-ahead.md","status":"side-timeline-final-draft"},
+    {"slug":"stultifera-navis","title":"愚人号","node_count":24,"bytes":4217,"file":"timeline/side/stultifera-navis.md","status":"side-timeline-final-draft"},
+    {"slug":"lingering-echoes","title":"尘影余音","node_count":19,"bytes":3393,"file":"timeline/side/lingering-echoes.md","status":"side-timeline-final-draft"},
+    {"slug":"dorothys-vision","title":"绿野幻梦","node_count":20,"bytes":3522,"file":"timeline/side/dorothys-vision.md","status":"side-timeline-final-draft"}
+  ]
+}
