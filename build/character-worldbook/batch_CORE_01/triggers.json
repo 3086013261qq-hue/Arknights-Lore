@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "build-time-only",
+  "runtime_fetch": false,
+  "default_constant": false,
+  "au_default_enabled": false,
+  "global_au_entry": "核心设定:信息素系统",
+  "global_au_inclusion": "仅在AU开启时装入卡内；与个人AU条目同开关，不从远程请求。",
+  "characters": [
+    {
+      "character": "能天使",
+      "keywords": [
+        "能天使",
+        "蕾缪乐",
+        "新约能天使"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:新约能天使|能天使|蕾缪乐)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "能天使character",
+        "ability": "核心设定:能天使·能力",
+        "pheromone": "核心设定:能天使·信息素"
+      },
+      "au_requires": [
+        "explicit_adult_stage",
+        "non_childlike",
+        "au_enabled",
+        "mutual_consent_for_closeness"
+      ],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "银灰",
+      "keywords": [
+        "银灰",
+        "恩希欧迪斯",
+        "恩希欧迪斯·希瓦艾什",
+        "凛御银灰"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:恩希欧迪斯·希瓦艾什|恩希欧迪斯|凛御银灰|银灰(?!色))(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "银灰character",
+        "ability": "核心设定:银灰·能力",
+        "pheromone": "核心设定:银灰·信息素"
+      },
+      "au_requires": [
+        "explicit_adult_stage",
+        "non_childlike",
+        "au_enabled",
+        "mutual_consent_for_closeness"
+      ],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "斯卡蒂",
+      "keywords": [
+        "斯卡蒂",
+        "浊心斯卡蒂"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:浊心斯卡蒂|斯卡蒂)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "斯卡蒂character",
+        "ability": "核心设定:斯卡蒂·能力"
+      },
+      "au_requires": [],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "塞雷娅",
+      "keywords": [
+        "塞雷娅"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:塞雷娅)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "塞雷娅character",
+        "ability": "核心设定:塞雷娅·能力",
+        "pheromone": "核心设定:塞雷娅·信息素"
+      },
+      "au_requires": [
+        "explicit_adult_stage",
+        "non_childlike",
+        "au_enabled",
+        "mutual_consent_for_closeness"
+      ],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "艾雅法拉",
+      "keywords": [
+        "艾雅法拉",
+        "阿黛尔·瑙曼",
+        "纯烬艾雅法拉"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:阿黛尔·瑙曼|纯烬艾雅法拉|艾雅法拉)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "艾雅法拉character",
+        "ability": "核心设定:艾雅法拉·能力"
+      },
+      "au_requires": [],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "安洁莉娜",
+      "keywords": [
+        "安洁莉娜",
+        "安心院安洁莉娜",
+        "予愿安洁莉娜"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:安心院安洁莉娜|予愿安洁莉娜|安洁莉娜)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "安洁莉娜character",
+        "ability": "核心设定:安洁莉娜·能力"
+      },
+      "au_requires": [],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "星熊",
+      "keywords": [
+        "星熊",
+        "斩业星熊"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:斩业星熊|星熊)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "星熊character",
+        "ability": "核心设定:星熊·能力",
+        "pheromone": "核心设定:星熊·信息素"
+      },
+      "au_requires": [
+        "explicit_adult_stage",
+        "non_childlike",
+        "au_enabled",
+        "mutual_consent_for_closeness"
+      ],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "临光",
+      "keywords": [
+        "临光",
+        "玛嘉烈·临光",
+        "耀骑士",
+        "耀骑士临光"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:玛嘉烈·临光|耀骑士临光|耀骑士|(?<![·])临光(?!家))(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "临光character",
+        "ability": "核心设定:临光·能力",
+        "pheromone": "核心设定:临光·信息素"
+      },
+      "au_requires": [
+        "explicit_adult_stage",
+        "non_childlike",
+        "au_enabled",
+        "mutual_consent_for_closeness"
+      ],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "莫斯提马",
+      "keywords": [
+        "莫斯提马"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:莫斯提马)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "莫斯提马character",
+        "ability": "核心设定:莫斯提马·能力"
+      },
+      "au_requires": [],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    },
+    {
+      "character": "史尔特尔",
+      "keywords": [
+        "史尔特尔"
+      ],
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:史尔特尔)(?:(?!</?story_scene>).)*?</story_scene>",
+      "flags": "s",
+      "entries": {
+        "character": "史尔特尔character",
+        "ability": "核心设定:史尔特尔·能力"
+      },
+      "au_requires": [],
+      "stage_policy": "关键词只选择人物；后续身份与能力须由已发生剧情确认，不由异格名字自动推进。"
+    }
+  ]
+}
