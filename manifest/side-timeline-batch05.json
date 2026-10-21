@@ -1,0 +1,19 @@
+{
+  "schema_version": "side-timeline-batch05-v1",
+  "batch": 5,
+  "status": "final-draft",
+  "scope": "SideStory 41-50 by PRTS public-affairs order",
+  "source_policy": "PRTS plot synopsis nodes primary; chronology conservative; no invented dates",
+  "entries": [
+    {"slug":"xiang-jian-huan","title":"相见欢","node_count":19,"bytes":3466,"file":"timeline/side/xiang-jian-huan.md","status":"side-timeline-final-draft"},
+    {"slug":"wange-ranshao-daijin","title":"挽歌燃烧殆尽","node_count":19,"bytes":3737,"file":"timeline/side/wange-ranshao-daijin.md","status":"side-timeline-final-draft"},
+    {"slug":"zhongsheng-xingji","title":"众生行记","node_count":24,"bytes":4575,"file":"timeline/side/zhongsheng-xingji.md","status":"side-timeline-final-draft"},
+    {"slug":"hong-sirong","title":"红丝绒","node_count":19,"bytes":3864,"file":"timeline/side/hong-sirong.md","status":"side-timeline-final-draft"},
+    {"slug":"xu","title":"墟","node_count":19,"bytes":3852,"file":"timeline/side/xu.md","status":"side-timeline-final-draft"},
+    {"slug":"wuyou-mengyi","title":"无忧梦呓","node_count":17,"bytes":3675,"file":"timeline/side/wuyou-mengyi.md","status":"side-timeline-final-draft"},
+    {"slug":"xueshan-jianglin-1101","title":"雪山降临1101","node_count":24,"bytes":4870,"file":"timeline/side/xueshan-jianglin-1101.md","status":"side-timeline-final-draft"},
+    {"slug":"weixu-zhidi","title":"未许之地","node_count":19,"bytes":4265,"file":"timeline/side/weixu-zhidi.md","status":"side-timeline-final-draft"},
+    {"slug":"yasainusi-fuchouji","title":"雅赛努斯复仇记","node_count":19,"bytes":3396,"file":"timeline/side/yasainusi-fuchouji.md","status":"side-timeline-final-draft"},
+    {"slug":"cisui-xing","title":"辞岁行","node_count":24,"bytes":4867,"file":"timeline/side/cisui-xing.md","status":"side-timeline-final-draft"}
+  ]
+}
