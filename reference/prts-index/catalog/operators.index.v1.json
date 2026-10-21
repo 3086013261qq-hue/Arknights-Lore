@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "prts-operator-catalog-index",
+  "source": "https://prts.wiki/w/%E5%B9%B2%E5%91%98%E4%B8%8A%E7%BA%BF%E6%97%B6%E9%97%B4",
+  "snapshot_through": "2026-10-09",
+  "canonical_total_entries": 463,
+  "canonical_batches": [
+    "operators.batch02.v1.json",
+    "operators.batch03.v1.json",
+    "operators.batch04.v1.json",
+    "operators.batch05.v1.json",
+    "operators.batch06.v1.json",
+    "operators.batch07.v1.json",
+    "operators.batch08.v1.json",
+    "operators.batch09.v1.json",
+    "operators.batch10.v1.json",
+    "operators.batch11.v1.json"
+  ],
+  "legacy_noncanonical_batches": [
+    {
+      "file": "operators.batch01.v1.json",
+      "reason": "早期按页面可见记录抓取，内容与后续完整时间序列有重叠，仅保留审计，不参与正式统计或制卡输入。"
+    }
+  ],
+  "qa_rules": [
+    "正式制卡输入只读取canonical_batches。",
+    "特殊模式单位、联动角色、机器人、异格与职业升变形态先保留索引，后续QA阶段决定归并或独立。",
+    "每一项在生成正式角色条目前必须重新读取对应PRTS/官方资料并重写，不直接复制百科正文。"
+  ]
+}
