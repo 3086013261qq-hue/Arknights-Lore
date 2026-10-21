@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "prts-world-setting-canonical-index",
+  "sources": [
+    "https://prts.wiki/w/词汇一览",
+    "https://prts.wiki/w/贴士一览",
+    "https://prts.wiki/w/大地巡旅"
+  ],
+  "policy": "只保存构建世界书最常用的世界观核心概念名称；不复制百科释义，正式条目后续按官方/PRTS事实重新撰写。",
+  "core_terms": [
+    "源石","源石技艺","源石技术","源石引擎","感染者","矿石病","天灾","天灾信使","移动城市","移动城邦",
+    "罗德岛基建","海嗣/恐鱼","兽亲","四国战争","大叛乱"
+  ],
+  "priority_groups": {
+    "originium_and_disease": ["源石","源石技艺","源石技术","源石引擎","感染者","矿石病"],
+    "catastrophe_and_civilization": ["天灾","天灾信使","移动城市","移动城邦"],
+    "terra_ecology": ["海嗣/恐鱼","兽亲"],
+    "history": ["四国战争","大叛乱"],
+    "rhodes_island": ["罗德岛基建"]
+  },
+  "notes": [
+    "world-terms.seed.v1.json 仅为早期种子，本文件为正式施工入口。",
+    "巨兽、兽主、先民、神民、邪魔等若进入正式设定条目，必须先从其独立PRTS/官方来源再次核验，不因常识直接写入。",
+    "信息素系统属于本卡原创AU设定，不得伪装成PRTS/官方世界观事实。"
+  ],
+  "status": "canonical_index_ready"
+}
