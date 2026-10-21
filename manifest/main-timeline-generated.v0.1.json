@@ -1,0 +1,37 @@
+{
+  "schema_version": "main-timeline-draft-v1",
+  "scope": "main-00-through-main-17",
+  "status": "generated-mother-draft",
+  "sources": {
+    "event_order": "PRTS main-story plot nodes",
+    "time_and_continuity_aid": "friend-provided Arknights script novel",
+    "policy": "official/PRTS facts take priority; novel is auxiliary only; no invented dates"
+  },
+  "chapters": [
+    {"id":"main-00","title":"序章　黑暗时代","act":"觉醒","chapter_time":"1096 年 12 月 23 日","node_count":14,"bytes":3062,"file":"timeline/main/main-00.md"},
+    {"id":"main-01","title":"第一章　黑暗时代·下","act":"觉醒","chapter_time":"时间待核","node_count":12,"bytes":4283,"file":"timeline/main/main-01.md"},
+    {"id":"main-02","title":"第二章　异卵同生","act":"觉醒","chapter_time":"切尔诺伯格营救行动结束后第四天清晨 —— 直至翌日黎明之前","node_count":20,"bytes":7615,"file":"timeline/main/main-02.md"},
+    {"id":"main-03","title":"第三章　二次呼吸","act":"觉醒","chapter_time":"龙门城郊的黄昏与长夜，切尔诺伯格事件之后的第三日","node_count":16,"bytes":6704,"file":"timeline/main/main-03.md"},
+    {"id":"main-04","title":"第四章　急性衰竭","act":"觉醒","chapter_time":"切尔诺伯格分城废墟被发现当夜 —— 第三日深夜","node_count":20,"bytes":8377,"file":"timeline/main/main-04.md"},
+    {"id":"main-05","title":"第五章　靶向药物","act":"幻灭","chapter_time":"龙门事变当日上午 —— 次日凌晨","node_count":17,"bytes":5722,"file":"timeline/main/main-05.md"},
+    {"id":"main-06","title":"第六章　局部坏死","act":"幻灭","chapter_time":"龙门围剿行动当日 8:50 A.M. 起","node_count":27,"bytes":11275,"file":"timeline/main/main-06.md"},
+    {"id":"main-07","title":"第七章　苦难摇篮","act":"幻灭","chapter_time":"切尔诺伯格核心城冲向龙门的三十二小时之内","node_count":20,"bytes":6853,"file":"timeline/main/main-07.md"},
+    {"id":"main-08","title":"第八章　怒号光明","act":"幻灭","chapter_time":"1097 年冬","node_count":39,"bytes":15826,"file":"timeline/main/main-08.md"},
+    {"id":"main-09","title":"第九章　风暴瞭望","act":"残阳","chapter_time":"1098 年冬","node_count":20,"bytes":6488,"file":"timeline/main/main-09.md"},
+    {"id":"main-10","title":"第十章　破碎日冕","act":"残阳","chapter_time":"维多利亚·伦蒂尼姆及其周边，清晨至夜间","node_count":28,"bytes":11989,"file":"timeline/main/main-10.md"},
+    {"id":"main-11","title":"第十一章　淬火尘霾","act":"残阳","chapter_time":"泰拉历 1072 年至 1098 年，多时态","node_count":27,"bytes":10305,"file":"timeline/main/main-11.md"},
+    {"id":"main-12","title":"第十二章　惊霆无声","act":"残阳","chapter_time":"泰拉历 1099 年","node_count":27,"bytes":14159,"file":"timeline/main/main-12.md"},
+    {"id":"main-13","title":"第十三章　恶兆湍流","act":"残阳","chapter_time":"泰拉历 1098 年夏末至秋冬之交","node_count":27,"bytes":15084,"file":"timeline/main/main-13.md"},
+    {"id":"main-14","title":"第十四章　慈悲灯塔","act":"残阳","chapter_time":"泰拉历 1099 年冬 — 1100 年初","node_count":41,"bytes":13929,"file":"timeline/main/main-14.md"},
+    {"id":"main-15","title":"第十五章　离解复合","act":"裂变","chapter_time":"伦蒂尼姆决战期间 —— 源石内化宇宙","node_count":23,"bytes":8241,"file":"timeline/main/main-15.md"},
+    {"id":"main-16","title":"第十六章　反常光谱","act":"裂变","chapter_time":"乌萨斯帝国，1099 年秋／1101 年秋，多时态","node_count":25,"bytes":11022,"file":"timeline/main/main-16.md"},
+    {"id":"main-17","title":"第十七章　相变临界","act":"裂变","chapter_time":"1077 年春／1099 年冬／1102 年 1 月，多时态","node_count":24,"bytes":8746,"file":"timeline/main/main-17.md"}
+  ],
+  "totals": {
+    "chapters": 18,
+    "nodes": 427,
+    "bytes": 169680,
+    "alignment_confidence": {"high":257,"medium":82,"low":88},
+    "missing_date_nodes": 12
+  }
+}
