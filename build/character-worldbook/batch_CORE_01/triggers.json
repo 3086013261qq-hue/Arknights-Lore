@@ -148,7 +148,7 @@
         "耀骑士",
         "耀骑士临光"
       ],
-      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:玛嘉烈·临光|耀骑士临光|耀骑士|(?<![·])临光(?!家))(?:(?!</?story_scene>).)*?</story_scene>",
+      "pattern": "<story_scene>(?:(?!</?story_scene>).)*?(?:玛嘉烈·临光|耀骑士临光|耀骑士|(?<![·.．])临光(?!家|氏|一家))(?:(?!</?story_scene>).)*?</story_scene>",
       "flags": "s",
       "entries": {
         "character": "临光character",

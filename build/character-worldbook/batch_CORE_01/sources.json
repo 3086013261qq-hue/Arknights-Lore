@@ -39,7 +39,16 @@
         "url": "https://media.prts.wiki/b/bd/立绘_能天使_1.png",
         "asset": "立绘_能天使_1.png",
         "viewed": true,
-        "sha256": "1898a83551dbe142b8c75b23d7b61028612292d87dc99d036fd33811fbc1f43c"
+        "sha256": "1898a83551dbe142b8c75b23d7b61028612292d87dc99d036fd33811fbc1f43c",
+        "rechecked_original_sha256": "1898a83551dbe142b8c75b23d7b61028612292d87dc99d036fd33811fbc1f43c",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "瞳色",
+          "上衣",
+          "下装",
+          "配饰"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -93,7 +102,10 @@
         "url": "https://media.prts.wiki/0/03/立绘_银灰_1.png",
         "asset": "立绘_银灰_1.png",
         "viewed": true,
-        "sha256": "1202f26f9dee3ed36f421f0ab88e073c3f3e8053e19461dff1033a4af45891b8"
+        "sha256": "1202f26f9dee3ed36f421f0ab88e073c3f3e8053e19461dff1033a4af45891b8",
+        "rechecked_original_sha256": "1202f26f9dee3ed36f421f0ab88e073c3f3e8053e19461dff1033a4af45891b8",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -147,7 +159,14 @@
         "url": "https://media.prts.wiki/4/45/立绘_斯卡蒂_1.png",
         "asset": "立绘_斯卡蒂_1.png",
         "viewed": true,
-        "sha256": "e2c6397440273b3a54d9efdb1b289fa80ab9c5f7cf623ade7d6ac33be7ff451b"
+        "sha256": "e2c6397440273b3a54d9efdb1b289fa80ab9c5f7cf623ade7d6ac33be7ff451b",
+        "rechecked_original_sha256": "e2c6397440273b3a54d9efdb1b289fa80ab9c5f7cf623ade7d6ac33be7ff451b",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "发型",
+          "鞋子"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -188,7 +207,14 @@
         "url": "https://media.prts.wiki/4/4e/立绘_塞雷娅_1.png",
         "asset": "立绘_塞雷娅_1.png",
         "viewed": true,
-        "sha256": "59d606ec13be69f24c9832f199290f41b7bc508134c6d6e1f5c4500fc0c989f5"
+        "sha256": "59d606ec13be69f24c9832f199290f41b7bc508134c6d6e1f5c4500fc0c989f5",
+        "rechecked_original_sha256": "59d606ec13be69f24c9832f199290f41b7bc508134c6d6e1f5c4500fc0c989f5",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "发型",
+          "鞋子"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -197,7 +223,8 @@
         "发色/发型/瞳色/服装/配饰/鞋子": "初始官方立绘实际查看；色名为视觉描述而非官方色值。",
         "胸部/体态": "立绘的中性非数值概括，无体重或罩杯推定。",
         "印象/心理模型/对话": "基于上述资料的原创互动解释，不作为原作明示事实。",
-        "能力": "档案及技能表现压缩，所有战术限制中的应对建议为互动约束而非伪称官方定值。"
+        "能力": "档案及技能表现压缩，所有战术限制中的应对建议为互动约束而非伪称官方定值。",
+        "后期职务": "淬羽赫默档案资料三：克丽斯腾卸任后由塞雷娅代管总辖构件科。"
       },
       "age_gate": {
         "decision": "eligible",
@@ -240,7 +267,13 @@
         "url": "https://media.prts.wiki/c/c0/立绘_艾雅法拉_1.png",
         "asset": "立绘_艾雅法拉_1.png",
         "viewed": true,
-        "sha256": "f645bd5f47b194c026432a220590a074d45fdfbc86f02d86ac12ae0ad219a922"
+        "sha256": "f645bd5f47b194c026432a220590a074d45fdfbc86f02d86ac12ae0ad219a922",
+        "rechecked_original_sha256": "f645bd5f47b194c026432a220590a074d45fdfbc86f02d86ac12ae0ad219a922",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "上衣"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -294,7 +327,13 @@
         "url": "https://media.prts.wiki/f/fe/立绘_安洁莉娜_1.png",
         "asset": "立绘_安洁莉娜_1.png",
         "viewed": true,
-        "sha256": "b8c49f484232c4aeadac639dbb05315f647810e0a8af2b697fd8a1b3be918509"
+        "sha256": "b8c49f484232c4aeadac639dbb05315f647810e0a8af2b697fd8a1b3be918509",
+        "rechecked_original_sha256": "b8c49f484232c4aeadac639dbb05315f647810e0a8af2b697fd8a1b3be918509",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "鞋子"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -348,7 +387,17 @@
         "url": "https://media.prts.wiki/d/d4/立绘_星熊_1.png",
         "asset": "立绘_星熊_1.png",
         "viewed": true,
-        "sha256": "7241d9fe7b733859018c4f2d9bbe15e9b922f31f0e50143ff10c0840c3280c44"
+        "sha256": "7241d9fe7b733859018c4f2d9bbe15e9b922f31f0e50143ff10c0840c3280c44",
+        "rechecked_original_sha256": "7241d9fe7b733859018c4f2d9bbe15e9b922f31f0e50143ff10c0840c3280c44",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "发型",
+          "瞳色",
+          "上衣",
+          "下装",
+          "鞋子"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -402,7 +451,10 @@
         "url": "https://media.prts.wiki/e/e4/立绘_临光_1.png",
         "asset": "立绘_临光_1.png",
         "viewed": true,
-        "sha256": "0a5156109bb4f6bd99f16af7a8f3334e22f07d3e8a88224f995f15a9a7b70cbd"
+        "sha256": "0a5156109bb4f6bd99f16af7a8f3334e22f07d3e8a88224f995f15a9a7b70cbd",
+        "rechecked_original_sha256": "0a5156109bb4f6bd99f16af7a8f3334e22f07d3e8a88224f995f15a9a7b70cbd",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -443,7 +495,13 @@
         "url": "https://media.prts.wiki/c/cd/立绘_莫斯提马_1.png",
         "asset": "立绘_莫斯提马_1.png",
         "viewed": true,
-        "sha256": "0623ed4dd38c734d238bd0a579de1da1ea08b6241b81aa68a533ee4e9a512496"
+        "sha256": "0623ed4dd38c734d238bd0a579de1da1ea08b6241b81aa68a533ee4e9a512496",
+        "rechecked_original_sha256": "0623ed4dd38c734d238bd0a579de1da1ea08b6241b81aa68a533ee4e9a512496",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "发型"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -482,7 +540,13 @@
         "url": "https://media.prts.wiki/0/0c/立绘_史尔特尔_1.png",
         "asset": "立绘_史尔特尔_1.png",
         "viewed": true,
-        "sha256": "a12aafbb4d39fa7149d2320dad3e533e0adfb2de0cdd144fc5708fd29ab38e0d"
+        "sha256": "a12aafbb4d39fa7149d2320dad3e533e0adfb2de0cdd144fc5708fd29ab38e0d",
+        "rechecked_original_sha256": "a12aafbb4d39fa7149d2320dad3e533e0adfb2de0cdd144fc5708fd29ab38e0d",
+        "rechecked_on": "2026-10-21",
+        "matches_previous_asset_hash": true,
+        "rechecked_fields": [
+          "鞋子"
+        ]
       },
       "field_evidence": {
         "性别/种族/出身/身高/感染情况": "基础档案及临床诊断；斯卡蒂/莫斯提马另保留公开未披露说明。",
@@ -518,5 +582,7 @@
     }
   ],
   "raw_sources_committed": false,
-  "third_party_cards_used": false
+  "third_party_cards_used": false,
+  "integration_baseline_commit": "1ea0572c9ba527bb08844362e8fcc1eb0ce7c2c7",
+  "integration_note": "已有 CORE-01 data/qa 与粗稿工具提交已快进保留；仅复核修订本批源稿，不覆盖并行工具工作。"
 }
