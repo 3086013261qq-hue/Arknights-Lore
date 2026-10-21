@@ -1,0 +1,66 @@
+{
+  "scope": "档案与晋升段落连续40个非空白字符完全一致筛查；不等同于语义抄袭鉴定，也不替代人工重写审阅。未读取第三方卡正文。",
+  "status": "PASS",
+  "rows": [
+    {
+      "character": "能天使",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "银灰",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "斯卡蒂",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "塞雷娅",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "艾雅法拉",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "安洁莉娜",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "星熊",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "临光",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "莫斯提马",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    },
+    {
+      "character": "史尔特尔",
+      "threshold_nonwhitespace_chars": 40,
+      "long_exact_reuse_found": false,
+      "matches": []
+    }
+  ]
+}

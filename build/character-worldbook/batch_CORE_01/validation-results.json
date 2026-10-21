@@ -1,0 +1,1275 @@
+{
+  "batch": "CORE-01",
+  "status": "PASS",
+  "scope": "source structural and editorial checks; not SillyTavern device QA",
+  "checks_total": 227,
+  "checks_passed": 227,
+  "checks": [
+    {
+      "check": "characters.md:tag_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔character:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "abilities.md:tag_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:能天使·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:银灰·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:斯卡蒂·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:塞雷娅·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:艾雅法拉·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:安洁莉娜·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:星熊·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:临光·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:莫斯提马·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:史尔特尔·能力:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pheromones.md:tag_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:能天使·信息素:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:银灰·信息素:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:塞雷娅·信息素:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:星熊·信息素:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "核心设定:临光·信息素:unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exact_character_roster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exact_ability_roster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "eligible_au_only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "trigger_roster",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:au_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:au_marked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 882"
+    },
+    {
+      "check": "能天使:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "能天使:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:au_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:au_marked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 881"
+    },
+    {
+      "check": "银灰:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "银灰:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 855"
+    },
+    {
+      "check": "斯卡蒂:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "斯卡蒂:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:au_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:au_marked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 879"
+    },
+    {
+      "check": "塞雷娅:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "塞雷娅:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 930"
+    },
+    {
+      "check": "艾雅法拉:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "艾雅法拉:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 861"
+    },
+    {
+      "check": "安洁莉娜:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "安洁莉娜:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:au_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:au_marked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 835"
+    },
+    {
+      "check": "星熊:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "星熊:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:au_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:au_marked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 901"
+    },
+    {
+      "check": "临光:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "临光:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 872"
+    },
+    {
+      "check": "莫斯提马:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "莫斯提马:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:psychology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:history_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:relation_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:three_original_dialogues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:ability_field_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:canonical_operator",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:no_npc_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:not_sample_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:merged_forms",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:alias_positive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:outside_and_cross_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:no_cross_tag_matching",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:same_trigger_for_all",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:sources_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:compact_vs_sample",
+      "passed": true,
+      "detail": "character count 785"
+    },
+    {
+      "check": "史尔特尔:no_game_panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "史尔特尔:no_meta_in_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "nearl_disambiguation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "silver_color_disambiguation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "au_off_by_default",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core02_absent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tracked_changes_only_in_batch",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "people": [
+    {
+      "character": "能天使",
+      "character_chars": 882,
+      "ability_chars": 267,
+      "au_chars": 281,
+      "au_decision": "eligible",
+      "canonical_forms": [
+        "能天使",
+        "新约能天使"
+      ]
+    },
+    {
+      "character": "银灰",
+      "character_chars": 881,
+      "ability_chars": 262,
+      "au_chars": 247,
+      "au_decision": "eligible",
+      "canonical_forms": [
+        "银灰",
+        "凛御银灰"
+      ]
+    },
+    {
+      "character": "斯卡蒂",
+      "character_chars": 855,
+      "ability_chars": 280,
+      "au_chars": 0,
+      "au_decision": "withheld",
+      "canonical_forms": [
+        "斯卡蒂",
+        "浊心斯卡蒂"
+      ]
+    },
+    {
+      "character": "塞雷娅",
+      "character_chars": 879,
+      "ability_chars": 255,
+      "au_chars": 272,
+      "au_decision": "eligible",
+      "canonical_forms": [
+        "塞雷娅"
+      ]
+    },
+    {
+      "character": "艾雅法拉",
+      "character_chars": 930,
+      "ability_chars": 308,
+      "au_chars": 0,
+      "au_decision": "withheld",
+      "canonical_forms": [
+        "艾雅法拉",
+        "纯烬艾雅法拉"
+      ]
+    },
+    {
+      "character": "安洁莉娜",
+      "character_chars": 861,
+      "ability_chars": 268,
+      "au_chars": 0,
+      "au_decision": "withheld",
+      "canonical_forms": [
+        "安洁莉娜",
+        "予愿安洁莉娜"
+      ]
+    },
+    {
+      "character": "星熊",
+      "character_chars": 835,
+      "ability_chars": 275,
+      "au_chars": 258,
+      "au_decision": "eligible",
+      "canonical_forms": [
+        "星熊",
+        "斩业星熊"
+      ]
+    },
+    {
+      "character": "临光",
+      "character_chars": 901,
+      "ability_chars": 264,
+      "au_chars": 294,
+      "au_decision": "eligible_later_only",
+      "canonical_forms": [
+        "临光",
+        "耀骑士临光"
+      ]
+    },
+    {
+      "character": "莫斯提马",
+      "character_chars": 872,
+      "ability_chars": 260,
+      "au_chars": 0,
+      "au_decision": "withheld",
+      "canonical_forms": [
+        "莫斯提马"
+      ]
+    },
+    {
+      "character": "史尔特尔",
+      "character_chars": 785,
+      "ability_chars": 264,
+      "au_chars": 0,
+      "au_decision": "withheld",
+      "canonical_forms": [
+        "史尔特尔"
+      ]
+    }
+  ],
+  "sizes": {
+    "characters.md": {
+      "bytes": 24424,
+      "sha256": "763292eed72e8087bd8ed9eef5729b2792b360305c36b83c733fdacc887e9e4e"
+    },
+    "abilities.md": {
+      "bytes": 8640,
+      "sha256": "7868bbceeed50511163b1b7b11df971923a6aa12207c360c73951e8c74568713"
+    },
+    "pheromones.md": {
+      "bytes": 6406,
+      "sha256": "843d298bf2ee4e09bf8212971390a3b413d732c577f2bbdd599dcba8b1a26030"
+    },
+    "triggers.json": {
+      "bytes": 7014,
+      "sha256": "e0fb6f1ea158d2c01a53a37aad85070a705bd4d1a471c660652f00ab0df7fa00"
+    },
+    "sources.json": {
+      "bytes": 24959,
+      "sha256": "b885da3432f16ee16b59356c0b74f347708cd630f274b0bd52cda3a9be575628"
+    }
+  }
+}

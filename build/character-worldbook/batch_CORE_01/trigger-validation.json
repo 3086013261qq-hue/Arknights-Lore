@@ -1,0 +1,6 @@
+{
+  "engine": "JavaScript RegExp",
+  "status": "PASS",
+  "positive_aliases": 24,
+  "cross_scene_negative_cases": 10
+}
