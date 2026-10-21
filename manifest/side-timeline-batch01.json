@@ -1,0 +1,19 @@
+{
+  "schema_version": "side-timeline-batch-v1",
+  "batch": "side-01",
+  "status": "final-draft",
+  "source": "PRTS 情报处理室 / 公共事务实录",
+  "chronology_policy": "Only explicit clocks/relative anchors are retained; unknown in-universe dates remain 时间待核.",
+  "stories": [
+    {"slug":"grani-and-the-knights-treasure","title":"骑兵与猎人","node_count":16,"bytes":2980,"file":"timeline/side/grani-and-the-knights-treasure.md"},
+    {"slug":"heart-of-surging-flame","title":"火蓝之心","node_count":26,"bytes":4361,"file":"timeline/side/heart-of-surging-flame.md"},
+    {"slug":"code-of-brawl","title":"喧闹法则","node_count":27,"bytes":4443,"file":"timeline/side/code-of-brawl.md"},
+    {"slug":"darknights-memoir","title":"生于黑夜","node_count":13,"bytes":2410,"file":"timeline/side/darknights-memoir.md"},
+    {"slug":"twilight-of-wolumonde","title":"沃伦姆德的薄暮","node_count":20,"bytes":3671,"file":"timeline/side/twilight-of-wolumonde.md"},
+    {"slug":"the-great-chief-returns","title":"密林悍将归来","node_count":21,"bytes":3621,"file":"timeline/side/the-great-chief-returns.md"},
+    {"slug":"maria-nearl","title":"玛莉娅·临光","node_count":19,"bytes":3260,"file":"timeline/side/maria-nearl.md"},
+    {"slug":"mansfield-break","title":"孤岛风云","node_count":18,"bytes":3095,"file":"timeline/side/mansfield-break.md"},
+    {"slug":"who-is-real","title":"画中人","node_count":17,"bytes":2963,"file":"timeline/side/who-is-real.md"},
+    {"slug":"operation-originium-dust","title":"源石尘行动","node_count":17,"bytes":3071,"file":"timeline/side/operation-originium-dust.md"}
+  ]
+}
