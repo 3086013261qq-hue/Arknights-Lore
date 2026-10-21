@@ -1,0 +1,19 @@
+{
+  "schema_version": "side-timeline-batch04-v1",
+  "batch": 4,
+  "status": "final-draft",
+  "scope": "SideStory 31-40 by PRTS public-affairs order",
+  "source_policy": "PRTS plot synopsis nodes primary; 泰拉饭 uses its PRTS activity-page story collection; chronology conservative; no invented dates",
+  "entries": [
+    {"slug":"the-rides-to-lake-silberneherze","title":"银心湖列车","node_count":19,"bytes":3660,"file":"timeline/side/the-rides-to-lake-silberneherze.md","status":"side-timeline-final-draft"},
+    {"slug":"here-a-people-sows","title":"怀黍离","node_count":19,"bytes":3521,"file":"timeline/side/here-a-people-sows.md","status":"side-timeline-final-draft"},
+    {"slug":"operation-lucent-arrow","title":"水晶箭行动","node_count":19,"bytes":3603,"file":"timeline/side/operation-lucent-arrow.md","status":"side-timeline-final-draft"},
+    {"slug":"babel","title":"巴别塔","node_count":23,"bytes":4048,"file":"timeline/side/babel.md","status":"side-timeline-final-draft"},
+    {"slug":"path-of-life","title":"生路","node_count":19,"bytes":3801,"file":"timeline/side/path-of-life.md","status":"side-timeline-final-draft"},
+    {"slug":"inudi-harek-horakhet","title":"太阳甩在身后","node_count":19,"bytes":3485,"file":"timeline/side/inudi-harek-horakhet.md","status":"side-timeline-final-draft"},
+    {"slug":"terra-meal","title":"泰拉饭","node_count":16,"bytes":3055,"file":"timeline/side/terra-meal.md","status":"side-timeline-final-draft"},
+    {"slug":"zhuiji-riluo-yixi","title":"追迹日落以西","node_count":18,"bytes":3369,"file":"timeline/side/zhuiji-riluo-yixi.md","status":"side-timeline-final-draft"},
+    {"slug":"the-revealers","title":"揭幕者们","node_count":24,"bytes":4416,"file":"timeline/side/the-revealers.md","status":"side-timeline-final-draft"},
+    {"slug":"out-of-the-pale-sea","title":"出苍白海","node_count":19,"bytes":3771,"file":"timeline/side/out-of-the-pale-sea.md","status":"side-timeline-final-draft"}
+  ]
+}
