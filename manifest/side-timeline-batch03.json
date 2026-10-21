@@ -1,0 +1,20 @@
+{
+  "schema_version": "side-timeline-batch-v1",
+  "batch": "side-03",
+  "status": "final-draft",
+  "chronology_policy": "Only explicit relative/time anchors are retained; unknown in-universe dates are not invented.",
+  "stories": [
+    {"slug":"ideal-city","title":"理想城：长夏狂欢季","node_count":18,"bytes":3682,"file":"timeline/side/ideal-city.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"il-siracusano","title":"叙拉古人","node_count":24,"bytes":4101,"file":"timeline/side/il-siracusano.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"what-the-firelight-casts","title":"照我以火","node_count":18,"bytes":3361,"file":"timeline/side/what-the-firelight-casts.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"where-vernal-winds-will-never-blow","title":"登临意","node_count":19,"bytes":3773,"file":"timeline/side/where-vernal-winds-will-never-blow.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"a-flurry-to-the-flame","title":"落叶逐火","node_count":19,"bytes":3767,"file":"timeline/side/a-flurry-to-the-flame.md","source":"PRTS SideStory《落叶逐火》活动页","note":"该联动故事不收入情报处理室，剧情节点直接取活动页故事辑录。"},
+    {"slug":"lone-trail","title":"孤星","node_count":24,"bytes":4365,"file":"timeline/side/lone-trail.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"hortus-de-escapismo","title":"空想花庭","node_count":19,"bytes":3219,"file":"timeline/side/hortus-de-escapismo.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"so-long-adele","title":"火山旅梦","node_count":19,"bytes":4002,"file":"timeline/side/so-long-adele.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"come-catastrophes-or-wakes-of-vultures","title":"不义之财","node_count":19,"bytes":3483,"file":"timeline/side/come-catastrophes-or-wakes-of-vultures.md","source":"PRTS 情报处理室 / 公共事务实录"},
+    {"slug":"zwillingsturme-im-herbst","title":"崔林特尔梅之金","node_count":23,"bytes":4874,"file":"timeline/side/zwillingsturme-im-herbst.md","source":"PRTS 情报处理室 / 公共事务实录"}
+  ],
+  "node_count": 202,
+  "bytes": 38627
+}
