@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "prts-organization-catalog",
+  "source": "https://prts.wiki/w/%E6%A8%A1%E6%9D%BF:%E5%88%86%E6%9E%90%E4%B8%8E%E8%80%83%E6%8D%AE/%E7%BB%84%E7%BB%87%E5%AF%BC%E8%88%AA",
+  "status": "indexed",
+  "entries": [
+    {"name":"朝陇山","type":"公司","rewrite_status":"pending"},
+    {"name":"黑钢","type":"公司","rewrite_status":"pending"},
+    {"name":"喀兰贸易","type":"公司","rewrite_status":"pending"},
+    {"name":"莱茵生命","type":"公司","rewrite_status":"pending"},
+    {"name":"雷神工业","type":"公司","rewrite_status":"pending"},
+    {"name":"鲤氏侦探事务所","type":"公司","rewrite_status":"pending"},
+    {"name":"罗德岛","type":"公司","rewrite_status":"pending"},
+    {"name":"企鹅物流","type":"公司","rewrite_status":"pending"},
+    {"name":"塞壬唱片","type":"公司","rewrite_status":"pending"},
+    {"name":"巴别塔","type":"组织","rewrite_status":"pending"},
+    {"name":"格拉斯哥帮","type":"组织","rewrite_status":"pending"},
+    {"name":"龙门近卫局","type":"组织","rewrite_status":"pending"},
+    {"name":"深海猎人","type":"组织","rewrite_status":"pending"},
+    {"name":"使徒","type":"组织","rewrite_status":"pending"},
+    {"name":"乌萨斯学生自治团","type":"组织","rewrite_status":"pending"},
+    {"name":"整合运动","type":"组织","rewrite_status":"pending"},
+    {"name":"岁","type":"组织","rewrite_status":"pending"},
+    {"name":"深池","type":"组织","rewrite_status":"pending"},
+    {"name":"红松骑士团","type":"组织","rewrite_status":"pending"},
+    {"name":"日落即逝","type":"乐队","rewrite_status":"pending"}
+  ]
+}
