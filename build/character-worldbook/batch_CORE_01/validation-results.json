@@ -2,8 +2,8 @@
   "batch": "CORE-01",
   "status": "PASS",
   "scope": "source structural and editorial checks; not SillyTavern device QA",
-  "checks_total": 227,
-  "checks_passed": 227,
+  "checks_total": 229,
+  "checks_passed": 229,
   "checks": [
     {
       "check": "characters.md:tag_count",
@@ -253,7 +253,7 @@
     {
       "check": "能天使:compact_vs_sample",
       "passed": true,
-      "detail": "character count 882"
+      "detail": "character count 890"
     },
     {
       "check": "能天使:no_game_panel",
@@ -443,7 +443,7 @@
     {
       "check": "斯卡蒂:compact_vs_sample",
       "passed": true,
-      "detail": "character count 855"
+      "detail": "character count 860"
     },
     {
       "check": "斯卡蒂:no_game_panel",
@@ -543,7 +543,7 @@
     {
       "check": "塞雷娅:compact_vs_sample",
       "passed": true,
-      "detail": "character count 879"
+      "detail": "character count 888"
     },
     {
       "check": "塞雷娅:no_game_panel",
@@ -633,7 +633,7 @@
     {
       "check": "艾雅法拉:compact_vs_sample",
       "passed": true,
-      "detail": "character count 930"
+      "detail": "character count 928"
     },
     {
       "check": "艾雅法拉:no_game_panel",
@@ -723,7 +723,7 @@
     {
       "check": "安洁莉娜:compact_vs_sample",
       "passed": true,
-      "detail": "character count 861"
+      "detail": "character count 862"
     },
     {
       "check": "安洁莉娜:no_game_panel",
@@ -823,7 +823,7 @@
     {
       "check": "星熊:compact_vs_sample",
       "passed": true,
-      "detail": "character count 835"
+      "detail": "character count 831"
     },
     {
       "check": "星熊:no_game_panel",
@@ -1013,7 +1013,7 @@
     {
       "check": "莫斯提马:compact_vs_sample",
       "passed": true,
-      "detail": "character count 872"
+      "detail": "character count 875"
     },
     {
       "check": "莫斯提马:no_game_panel",
@@ -1136,7 +1136,17 @@
       "detail": ""
     },
     {
-      "check": "tracked_changes_only_in_batch",
+      "check": "working_changes_only_in_batch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "production_inputs_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "javascript_regex_all_cases",
       "passed": true,
       "detail": ""
     }
@@ -1144,7 +1154,7 @@
   "people": [
     {
       "character": "能天使",
-      "character_chars": 882,
+      "character_chars": 890,
       "ability_chars": 267,
       "au_chars": 281,
       "au_decision": "eligible",
@@ -1166,7 +1176,7 @@
     },
     {
       "character": "斯卡蒂",
-      "character_chars": 855,
+      "character_chars": 860,
       "ability_chars": 280,
       "au_chars": 0,
       "au_decision": "withheld",
@@ -1177,7 +1187,7 @@
     },
     {
       "character": "塞雷娅",
-      "character_chars": 879,
+      "character_chars": 888,
       "ability_chars": 255,
       "au_chars": 272,
       "au_decision": "eligible",
@@ -1187,7 +1197,7 @@
     },
     {
       "character": "艾雅法拉",
-      "character_chars": 930,
+      "character_chars": 928,
       "ability_chars": 308,
       "au_chars": 0,
       "au_decision": "withheld",
@@ -1198,7 +1208,7 @@
     },
     {
       "character": "安洁莉娜",
-      "character_chars": 861,
+      "character_chars": 862,
       "ability_chars": 268,
       "au_chars": 0,
       "au_decision": "withheld",
@@ -1209,7 +1219,7 @@
     },
     {
       "character": "星熊",
-      "character_chars": 835,
+      "character_chars": 831,
       "ability_chars": 275,
       "au_chars": 258,
       "au_decision": "eligible",
@@ -1231,7 +1241,7 @@
     },
     {
       "character": "莫斯提马",
-      "character_chars": 872,
+      "character_chars": 875,
       "ability_chars": 260,
       "au_chars": 0,
       "au_decision": "withheld",
@@ -1252,8 +1262,8 @@
   ],
   "sizes": {
     "characters.md": {
-      "bytes": 24424,
-      "sha256": "763292eed72e8087bd8ed9eef5729b2792b360305c36b83c733fdacc887e9e4e"
+      "bytes": 24484,
+      "sha256": "1ab30e1d2b5b32bcf1f0e4c456515205d28c95e33db056ef2ba9ba7e816b4f21"
     },
     "abilities.md": {
       "bytes": 8640,
@@ -1264,12 +1274,12 @@
       "sha256": "843d298bf2ee4e09bf8212971390a3b413d732c577f2bbdd599dcba8b1a26030"
     },
     "triggers.json": {
-      "bytes": 7014,
-      "sha256": "e0fb6f1ea158d2c01a53a37aad85070a705bd4d1a471c660652f00ab0df7fa00"
+      "bytes": 7029,
+      "sha256": "07555e30b823f8677057442ae43c823e3ef12d61c765e9f42c7b7a3398d69a5b"
     },
     "sources.json": {
-      "bytes": 24959,
-      "sha256": "b885da3432f16ee16b59356c0b74f347708cd630f274b0bd52cda3a9be575628"
+      "bytes": 27839,
+      "sha256": "3e6bfc800afa5c1f2d6fa215044400bed8dfb10b62d7807f3cae76b52cf35899"
     }
   }
 }

@@ -19,4 +19,4 @@ AU默认关闭。开启后，将全局系统和通过年龄门槛的个人条目
 
 没有附带预设修改、远程运行时、第三方卡片或原文镜像。本包不宣称已完成酒馆导入与模型实机测试。
 
-离线复核：在仓库中运行 `python build/character-worldbook/batch_CORE_01/validate.py`。该脚本重新生成结构报告；事实、心理模型和视觉判断仍需结合QA及来源人工验收。
+离线复核（需要 Python 3 与 Node.js）：在仓库中运行 `python build/character-worldbook/batch_CORE_01/validate.py`。该脚本重新生成结构与 JavaScript 正则报告；事实、心理模型和视觉判断仍需结合QA及来源人工验收。

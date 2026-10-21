@@ -1,6 +1,778 @@
 {
   "engine": "JavaScript RegExp",
   "status": "PASS",
-  "positive_aliases": 24,
-  "cross_scene_negative_cases": 10
+  "total": 110,
+  "passed": 110,
+  "cases": [
+    {
+      "character": "能天使",
+      "label": "alias: 能天使",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "outside: 能天使",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "cross-scene: 能天使",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "alias: 蕾缪乐",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "outside: 蕾缪乐",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "cross-scene: 蕾缪乐",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "alias: 新约能天使",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "outside: 新约能天使",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "cross-scene: 新约能天使",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "能天使",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "alias: 银灰",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "outside: 银灰",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "cross-scene: 银灰",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "alias: 恩希欧迪斯",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "outside: 恩希欧迪斯",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "cross-scene: 恩希欧迪斯",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "alias: 恩希欧迪斯·希瓦艾什",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "outside: 恩希欧迪斯·希瓦艾什",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "cross-scene: 恩希欧迪斯·希瓦艾什",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "alias: 凛御银灰",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "outside: 凛御银灰",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "cross-scene: 凛御银灰",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "银灰",
+      "label": "color",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "alias: 斯卡蒂",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "outside: 斯卡蒂",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "cross-scene: 斯卡蒂",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "alias: 浊心斯卡蒂",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "outside: 浊心斯卡蒂",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "cross-scene: 浊心斯卡蒂",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "斯卡蒂",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "塞雷娅",
+      "label": "alias: 塞雷娅",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "塞雷娅",
+      "label": "outside: 塞雷娅",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "塞雷娅",
+      "label": "cross-scene: 塞雷娅",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "塞雷娅",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "塞雷娅",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "塞雷娅",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "alias: 艾雅法拉",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "outside: 艾雅法拉",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "cross-scene: 艾雅法拉",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "alias: 阿黛尔·瑙曼",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "outside: 阿黛尔·瑙曼",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "cross-scene: 阿黛尔·瑙曼",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "alias: 纯烬艾雅法拉",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "outside: 纯烬艾雅法拉",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "cross-scene: 纯烬艾雅法拉",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "艾雅法拉",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "alias: 安洁莉娜",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "outside: 安洁莉娜",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "cross-scene: 安洁莉娜",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "alias: 安心院安洁莉娜",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "outside: 安心院安洁莉娜",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "cross-scene: 安心院安洁莉娜",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "alias: 予愿安洁莉娜",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "outside: 予愿安洁莉娜",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "cross-scene: 予愿安洁莉娜",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "安洁莉娜",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "alias: 星熊",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "outside: 星熊",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "cross-scene: 星熊",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "alias: 斩业星熊",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "outside: 斩业星熊",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "cross-scene: 斩业星熊",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "星熊",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "alias: 临光",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "outside: 临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "cross-scene: 临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "alias: 玛嘉烈·临光",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "outside: 玛嘉烈·临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "cross-scene: 玛嘉烈·临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "alias: 耀骑士",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "outside: 耀骑士",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "cross-scene: 耀骑士",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "alias: 耀骑士临光",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "outside: 耀骑士临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "cross-scene: 耀骑士临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 玛莉娅·临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 玛恩纳·临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 玛莉娅.临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 玛恩纳．临光",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 临光家族",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 临光一家",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "临光",
+      "label": "surname: 临光氏",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "莫斯提马",
+      "label": "alias: 莫斯提马",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "莫斯提马",
+      "label": "outside: 莫斯提马",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "莫斯提马",
+      "label": "cross-scene: 莫斯提马",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "莫斯提马",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "莫斯提马",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "莫斯提马",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "史尔特尔",
+      "label": "alias: 史尔特尔",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "character": "史尔特尔",
+      "label": "outside: 史尔特尔",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "史尔特尔",
+      "label": "cross-scene: 史尔特尔",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "史尔特尔",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "史尔特尔",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "character": "史尔特尔",
+      "label": "malformed or generic",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    }
+  ]
 }
