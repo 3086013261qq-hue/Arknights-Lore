@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "prts-canonical-catalog-entrypoint",
+  "policy": "本文件是资料重建阶段的唯一索引入口；旧seed/legacy文件仅供追溯，不参与正式批量生成。",
+  "catalogs": {
+    "operators": "operators.index.v1.json",
+    "curated_story_characters": "story-characters.curated.index.v1.json",
+    "geography": "geography.canonical.v1.json",
+    "races": "races.canonical.v1.json",
+    "organizations": "organizations.canonical.v1.json",
+    "world_terms": "world-terms.canonical.v1.json",
+    "story_sources": "story-sources.v1.json"
+  },
+  "construction_rules": [
+    "干员按完整索引保留；剧情NPC只使用精选池。",
+    "角色事实进入正式卡前必须重新核对PRTS/官方来源并按咩咩chara-v1重写。",
+    "地点、组织、种族与设定索引只提供候选名称和分类，不复制百科正文。",
+    "时间线仍走timeline远程层；角色、地点、核心设定最终进入卡内世界书。",
+    "信息素属于独立AU层，与原作事实层分开标记。"
+  ],
+  "status": "ready_for_rewrite_pipeline"
+}
