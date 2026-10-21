@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "main-story-order",
+  "status": "skeleton",
+  "scope": "main-00-through-main-17",
+  "acts": [
+    {
+      "id": "act-initium",
+      "name": "觉醒",
+      "entries": [
+        {"id": "main-00", "type": "main", "title": "黑暗时代·上", "file": "timeline/main/main-00.md"},
+        {"id": "main-01", "type": "main", "title": "黑暗时代·下", "file": "timeline/main/main-01.md"},
+        {"id": "main-02", "type": "main", "title": "异卵同生", "file": "timeline/main/main-02.md"},
+        {"id": "main-03", "type": "main", "title": "二次呼吸", "file": "timeline/main/main-03.md"}
+      ]
+    },
+    {
+      "id": "act-1",
+      "name": "幻灭",
+      "entries": [
+        {"id": "main-04", "type": "main", "title": "急性衰竭", "file": "timeline/main/main-04.md"},
+        {"id": "main-05", "type": "main", "title": "靶向药物", "file": "timeline/main/main-05.md"},
+        {"id": "main-06", "type": "main", "title": "局部坏死", "file": "timeline/main/main-06.md"},
+        {"id": "side-shengyu-heiye", "type": "linked-side", "title": "生于黑夜", "file": "timeline/side/shengyu-heiye.md", "status": "planned"},
+        {"id": "main-07", "type": "main", "title": "苦难摇篮", "file": "timeline/main/main-07.md"},
+        {"id": "main-08", "type": "main", "title": "怒号光明", "file": "timeline/main/main-08.md"}
+      ]
+    },
+    {
+      "id": "act-2",
+      "name": "残阳",
+      "entries": [
+        {"id": "main-09", "type": "main", "title": "风暴瞭望", "file": "timeline/main/main-09.md"},
+        {"id": "side-yichen-manbu", "type": "linked-side", "title": "遗尘漫步", "file": "timeline/side/yichen-manbu.md", "status": "planned"},
+        {"id": "main-10", "type": "main", "title": "破碎日冕", "file": "timeline/main/main-10.md"},
+        {"id": "main-11", "type": "main", "title": "淬火尘霾", "file": "timeline/main/main-11.md"},
+        {"id": "side-zhaowo-yihuo", "type": "linked-side", "title": "照我以火", "file": "timeline/side/zhaowo-yihuo.md", "status": "planned"},
+        {"id": "main-12", "type": "main", "title": "惊霆无声", "file": "timeline/main/main-12.md"},
+        {"id": "main-13", "type": "main", "title": "恶兆湍流", "file": "timeline/main/main-13.md"},
+        {"id": "side-babel", "type": "linked-side", "title": "巴别塔", "file": "timeline/side/babel.md", "status": "planned"},
+        {"id": "main-14", "type": "main", "title": "慈悲灯塔", "file": "timeline/main/main-14.md"}
+      ]
+    },
+    {
+      "id": "act-3",
+      "name": "裂变",
+      "entries": [
+        {"id": "side-zhuiji-riluo-yixi", "type": "linked-side", "title": "追迹日落以西", "file": "timeline/side/zhuiji-riluo-yixi.md", "status": "planned"},
+        {"id": "main-15", "type": "main", "title": "离解复合", "file": "timeline/main/main-15.md"},
+        {"id": "main-16", "type": "main", "title": "反常光谱", "file": "timeline/main/main-16.md"},
+        {"id": "side-renmen-women", "type": "linked-side", "title": "人们，我们", "file": "timeline/side/renmen-women.md", "status": "planned"},
+        {"id": "main-17", "type": "main", "title": "相变临界", "file": "timeline/main/main-17.md"}
+      ]
+    }
+  ],
+  "notes": [
+    "main files and linked-side files are not created until the corresponding rewritten timeline block is ready",
+    "linked-side ordering follows the current PRTS score/storyline presentation and is an index anchor, not a claim that every scene occurs strictly between the adjacent main chapters",
+    "exact in-universe dates are added only when supported by official material or reliable timeline evidence"
+  ]
+}
