@@ -21,7 +21,7 @@ import os
 import re
 import subprocess
 import time
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import quote
@@ -33,10 +33,24 @@ BASE_URL = "https://prts.wiki/w/"
 DEFAULT_INDEX = Path("reference/prts-index/catalog/index.v1.json")
 DEFAULT_OUT = Path("build/rough-worldbook")
 USER_AGENT = (
-    "Arknights-Lore-RoughcardBuilder/1.0 "
+    "Arknights-Lore-RoughcardBuilder/2.2 "
     "(structured-facts only; non-mirroring; contact via repository)"
 )
 MAX_FACT_VALUE = 180
+MAX_HISTORY_NOTE = 180
+MAX_ABILITY_NOTE = 180
+MAX_HISTORY_NOTES = 5
+MAX_ABILITY_NOTES = 8
+
+HISTORY_SECTION_HINTS = (
+    "客观履历", "档案资料", "晋升记录", "背景", "经历", "人物经历", "剧情表现", "生平", "事迹",
+)
+ABILITY_SECTION_HINTS = (
+    "特性", "天赋", "技能", "模组", "战斗", "战斗方式", "能力", "源石技艺",
+)
+SKIP_SECTION_HINTS = (
+    "语音记录", "干员密录", "悖论模拟", "活动剧情", "剧情一览", "皮肤", "时装",
+)
 
 CHARACTER_KEY_ALIASES = {
     "性别": ["性别"],
@@ -64,6 +78,13 @@ class PageFacts:
     facts: dict[str, str]
     categories: list[str]
     fetched_at: str
+    history_notes: list[str] = field(default_factory=list)
+    ability_notes: list[str] = field(default_factory=list)
+    trait_names: list[str] = field(default_factory=list)
+    talent_names: list[str] = field(default_factory=list)
+    skill_names: list[str] = field(default_factory=list)
+    section_hits: list[str] = field(default_factory=list)
+    lead_notes: list[str] = field(default_factory=list)
 
 
 class Fetcher:
@@ -78,13 +99,14 @@ class Fetcher:
 
     def _cache_path(self, title: str) -> Path:
         h = hashlib.sha1(title.encode("utf-8")).hexdigest()
-        return self.cache_dir / f"{h}.json"
+        return self.cache_dir / f"v2-{h}.json"
 
     def fetch(self, title: str, refresh: bool = False) -> PageFacts:
         cp = self._cache_path(title)
         if cp.exists() and not refresh:
             data = json.loads(cp.read_text("utf-8"))
-            return PageFacts(**data)
+            allowed = {k: data[k] for k in PageFacts.__dataclass_fields__ if k in data}
+            return PageFacts(**allowed)
 
         url = BASE_URL + quote(title, safe="")
         last_error: Exception | None = None
@@ -99,6 +121,13 @@ class Fetcher:
                     facts=parsed["facts"],
                     categories=parsed["categories"],
                     fetched_at=time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+                    history_notes=parsed.get("history_notes", []),
+                    ability_notes=parsed.get("ability_notes", []),
+                    trait_names=parsed.get("trait_names", []),
+                    talent_names=parsed.get("talent_names", []),
+                    skill_names=parsed.get("skill_names", []),
+                    section_hits=parsed.get("section_hits", []),
+                    lead_notes=parsed.get("lead_notes", []),
                 )
                 cp.write_text(json.dumps(asdict(item), ensure_ascii=False, indent=2), encoding="utf-8")
                 time.sleep(self.delay)
@@ -114,8 +143,101 @@ def clean_text(text: str) -> str:
     return text.replace("\u200b", "")
 
 
+def _clip(text: str, limit: int) -> str:
+    text = clean_text(text)
+    if len(text) <= limit:
+        return text
+    return text[: max(1, limit - 1)].rstrip("，。；;：:、 ") + "…"
+
+
+def _split_notes(text: str) -> list[str]:
+    text = clean_text(text)
+    text = re.sub(r"(?:提升信赖至|初始开放|提升至精英阶段)\S*以查看更多信息", " ", text)
+    text = re.sub(r"\bImage\b", " ", text, flags=re.I)
+    chunks = re.split(r"(?<=[。！？!?；;])\s*|\s{2,}", text)
+    out: list[str] = []
+    for chunk in chunks:
+        c = clean_text(chunk)
+        if len(c) < 12:
+            continue
+        if re.fullmatch(r"[\d\W_]+", c):
+            continue
+        if any(x in c for x in ("部署费用", "精英化材料", "技能升级材料", "信赖值(%)", "模组解锁任务")):
+            continue
+        out.append(c)
+    return out
+
+
+def _heading_title(node) -> str:
+    headline = node.select_one(".mw-headline") if hasattr(node, "select_one") else None
+    return clean_text((headline or node).get_text(" ", strip=True))
+
+
+def _section_text(heading, max_chars: int = 2400) -> str:
+    try:
+        level = int(heading.name[1])
+    except Exception:
+        level = 2
+    parts: list[str] = []
+    total = 0
+    for sib in heading.find_next_siblings():
+        if getattr(sib, "name", "") in {"h2", "h3", "h4", "h5", "h6"}:
+            try:
+                sib_level = int(sib.name[1])
+            except Exception:
+                sib_level = 6
+            if sib_level <= level:
+                break
+        if getattr(sib, "name", "") in {"script", "style", "noscript"}:
+            continue
+        txt = clean_text(sib.get_text(" ", strip=True)) if hasattr(sib, "get_text") else ""
+        if not txt:
+            continue
+        parts.append(txt)
+        total += len(txt)
+        if total >= max_chars:
+            break
+    return _clip(" ".join(parts), max_chars)
+
+
+def _table_first_col_names_between(heading, max_names: int = 12) -> list[str]:
+    try:
+        level = int(heading.name[1])
+    except Exception:
+        level = 2
+    names: list[str] = []
+    for sib in heading.find_next_siblings():
+        if getattr(sib, "name", "") in {"h2", "h3", "h4", "h5", "h6"}:
+            try:
+                sib_level = int(sib.name[1])
+            except Exception:
+                sib_level = 6
+            if sib_level <= level:
+                break
+        tables = [sib] if getattr(sib, "name", "") == "table" else (sib.select("table") if hasattr(sib, "select") else [])
+        for table in tables:
+            for row in table.select("tr"):
+                cells = row.find_all(["th", "td"], recursive=False)
+                if not cells:
+                    continue
+                vals = [clean_text(c.get_text(" ", strip=True)) for c in cells]
+                for v in vals[:2]:
+                    if not v or len(v) > 32:
+                        continue
+                    if any(x in v for x in ("等级", "条件", "描述", "初始", "消耗", "持续", "攻击", "防御", "生命", "法术抗性", "潜能")):
+                        continue
+                    if re.fullmatch(r"(?:Rank\s*)?[ⅠⅡⅢIVX\d+→\-]+", v):
+                        continue
+                    v = re.sub(r"^Image[:：]?\s*", "", v, flags=re.I)
+                    if v and v not in names:
+                        names.append(v)
+                        break
+                if len(names) >= max_names:
+                    return names
+    return names
+
+
 def parse_structured_facts(html: str) -> dict[str, Any]:
-    """Extract short key/value facts from tables; ignore narrative paragraphs."""
     soup = BeautifulSoup(html, "lxml")
     facts: dict[str, str] = {}
 
@@ -136,7 +258,64 @@ def parse_structured_facts(html: str) -> dict[str, Any]:
         if t and t != "分类":
             categories.append(t)
 
-    return {"facts": facts, "categories": sorted(set(categories))}
+    lead_notes: list[str] = []
+    content = soup.select_one("#mw-content-text .mw-parser-output") or soup.select_one("#mw-content-text")
+    if content:
+        for child in content.find_all(["p"], recursive=False):
+            txt = clean_text(child.get_text(" ", strip=True))
+            if len(txt) >= 20:
+                lead_notes.append(_clip(txt, 180))
+            if len(lead_notes) >= 2:
+                break
+
+    history_notes: list[str] = []
+    ability_notes: list[str] = []
+    trait_names: list[str] = []
+    talent_names: list[str] = []
+    skill_names: list[str] = []
+    section_hits: list[str] = []
+
+    for heading in soup.select("h2, h3, h4, h5, h6"):
+        title = _heading_title(heading)
+        if not title or any(skip in title for skip in SKIP_SECTION_HINTS):
+            continue
+
+        if "特性" in title:
+            trait_names.extend(_table_first_col_names_between(heading))
+        if "天赋" in title:
+            talent_names.extend(_table_first_col_names_between(heading))
+        if "技能" in title and "技能升级" not in title:
+            skill_names.extend(_table_first_col_names_between(heading))
+
+        if any(h in title for h in HISTORY_SECTION_HINTS):
+            section_hits.append(title)
+            for note in _split_notes(_section_text(heading)):
+                n = f"[{title}] {_clip(note, MAX_HISTORY_NOTE)}"
+                if n not in history_notes:
+                    history_notes.append(n)
+                if len(history_notes) >= MAX_HISTORY_NOTES:
+                    break
+
+        if any(h in title for h in ABILITY_SECTION_HINTS):
+            section_hits.append(title)
+            for note in _split_notes(_section_text(heading)):
+                n = f"[{title}] {_clip(note, MAX_ABILITY_NOTE)}"
+                if n not in ability_notes:
+                    ability_notes.append(n)
+                if len(ability_notes) >= MAX_ABILITY_NOTES:
+                    break
+
+    return {
+        "facts": facts,
+        "categories": sorted(set(categories)),
+        "history_notes": history_notes[:MAX_HISTORY_NOTES],
+        "ability_notes": ability_notes[:MAX_ABILITY_NOTES],
+        "trait_names": unique(trait_names),
+        "talent_names": unique(talent_names),
+        "skill_names": unique(skill_names),
+        "section_hits": unique(section_hits),
+        "lead_notes": lead_notes[:2],
+    }
 
 
 def load_json(path: Path) -> Any:
@@ -236,10 +415,26 @@ def first_fact(facts: dict[str, str], aliases: list[str]) -> str:
     return ""
 
 
+def _rough_lines(notes: list[str], fallback: str = "待精修") -> str:
+    if not notes:
+        return f"- {fallback}"
+    return "\n".join(f"- {x}" for x in notes)
+
+
+def _join_names(names: list[str], fallback: str = "待精修") -> str:
+    vals = [clean_text(x) for x in names if clean_text(x)]
+    return " / ".join(vals[:12]) if vals else fallback
+
+
 def character_card(name: str, page: PageFacts) -> str:
     f = page.facts
     mapped = {key: first_fact(f, aliases) for key, aliases in CHARACTER_KEY_ALIASES.items()}
     body = mapped.get("身高") or "待精修"
+    history_block = _rough_lines(page.history_notes)
+    trait_text = _join_names(page.trait_names)
+    talent_text = _join_names(page.talent_names)
+    skill_text = _join_names(page.skill_names)
+    ability_notes = _rough_lines(page.ability_notes)
     return f"""<{name}character>
 名字:{name}
 性别:{mapped.get('性别') or '待精修'}
@@ -261,7 +456,7 @@ def character_card(name: str, page: PageFacts) -> str:
 鞋子:待精修
 
 经历:
-- 待精修
+{history_block}
 
 关系:
 - 待精修
@@ -280,28 +475,35 @@ def character_card(name: str, page: PageFacts) -> str:
 
 <核心设定:{name}·能力>
 定位:{mapped.get('职业') or mapped.get('身份') or '待精修'}
+特性:{trait_text}
+天赋:{talent_text}
+技能:{skill_text}
 武器/战斗方式:待精修
 源石技艺/特殊能力:待精修
-代表性能力:待精修
+代表性能力粗采集:
+{ability_notes}
 限制与代价:待精修
 战斗习惯:待精修
 </核心设定:{name}·能力>
 
+<!-- rough-source-notes: automatically harvested, MUST be rewritten before final release -->
 <!-- source: {page.url} -->
 """
 
 
 def location_card(name: str, country: str, page: PageFacts | None) -> str:
     url = page.url if page else BASE_URL + quote(name, safe="")
+    lead = " / ".join(page.lead_notes[:2]) if page and page.lead_notes else "待精修"
     return f"""<地点:{name}>
 名称:{name}
 所属国家:{country or '待精修'}
 类别:待精修
-概况:待精修
+概况粗采集:{lead}
 重要组织:待精修
 相关人物:待精修
 相关事件:待精修
 </地点:{name}>
+<!-- rough-source-notes: automatically harvested, MUST be rewritten before final release -->
 <!-- source: {url} -->
 """
 
@@ -311,13 +513,15 @@ def simple_setting_card(tag: str, name: str, page: PageFacts | None) -> str:
     facts = page.facts if page else {}
     selected = [f"- {k}:{v}" for k, v in facts.items() if k in GENERIC_FACT_KEYS and len(v) <= 120]
     facts_block = "\n".join(selected[:8]) if selected else "- 待精修"
+    lead = " / ".join(page.lead_notes[:2]) if page and page.lead_notes else "待精修"
     return f"""<核心设定:{name}>
 类型:{tag}
 结构化事实:
 {facts_block}
-概要:待精修
+概要粗采集:{lead}
 关联人物/组织/地点:待精修
 </核心设定:{name}>
+<!-- rough-source-notes: automatically harvested, MUST be rewritten before final release -->
 <!-- source: {url} -->
 """
 
@@ -351,13 +555,14 @@ def git_commit(repo_root: Path, message: str) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Build rough Arknights worldbook drafts from PRTS structured facts.")
+    parser = argparse.ArgumentParser(description="Build rich rough Arknights worldbook drafts from PRTS structured facts + bounded history/ability notes.")
     parser.add_argument("--repo-root", default=".", help="Arknights-Lore repository root")
     parser.add_argument("--index", default=str(DEFAULT_INDEX), help="canonical catalog entrypoint")
     parser.add_argument("--out", default=str(DEFAULT_OUT), help="output directory")
     parser.add_argument("--scope", choices=["all", "operators", "npcs", "geography", "races", "organizations", "world_terms"], default="all")
     parser.add_argument("--limit", type=int, default=0, help="debug limit per scope; 0 = no limit")
-    parser.add_argument("--delay", type=float, default=1.2, help="seconds between uncached requests")
+    parser.add_argument("--names", default="", help="comma-separated explicit names for operators/npcs test runs")
+    parser.add_argument("--delay", type=float, default=0.8, help="seconds between uncached requests; desktop default 0.8")
     parser.add_argument("--refresh", action="store_true", help="ignore cached page facts")
     parser.add_argument("--no-fetch", action="store_true", help="generate skeletons without network")
     parser.add_argument("--commit", action="store_true", help="git add/commit generated rough drafts")
@@ -370,14 +575,16 @@ def main() -> int:
     entrypoint = load_json(index_path)
     catalogs = entrypoint["catalogs"]
 
-    cache_dir = Path(os.environ.get("PRTS_ROUGHCARD_CACHE", str(Path.home() / ".cache" / "arknights-lore-prts")))
+    cache_dir = Path(os.environ.get("PRTS_ROUGHCARD_CACHE", str(root / ".cache" / "prts-v2")))
     fetcher = Fetcher(cache_dir=cache_dir, delay=args.delay)
     errors: list[dict[str, str]] = []
     manifest: dict[str, Any] = {
         "generator": "prts_roughcard_builder.py",
-        "policy": "structured facts + placeholders only; no long wiki prose mirrored",
+        "policy": "structured facts + bounded rough history/ability source notes; rewrite before final release",
         "scopes": {},
     }
+
+    explicit_names = unique([x.strip() for x in args.names.split(",") if x.strip()])
 
     def limited(xs):
         xs = list(xs)
@@ -391,7 +598,7 @@ def main() -> int:
     scopes = {args.scope} if args.scope != "all" else {"operators", "npcs", "geography", "races", "organizations", "world_terms"}
 
     if "operators" in scopes:
-        names = limited(load_operator_names(catalog_dir, catalog_dir / catalogs["operators"]))
+        names = explicit_names if explicit_names else limited(load_operator_names(catalog_dir, catalog_dir / catalogs["operators"]))
         chunks = []
         for i, name in enumerate(names, 1):
             page = page_for(name) or PageFacts(name, BASE_URL + quote(name, safe=""), {}, [], "")
@@ -403,7 +610,7 @@ def main() -> int:
         manifest["scopes"]["operators"] = len(names)
 
     if "npcs" in scopes:
-        names = limited(load_catalog_names(catalog_dir / catalogs["curated_story_characters"]))
+        names = explicit_names if explicit_names else limited(load_catalog_names(catalog_dir / catalogs["curated_story_characters"]))
         chunks = []
         for i, name in enumerate(names, 1):
             page = page_for(name) or PageFacts(name, BASE_URL + quote(name, safe=""), {}, [], "")
