@@ -1,0 +1,12 @@
+# Local raw source cache / downloaded reference assets
+raw-source/
+.cache/
+
+# Generated rough drafts are local build artifacts by default
+build/rough-worldbook/raw/
+build/rough-worldbook/debug/raw/
+
+# Python local artifacts
+__pycache__/
+*.pyc
+.venv/
