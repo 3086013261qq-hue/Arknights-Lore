@@ -1,0 +1,14 @@
+{
+  "schema_version": "side-timeline-batch06-v1",
+  "batch": 6,
+  "status": "final-draft",
+  "scope": "SideStory 51-55 by PRTS public-affairs order",
+  "source_policy": "PRTS plot synopsis nodes primary; 泡影苍霆 uses its PRTS activity-page story collection; chronology conservative; no invented dates",
+  "entries": [
+    {"slug":"renmen-women","title":"人们，我们","node_count":18,"bytes":4173,"file":"timeline/side/renmen-women.md","status":"side-timeline-final-draft"},
+    {"slug":"paoying-cangting","title":"泡影苍霆","node_count":18,"bytes":3740,"file":"timeline/side/paoying-cangting.md","status":"side-timeline-final-draft"},
+    {"slug":"zhidao-dadi-biancheng-yike-suancheng","title":"直到大地变成一颗酸橙","node_count":19,"bytes":4058,"file":"timeline/side/zhidao-dadi-biancheng-yike-suancheng.md","status":"side-timeline-final-draft"},
+    {"slug":"yuexing-shuishang","title":"月行水上","node_count":13,"bytes":3052,"file":"timeline/side/yuexing-shuishang.md","status":"side-timeline-final-draft"},
+    {"slug":"zuori-hai","title":"昨日海","node_count":19,"bytes":4301,"file":"timeline/side/zuori-hai.md","status":"side-timeline-final-draft"}
+  ]
+}
