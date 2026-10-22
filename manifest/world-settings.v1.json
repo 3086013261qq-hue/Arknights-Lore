@@ -1,0 +1,90 @@
+{
+  "schema_version": "world-settings-v1.0",
+  "status": "complete",
+  "format": "mie-mie-fullstack-core-setting",
+  "entry_count": 57,
+  "shard_count": 6,
+  "source_of_truth": "worldbook/settings/*.md",
+  "source_policy": [
+    "game/official",
+    "PRTS",
+    "sealed repo timeline/context"
+  ],
+  "activation_policy": {
+    "default": "keyword",
+    "keyword_scope": "<story_scene>",
+    "always_on": [
+      "泰拉世界运行基线",
+      "泰拉战斗常识",
+      "泰拉医疗与伤病常识",
+      "泰拉知识迷雾",
+      "泰拉去玩家中心化",
+      "剧情事实与游戏机制隔离",
+      "时间线与状态连续性"
+    ],
+    "deep_lore": {
+      "file": "worldbook/settings/04_前文明与深层真相.md",
+      "default": "keyword_or_story_stage_gated",
+      "reason": "避免早期NPC无条件获得前文明、源石计划、博士身份等最高剧透知识"
+    }
+  },
+  "shards": [
+    {
+      "file": "worldbook/settings/00_世界基础法则.md",
+      "count": 10,
+      "entries": ["泰拉世界运行基线","源石","天灾","矿石病","感染者社会处境","源石技艺","移动城市","荒野与天灾信使","泰拉科技与工业","泰拉通讯与交通"]
+    },
+    {
+      "file": "worldbook/settings/01_组织与社会.md",
+      "count": 6,
+      "entries": ["罗德岛","巴别塔","整合运动","泰拉企业与私人武装","泰拉医疗体系","佣兵与边境秩序"]
+    },
+    {
+      "file": "worldbook/settings/02_国家与政治秩序.md",
+      "count": 18,
+      "entries": ["乌萨斯","炎","维多利亚","卡西米尔","哥伦比亚","莱塔尼亚","卡兹戴尔","拉特兰","叙拉古","萨尔贡","谢拉格","伊比利亚","阿戈尔","玻利瓦尔","雷姆必拓","萨米","东国","米诺斯"]
+    },
+    {
+      "file": "worldbook/settings/03_种族与超常体系.md",
+      "count": 9,
+      "entries": ["泰拉种族与族裔","提卡兹与萨卡兹","魔王与萨卡兹王庭","萨科塔·律法与共感","海嗣","深海猎人","巨兽·岁与兽主","邪魔与北境威胁","精灵与前文明造物"]
+    },
+    {
+      "file": "worldbook/settings/04_前文明与深层真相.md",
+      "count": 8,
+      "entries": ["前文明","文明存续计划","源石计划","博士·预言家身份","普瑞赛斯与PRTS","石棺与保存者","罗德岛本舰","伐木工与星外灾难"]
+    },
+    {
+      "file": "worldbook/settings/05_叙事与互动约束.md",
+      "count": 6,
+      "entries": ["泰拉战斗常识","泰拉医疗与伤病常识","泰拉知识迷雾","泰拉去玩家中心化","剧情事实与游戏机制隔离","时间线与状态连续性"]
+    }
+  ],
+  "suggested_aliases": {
+    "源石": ["Originium","活性源石","源石工业"],
+    "矿石病": ["感染者","感染","源石结晶"],
+    "移动城市": ["移动城邦","城区","地块"],
+    "罗德岛": ["Rhodes Island","罗德岛制药"],
+    "整合运动": ["整合","Reunion"],
+    "卡兹戴尔": ["萨卡兹","军事委员会"],
+    "拉特兰": ["萨科塔","教宗","公证所"],
+    "萨科塔·律法与共感": ["律法","共感","光环","光翼"],
+    "海嗣": ["海怪","海神","深海教会"],
+    "文明存续计划": ["存续计划","保存者","深蓝之树"],
+    "博士·预言家身份": ["博士","预言家","巴别塔的恶灵"],
+    "普瑞赛斯与PRTS": ["普瑞赛斯","PRTS","P.R.T.S."],
+    "石棺与保存者": ["石棺","保存者","Friston","弗里斯顿"],
+    "伐木工与星外灾难": ["伐木工","星外灾难","文明灭亡"]
+  },
+  "rules": {
+    "core_setting_tag_required": true,
+    "knowledge_fog_required": true,
+    "game_mechanics_are_not_world_facts": true,
+    "preset_modified": false,
+    "operator_files_modified": false,
+    "npc_files_modified": false,
+    "timeline_modified": false,
+    "media_modified": false
+  },
+  "qa": "QA/world-settings-v1.md"
+}
