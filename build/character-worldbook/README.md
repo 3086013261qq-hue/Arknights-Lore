@@ -4,6 +4,7 @@
 
 - `batch_CORE_01/`：早期核心样板批次，保留作历史基准。
 - `batch_OPERATOR_REFINEMENT_01/`：Operator Refinement Batch 01 的施工/QA记录。
+- `batch_OPERATOR_REFINEMENT_02/`：Operator Refinement Batch 02 的施工/QA记录。
 - 后续 Batch 可继续在此记录范围、QA、冲突与统计。
 
 正式可持续返修的角色正文统一保存于：
