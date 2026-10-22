@@ -1,0 +1,17 @@
+{
+  "schema_version": "operator-moe-batch05-final-v1",
+  "batch": 5,
+  "status": "complete",
+  "count": 63,
+  "range": "铃兰 -> 龙舌兰",
+  "registry": "worldbook/operator-moe/batch-05.json",
+  "entry_indexes": [
+    401,
+    463
+  ],
+  "moe_refined_after_batch": 463,
+  "body_files_modified": 0,
+  "media_modified": 0,
+  "timeline_modified": 0,
+  "qa": "build/character-worldbook/batch_OPERATOR_MOE_05_FINAL/QA.md"
+}
