@@ -1,0 +1,14 @@
+{
+  "schema_version": "operator-moe-batch01-v1",
+  "batch": 1,
+  "status": "refined",
+  "count": 100,
+  "range": "12F -> 复奏",
+  "registry": "worldbook/operator-moe.v1.json",
+  "entry_indexes": [1, 100],
+  "moe_refined_after_batch": 100,
+  "body_files_modified": 0,
+  "media_modified": 0,
+  "timeline_modified": 0,
+  "qa": "build/character-worldbook/batch_OPERATOR_MOE_01/QA.md"
+}
