@@ -1,0 +1,17 @@
+{
+  "schema_version": "operator-moe-batch04-v1",
+  "batch": 4,
+  "status": "refined",
+  "count": 100,
+  "range": "空构 -> 钼铅",
+  "registry": "worldbook/operator-moe/batch-04.json",
+  "entry_indexes": [
+    301,
+    400
+  ],
+  "moe_refined_after_batch": 400,
+  "body_files_modified": 0,
+  "media_modified": 0,
+  "timeline_modified": 0,
+  "qa": "build/character-worldbook/batch_OPERATOR_MOE_04/QA.md"
+}
