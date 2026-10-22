@@ -1,9 +1,9 @@
 {
-  "schema_version": "operator-worldbook-v1.3",
+  "schema_version": "operator-worldbook-v1.4",
   "status": "active",
   "role": "canonical editable operator worldbook source",
   "total_operator_target": 463,
-  "body_refined": 200,
+  "body_refined": 250,
   "moe_refined": 0,
   "source_of_truth": "worldbook/operators/<operator>.md",
   "media_manifest": "manifest/operator-media.v1.json",
@@ -15,6 +15,6 @@
     "media_not_rebuilt_during_operator_edits": true
   },
   "index_strategy": "operator_order + batch_manifests; individual file/media paths derive from canonical name",
-  "operator_order": ["12F","Castle-3","CONFESS-47","Friston-3","GALLUS²","Lancet-2","Mechanist(卫戍协议)","Misery(卫戍协议)","Miss.Christine","Mon3tr","PhonoR-0","Pith(卫戍协议)","Pith","Raidian(卫戍协议)","Sharp(卫戍协议)","Sharp","Stormeye(卫戍协议)","Stormeye","THRM-EX","Touch(卫戍协议)","Touch","U-Official","W","万顷","三角初华","丰川祥子","临光","乌啾","乌尔比安","乌有","九色鹿","予愿安洁莉娜","云迹","亚叶","仇白","令","伊内丝","伊桑","伊芙利特","休谟斯","伯塔尼","伺夜","但书","余","佩佩","佩德洛","信仰搅拌机","假日威龙陈","傀影","克洛丝","克莱门莎","八幡海铃","冬时","冰酿","凛冬","凛御银灰","凛视","凯尔希","凯尔希·思衡托","凯瑟琳","初雪","刺玫","刻俄柏","刻刀","医生","华法琳","协律","卡夫卡","卡涅利安","卡缇","卡达","历阵锐枪芬","双月","古米","可露希尔","可颂","史尔特尔","史都华德","号角","司霆惊蛰","吉星","吽","和弦","哈洛德","哈蒂娅","响石","嘉维尔","嘉辛塔","四月","因陀罗","图耶","圣约送葬人","圣聆初雪","地灵","坚雷","埃拉托","埃癸斯","塑心","塞雷娅","复奏","夏栎","夕","多萝西","夜刀","夜半","夜烟","夜莺","夜魔","天火","天空盒","奥斯塔","奥达","妮芙","娜仁图亚","娜斯提","子月","孑","守林人","安哲拉","安德切尔","安比尔","安洁莉娜","安赛尔","宴","寒檀","寒芒克洛丝","寻澜","导火索","小满","山","岳羽由加莉","崖心","嵯峨","巡林者","左乐","巫恋","布丁","布洛卡","帕拉斯","年","幽灵鲨","异客","弑君者","引星棘刺","归溟幽灵鲨","录武官","微风","德·托莱多","德克萨斯","忍冬","怒潮凛冬","惊蛰","慑砂","慕斯","战车","截云","戴菲恩","承曦格雷伊","折光","折桠","拉普兰德","拜松","掠风","推进之王","提丰","摆渡人","摩根","撷英调香师","斑点","斥罪","斩业星熊","断崖","断罪者","斯卡蒂","新约能天使","旅骨","早露","时隙","明椒","星极","星源","星熊","晓歌","普罗旺斯","暗索","暮落(集成战略)","暮落","暴行","暴雨","月禾","月见夜","望","末药","机械师","杏仁","杜宾","杜林","杰克","杰西卡","松果"],
-  "batch_manifests": ["build/character-worldbook/batch_OPERATOR_REFINEMENT_01/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_02/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_03/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_04/manifest.json"]
+  "operator_order": ["12F","Castle-3","CONFESS-47","Friston-3","GALLUS²","Lancet-2","Mechanist(卫戍协议)","Misery(卫戍协议)","Miss.Christine","Mon3tr","PhonoR-0","Pith(卫戍协议)","Pith","Raidian(卫戍协议)","Sharp(卫戍协议)","Sharp","Stormeye(卫戍协议)","Stormeye","THRM-EX","Touch(卫戍协议)","Touch","U-Official","W","万顷","三角初华","丰川祥子","临光","乌啾","乌尔比安","乌有","九色鹿","予愿安洁莉娜","云迹","亚叶","仇白","令","伊内丝","伊桑","伊芙利特","休谟斯","伯塔尼","伺夜","但书","余","佩佩","佩德洛","信仰搅拌机","假日威龙陈","傀影","克洛丝","克莱门莎","八幡海铃","冬时","冰酿","凛冬","凛御银灰","凛视","凯尔希","凯尔希·思衡托","凯瑟琳","初雪","刺玫","刻俄柏","刻刀","医生","华法琳","协律","卡夫卡","卡涅利安","卡缇","卡达","历阵锐枪芬","双月","古米","可露希尔","可颂","史尔特尔","史都华德","号角","司霆惊蛰","吉星","吽","和弦","哈洛德","哈蒂娅","响石","嘉维尔","嘉辛塔","四月","因陀罗","图耶","圣约送葬人","圣聆初雪","地灵","坚雷","埃拉托","埃癸斯","塑心","塞雷娅","复奏","夏栎","夕","多萝西","夜刀","夜半","夜烟","夜莺","夜魔","天火","天空盒","奥斯塔","奥达","妮芙","娜仁图亚","娜斯提","子月","孑","守林人","安哲拉","安德切尔","安比尔","安洁莉娜","安赛尔","宴","寒檀","寒芒克洛丝","寻澜","导火索","小满","山","岳羽由加莉","崖心","嵯峨","巡林者","左乐","巫恋","布丁","布洛卡","帕拉斯","年","幽灵鲨","异客","弑君者","引星棘刺","归溟幽灵鲨","录武官","微风","德·托莱多","德克萨斯","忍冬","怒潮凛冬","惊蛰","慑砂","慕斯","战车","截云","戴菲恩","承曦格雷伊","折光","折桠","拉普兰德","拜松","掠风","推进之王","提丰","摆渡人","摩根","撷英调香师","斑点","斥罪","斩业星熊","断崖","断罪者","斯卡蒂","新约能天使","旅骨","早露","时隙","明椒","星极","星源","星熊","晓歌","普罗旺斯","暗索","暮落(集成战略)","暮落","暴行","暴雨","月禾","月见夜","望","末药","机械师","杏仁","杜宾","杜林","杰克","杰西卡","松果","松桐","极光","极境","林","柏喙","格劳克斯","格拉尼","格雷伊","桃金娘","桑葚","梅","梅尔","梓兰","棘刺","森蚺","森西","槐琥","歌蕾蒂娅","止颂","正义骑士号","死芒","水月","水灯心","泡普卡","泡泡","波卜","波登可","泥岩","泰拉大陆调查团","洋灰","洛洛","流明","流星","浊心斯卡蒂","海沫","海蒂","海霓","涤火杰西卡","淬羽赫默","深巡","深律","深海色","深靛","清流","清道夫","渡桥","温米","温蒂","溯光星源","澄闪"],
+  "batch_manifests": ["build/character-worldbook/batch_OPERATOR_REFINEMENT_01/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_02/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_03/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_04/manifest.json","build/character-worldbook/batch_OPERATOR_REFINEMENT_05/manifest.json"]
 }
