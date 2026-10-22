@@ -1,0 +1,12 @@
+{
+  "schema_version": "operator-refinement-batch03-v1",
+  "batch": 3,
+  "status": "refined",
+  "count": 50,
+  "range": "夏栎 -> 忍冬",
+  "canonical_destination": "worldbook/operators/",
+  "dialogue_preserved": true,
+  "moe_refined": false,
+  "timeline_modified": false,
+  "media_modified": false
+}
