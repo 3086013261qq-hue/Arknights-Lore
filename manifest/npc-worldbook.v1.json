@@ -1,0 +1,31 @@
+{
+  "schema_version": "npc-worldbook-v1.0",
+  "status": "complete",
+  "count": 18,
+  "source_of_truth": "worldbook/npcs/<npc>.md",
+  "format_baseline": "worldbook/operators/<operator>.md",
+  "selection_policy": "高人气 / 高剧情权重 / 未作为正式干员主体重复收录",
+  "source_policy": ["PRTS","萌娘百科","repo timeline/context"],
+  "dialogue_policy": "未统一纳入可靠原文时不杜撰",
+  "weapon_audit_pending": true,
+  "entries": [
+    {"index":1,"name":"普瑞赛斯","path":"worldbook/npcs/普瑞赛斯.md"},
+    {"index":2,"name":"霜星","path":"worldbook/npcs/霜星.md"},
+    {"index":3,"name":"塔露拉","path":"worldbook/npcs/塔露拉.md"},
+    {"index":4,"name":"爱国者","path":"worldbook/npcs/爱国者.md"},
+    {"index":5,"name":"特雷西斯","path":"worldbook/npcs/特雷西斯.md"},
+    {"index":6,"name":"安多恩","path":"worldbook/npcs/安多恩.md"},
+    {"index":7,"name":"曼弗雷德","path":"worldbook/npcs/曼弗雷德.md"},
+    {"index":8,"name":"杜卡雷（血魔大君）","path":"worldbook/npcs/杜卡雷（血魔大君）.md"},
+    {"index":9,"name":"赫尔昏佐伦（巫王）","path":"worldbook/npcs/赫尔昏佐伦（巫王）.md"},
+    {"index":10,"name":"坎诺特","path":"worldbook/npcs/坎诺特.md"},
+    {"index":11,"name":"林舸瑞（鼠王）","path":"worldbook/npcs/林舸瑞（鼠王）.md"},
+    {"index":12,"name":"阿丽娜","path":"worldbook/npcs/阿丽娜.md"},
+    {"index":13,"name":"梅菲斯特","path":"worldbook/npcs/梅菲斯特.md"},
+    {"index":14,"name":"浮士德","path":"worldbook/npcs/浮士德.md"},
+    {"index":15,"name":"ACE","path":"worldbook/npcs/ACE.md"},
+    {"index":16,"name":"Scout","path":"worldbook/npcs/Scout.md"},
+    {"index":17,"name":"Outcast","path":"worldbook/npcs/Outcast.md"},
+    {"index":18,"name":"克丽斯腾·莱特","path":"worldbook/npcs/克丽斯腾·莱特.md"}
+  ]
+}
