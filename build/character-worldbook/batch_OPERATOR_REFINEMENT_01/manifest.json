@@ -1,0 +1,24 @@
+{
+  "schema_version": "operator-refinement-batch01-v1",
+  "batch": 1,
+  "status": "refined",
+  "count": 50,
+  "range": "12F -> 克洛丝",
+  "baseline": "rough-worldbook (9).zip",
+  "group_files": [
+    "groups/group-01-01-10.md",
+    "groups/group-02-11-20.md",
+    "groups/group-03a-21-25.md",
+    "groups/group-03b-26-30.md",
+    "groups/group-04-31-40.md",
+    "groups/group-05-41-50.md"
+  ],
+  "rules": {
+    "dialogue_examples": "preserved from roughcards",
+    "moe_points": "deferred until all 463 operator bodies are refined",
+    "timeline_modified": false,
+    "npc_modified": false,
+    "media_modified": false,
+    "source_priority": "PRTS/game archive > Moegirl fallback > Qwen3-VL visual observation"
+  }
+}
