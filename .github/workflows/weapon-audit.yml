@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore missing canonical operator files for audit
+        run: python tools/weapon_audit_restore_missing.py
       - name: Extract weapon fields
         run: python tools/weapon_audit_extract.py --out build/weapon-audit
       - name: Upload audit artifact
