@@ -1,5 +1,5 @@
 {
-  "schema_version": "npc-worldbook-v1.0",
+  "schema_version": "npc-worldbook-v1.1",
   "status": "complete",
   "count": 18,
   "source_of_truth": "worldbook/npcs/<npc>.md",
@@ -7,7 +7,9 @@
   "selection_policy": "高人气 / 高剧情权重 / 未作为正式干员主体重复收录",
   "source_policy": ["PRTS","萌娘百科","repo timeline/context"],
   "dialogue_policy": "未统一纳入可靠原文时不杜撰",
-  "weapon_audit_pending": true,
+  "weapon_audit_pending": false,
+  "weapon_audit_complete": true,
+  "weapon_audit_manifest": "manifest/character-weapon-audit.v1.json",
   "entries": [
     {"index":1,"name":"普瑞赛斯","path":"worldbook/npcs/普瑞赛斯.md"},
     {"index":2,"name":"霜星","path":"worldbook/npcs/霜星.md"},
