@@ -1,97 +1,44 @@
 {
-  "schema_version": "arknights-mvu-music-v1.0",
-  "status": "selected-ready-for-fullstack-resolution",
+  "schema_version": "arknights-mvu-music-v1.1",
+  "status": "playlist-only-inherit-mature-netease-runtime",
   "provider": "netease-cloud-music",
   "scope": "Arknights / Monster Siren Records only",
-  "player_policy": {
-    "audio_instances": 1,
-    "autoplay": false,
-    "app_jump_preferred": true,
-    "web_fallback": true,
-    "write_game_state": false,
-    "write_worldbook": false,
-    "persist_track_index": false,
-    "lyrics_required": false
-  },
-  "resolution_policy": {
-    "verified_id_can_be_used_directly": true,
-    "missing_id": "resolve at assembly by exact title + Arknights/Monster Siren Records artist/album identity, then freeze the exact NetEase song id in the final runtime config",
-    "do_not_guess_song_id": true,
-    "region_failure": "keep track in list and provide NetEase search/app fallback; do not break MVU",
-    "runtime_music_proxy": false
+  "runtime_inheritance": {
+    "source_baseline": "mature module from 亚空间演唱会 / Warhammer BanG！！ and later validated cards",
+    "rewrite_player_core": false,
+    "outchain_template": "https://music.163.com/outchain/player?type=2&id={track_id}&auto=0&height=66",
+    "iframe_instances": 1,
+    "auto": 0,
+    "switch_track_behavior": "update track_id and reload the same iframe instance",
+    "dom_rerender_rebind": true,
+    "music_failure_isolated_from_mvu": true,
+    "app_jump_requires_real_user_click": true,
+    "app_first": true,
+    "https_official_web_fallback": true,
+    "store_credentials": false,
+    "runtime_proxy": false,
+    "spec": "docs/mvu-mature-netease-floating-window-v1.md"
   },
   "default_track": "speed-of-light",
   "tracks": [
-    {
-      "key": "speed-of-light",
-      "title": "Speed of Light",
-      "artist_hint": "DJ OKAWARI / 二宫爱 / 塞壬唱片-MSR",
-      "netease_song_id": 1403774122,
-      "role": "default / terminal",
-      "verified": true
-    },
-    {
-      "key": "renegade",
-      "title": "Renegade",
-      "artist_hint": "Substantial / X.ARI / 塞壬唱片-MSR",
-      "netease_song_id": null,
-      "role": "combat / dark",
-      "verified": "PRTS confirms official NetEase link; resolve exact id at assembly"
-    },
-    {
-      "key": "radiant",
-      "title": "Radiant",
-      "artist_hint": "塞壬唱片-MSR",
-      "netease_song_id": 1890402858,
-      "role": "heroic / bright",
-      "verified": true
-    },
-    {
-      "key": "immutable",
-      "title": "Immutable",
-      "artist_hint": "塞壬唱片-MSR",
-      "netease_song_id": null,
-      "role": "archive / reflective",
-      "verified": "PRTS confirms official NetEase link; resolve exact id at assembly"
-    },
-    {
-      "key": "be-me-msr",
-      "title": "BE ME (Monster Siren Records)",
-      "artist_hint": "Doul / 左乙 / 塞壬唱片-MSR",
-      "netease_song_id": 1997921766,
-      "role": "quiet / ending",
-      "verified": true
-    },
-    {
-      "key": "mystic-light-quest",
-      "title": "Mystic Light Quest",
-      "artist_hint": "塞壬唱片-MSR / RANASOL / KOTONOHOUSE / Machico",
-      "netease_song_id": 2612747239,
-      "role": "adventure / upbeat",
-      "verified": true
-    },
-    {
-      "key": "snow-parade",
-      "title": "Snow Parade",
-      "artist_hint": "塞壬唱片-MSR / mariko / 原田夏樹",
-      "netease_song_id": 2110359806,
-      "role": "soft / winter",
-      "verified": true
-    },
-    {
-      "key": "boiling-blood",
-      "title": "Boiling Blood",
-      "artist_hint": "塞壬唱片-MSR",
-      "netease_song_id": null,
-      "role": "energetic / action",
-      "verified": "official MSR catalog; resolve exact NetEase id at assembly"
-    }
+    {"key":"speed-of-light","title":"Speed of Light","artist_hint":"DJ OKAWARI / 二宫爱 / 塞壬唱片-MSR","netease_song_id":1403774122,"role":"default / terminal","verified":true},
+    {"key":"renegade","title":"Renegade","artist_hint":"Substantial / X.ARI / 塞壬唱片-MSR","netease_song_id":null,"role":"combat / dark","verified":"resolve exact NetEase id at assembly; do not guess"},
+    {"key":"radiant","title":"Radiant","artist_hint":"塞壬唱片-MSR","netease_song_id":1890402858,"role":"heroic / bright","verified":true},
+    {"key":"immutable","title":"Immutable","artist_hint":"塞壬唱片-MSR","netease_song_id":null,"role":"archive / reflective","verified":"resolve exact NetEase id at assembly; do not guess"},
+    {"key":"be-me-msr","title":"BE ME (Monster Siren Records)","artist_hint":"Doul / 左乙 / 塞壬唱片-MSR","netease_song_id":1997921766,"role":"quiet / ending","verified":true},
+    {"key":"mystic-light-quest","title":"Mystic Light Quest","artist_hint":"塞壬唱片-MSR / RANASOL / KOTONOHOUSE / Machico","netease_song_id":2612747239,"role":"adventure / upbeat","verified":true},
+    {"key":"snow-parade","title":"Snow Parade","artist_hint":"塞壬唱片-MSR / mariko / 原田夏樹","netease_song_id":2110359806,"role":"soft / winter","verified":true},
+    {"key":"boiling-blood","title":"Boiling Blood","artist_hint":"塞壬唱片-MSR","netease_song_id":null,"role":"energetic / action","verified":"resolve exact NetEase id at assembly; do not guess"}
   ],
-  "ui": {
+  "ui_skin": {
     "label": "AUDIO TERMINAL",
-    "compact_fields": ["title", "play_pause", "progress"],
-    "drawer_fields": ["track_list", "current_title", "provider_badge"],
-    "style": "same Arknights/PRTS hard-edge terminal grammar as the rest of MVU",
-    "forbidden": ["separate second audio element", "generic music-app rounded card", "autoplay on first load"]
+    "style": "Arknights/PRTS hard-edge shell around mature NetEase outchain",
+    "forbidden": [
+      "rewrite mature NetEase runtime",
+      "second iframe/player instance",
+      "generic rounded music app",
+      "autoplay on first load",
+      "music state coupled to game state"
+    ]
   }
 }
