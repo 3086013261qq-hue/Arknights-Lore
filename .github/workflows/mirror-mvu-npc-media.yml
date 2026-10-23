@@ -1,0 +1,58 @@
+name: mirror-mvu-npc-media
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/mirror_mvu_npc_media.py'
+      - '.github/workflows/mirror-mvu-npc-media.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  mirror-npc-portraits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image converter
+        run: python -m pip install --disable-pip-version-check pillow
+      - name: Mirror 19 audited PRTS NPC portraits
+        run: python tools/mirror_mvu_npc_media.py
+      - name: Commit NPC portrait binaries and QA
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/mvu/npcs QA/mvu-npc-media-mirror-report-v1.json manifest/npc-media.v1.json
+          if git diff --cached --quiet; then
+            echo 'No NPC media changes to commit.'
+          else
+            git commit -m 'media: mirror 19 audited NPC portraits'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Require complete 19/19 NPC media
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('manifest/npc-media.v1.json').read_text('utf-8'))
+          ready=int(d.get('summary',{}).get('binary_ready',0))
+          print('NPC portrait binaries ready:', ready, '/19')
+          missing=[e['name'] for e in d['entries'] if e.get('binary_status')!='ready']
+          if ready != 19 or missing:
+              raise SystemExit(f'NPC media incomplete: ready={ready}/19 missing={missing}')
+          for e in d['entries']:
+              p=Path(e['target'])
+              if not p.is_file() or p.stat().st_size <= 0:
+                  raise SystemExit(f"missing file despite manifest ready: {e['name']} -> {p}")
+          if d.get('status') != 'binary-ready-19-of-19':
+              raise SystemExit(f"unexpected manifest status: {d.get('status')}")
+          PY
