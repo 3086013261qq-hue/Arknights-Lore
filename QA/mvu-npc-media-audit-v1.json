@@ -1,7 +1,7 @@
 {
-  "schema_version": "mvu-npc-media-audit-v1.0",
+  "schema_version": "mvu-npc-media-audit-v1.1",
   "source_page": "剧情角色一览",
-  "policy": "audit only; no portrait binaries are published by this script",
+  "policy": "audit only; no portrait binaries are published by this script; first valid PRTS story-art version is preferred",
   "summary": {
     "target": 19,
     "row_found": 19,
@@ -97,15 +97,6 @@
       "candidate_file_count": 3,
       "candidates": [
         {
-          "score": 11140.0,
-          "dom_index": 2,
-          "file": "Avg_avg_npc_1968_1-1$1.png",
-          "url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
-          "width": 1348,
-          "height": 1348,
-          "mime": "image/png"
-        },
-        {
           "score": 10943.2,
           "dom_index": 0,
           "file": "Avg_avg_npc_078_2.png",
@@ -122,14 +113,23 @@
           "width": 1024,
           "height": 1024,
           "mime": "image/png"
+        },
+        {
+          "score": 11140.0,
+          "dom_index": 2,
+          "file": "Avg_avg_npc_1968_1-1$1.png",
+          "url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
+          "width": 1348,
+          "height": 1348,
+          "mime": "image/png"
         }
       ],
       "status": "selected-for-review",
-      "selected_file": "Avg_avg_npc_1968_1-1$1.png",
-      "selected_url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
-      "selected_width": 1348,
-      "selected_height": 1348,
-      "selected_score": 11140.0
+      "selected_file": "Avg_avg_npc_078_2.png",
+      "selected_url": "https://media.prts.wiki/e/ec/Avg_avg_npc_078_2.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
     },
     {
       "index": 4,
@@ -172,15 +172,6 @@
       "candidate_file_count": 2,
       "candidates": [
         {
-          "score": 11220.0,
-          "dom_index": 1,
-          "file": "Avg_avg_npc_1724_1$1.png",
-          "url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
-          "width": 1380,
-          "height": 1380,
-          "mime": "image/png"
-        },
-        {
           "score": 10943.2,
           "dom_index": 0,
           "file": "Avg_avg_npc_062.png",
@@ -188,14 +179,23 @@
           "width": 1024,
           "height": 1024,
           "mime": "image/png"
+        },
+        {
+          "score": 11220.0,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_1724_1$1.png",
+          "url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
+          "width": 1380,
+          "height": 1380,
+          "mime": "image/png"
         }
       ],
       "status": "selected-for-review",
-      "selected_file": "Avg_avg_npc_1724_1$1.png",
-      "selected_url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
-      "selected_width": 1380,
-      "selected_height": 1380,
-      "selected_score": 11220.0
+      "selected_file": "Avg_avg_npc_062.png",
+      "selected_url": "https://media.prts.wiki/a/a1/Avg_avg_npc_062.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
     },
     {
       "index": 6,
@@ -208,6 +208,15 @@
       "matched_label": "安多恩·雅迦坦哲罗思",
       "candidate_file_count": 4,
       "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_351_1-1$1.png",
+          "url": "https://media.prts.wiki/e/e6/Avg_avg_npc_351_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
         {
           "score": 11220.0,
           "dom_index": 1,
@@ -227,15 +236,6 @@
           "mime": "image/png"
         },
         {
-          "score": 10943.2,
-          "dom_index": 0,
-          "file": "Avg_avg_npc_351_1-1$1.png",
-          "url": "https://media.prts.wiki/e/e6/Avg_avg_npc_351_1-1%241.png",
-          "width": 1024,
-          "height": 1024,
-          "mime": "image/png"
-        },
-        {
           "score": 10703.2,
           "dom_index": 3,
           "file": "Avg_avg_npc_1809_1-1$1.png",
@@ -246,11 +246,11 @@
         }
       ],
       "status": "selected-for-review",
-      "selected_file": "Avg_avg_npc_1800_1-1$1.png",
-      "selected_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1800_1-1%241.png",
-      "selected_width": 1624,
-      "selected_height": 1624,
-      "selected_score": 11220.0
+      "selected_file": "Avg_avg_npc_351_1-1$1.png",
+      "selected_url": "https://media.prts.wiki/e/e6/Avg_avg_npc_351_1-1%241.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
     },
     {
       "index": 7,
@@ -655,15 +655,6 @@
       "candidate_file_count": 2,
       "candidates": [
         {
-          "score": 10863.2,
-          "dom_index": 1,
-          "file": "Avg_avg_npc_048.png",
-          "url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
-          "width": 1024,
-          "height": 1024,
-          "mime": "image/png"
-        },
-        {
           "score": 4943.2,
           "dom_index": 0,
           "file": "Npc_doctor.png",
@@ -671,14 +662,23 @@
           "width": 1024,
           "height": 1024,
           "mime": "image/png"
+        },
+        {
+          "score": 10863.2,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_048.png",
+          "url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
         }
       ],
       "status": "selected-for-review",
-      "selected_file": "Avg_avg_npc_048.png",
-      "selected_url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
+      "selected_file": "Npc_doctor.png",
+      "selected_url": "https://media.prts.wiki/a/aa/Npc_doctor.png",
       "selected_width": 1024,
       "selected_height": 1024,
-      "selected_score": 10863.2
+      "selected_score": 4943.2
     }
   ]
 }

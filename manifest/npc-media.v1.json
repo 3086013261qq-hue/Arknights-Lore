@@ -56,10 +56,10 @@
       "target": "media/mvu/npcs/塔露拉/portrait.webp",
       "audit_status": "selected-for-review",
       "source_page": "剧情角色一览",
-      "source_file": "Avg_avg_npc_1968_1-1$1.png",
-      "source_url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
-      "source_width": 1348,
-      "source_height": 1348
+      "source_file": "Avg_avg_npc_078_2.png",
+      "source_url": "https://media.prts.wiki/e/ec/Avg_avg_npc_078_2.png",
+      "source_width": 1024,
+      "source_height": 1024
     },
     {
       "index": 4,
@@ -85,10 +85,10 @@
       "target": "media/mvu/npcs/特雷西斯/portrait.webp",
       "audit_status": "selected-for-review",
       "source_page": "剧情角色一览",
-      "source_file": "Avg_avg_npc_1724_1$1.png",
-      "source_url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
-      "source_width": 1380,
-      "source_height": 1380
+      "source_file": "Avg_avg_npc_062.png",
+      "source_url": "https://media.prts.wiki/a/a1/Avg_avg_npc_062.png",
+      "source_width": 1024,
+      "source_height": 1024
     },
     {
       "index": 6,
@@ -99,10 +99,10 @@
       "target": "media/mvu/npcs/安多恩/portrait.webp",
       "audit_status": "selected-for-review",
       "source_page": "剧情角色一览",
-      "source_file": "Avg_avg_npc_1800_1-1$1.png",
-      "source_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1800_1-1%241.png",
-      "source_width": 1624,
-      "source_height": 1624
+      "source_file": "Avg_avg_npc_351_1-1$1.png",
+      "source_url": "https://media.prts.wiki/e/e6/Avg_avg_npc_351_1-1%241.png",
+      "source_width": 1024,
+      "source_height": 1024
     },
     {
       "index": 7,
@@ -291,8 +291,8 @@
       "target": "media/mvu/npcs/博士/portrait.webp",
       "audit_status": "selected-for-review",
       "source_page": "剧情角色一览",
-      "source_file": "Avg_avg_npc_048.png",
-      "source_url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
+      "source_file": "Npc_doctor.png",
+      "source_url": "https://media.prts.wiki/a/aa/Npc_doctor.png",
       "source_width": 1024,
       "source_height": 1024
     }
