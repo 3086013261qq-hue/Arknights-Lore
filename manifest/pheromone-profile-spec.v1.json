@@ -1,0 +1,81 @@
+{
+  "schema_version": "arknights-pheromone-profile-spec-v1.0",
+  "status": "design-frozen-ready-for-batch-assembly",
+  "scope": {
+    "operators": 463,
+    "npcs": "all core NPCs including Doctor after identity fix",
+    "canon_status": "original AU overlay; never treated as source canon"
+  },
+  "sources": {
+    "operator_body": "worldbook/operators/<operator>.md",
+    "operator_moe": "worldbook/operator-moe.v1.json + worldbook/operator-moe/batch-*.json",
+    "npc_body": "worldbook/npcs/<npc>.md",
+    "npc_moe_output": "worldbook/npc-moe.v1.json"
+  },
+  "output": {
+    "profile_manifest": "manifest/pheromone-profile.v1.json",
+    "operator_merge_target": "existing moe string",
+    "npc_merge_target": "npc moe overlay",
+    "mvu_mode": "read-only"
+  },
+  "profile_fields": [
+    "name",
+    "entity_type",
+    "signature_type",
+    "base_notes",
+    "intensity",
+    "emotion_shift",
+    "social_marking_style",
+    "boundary_class",
+    "moe_append"
+  ],
+  "signature_types": ["biological", "mechanical", "special"],
+  "intensity_values": ["very-low", "low", "medium", "high"],
+  "boundary_classes": ["adult-consensual", "nonsexual-only"],
+  "relationship_policy": {
+    "source": "existing meme affinity/status only",
+    "new_persistent_affinity": false,
+    "stranger": "recognition only; no automatic marking",
+    "familiar": "possible sniffing, light rubbing, scent-object exchange according to character",
+    "close": "character-specific social marking/grooming may occur",
+    "adult_consensual": "non-explicit intimate grooming may occur only when both relationship and context permit"
+  },
+  "behavior_palette": [
+    "sniff-to-recognize",
+    "cheek-or-forehead-rub",
+    "shoulder-or-sleeve-rub",
+    "tail-or-ear-proximity",
+    "scented-clothing-exchange",
+    "blanket-or-pillow-scent-comfort",
+    "fur-or-feather-grooming",
+    "adult-consensual-nonexplicit-grooming-lick"
+  ],
+  "hard_rules": [
+    "pheromone system cannot force affection, arousal, obedience, mate-bond, ownership, or consent",
+    "scent recognition cannot read thoughts or detect truth",
+    "being scent-marked does not mean lover, mate, ownership, or sexual consent",
+    "minor, age-unknown-young, or otherwise age-risk entities must be nonsexual-only",
+    "mechanical entities use mechanical scent/signature, not biological pheromone glands",
+    "same species must still receive individualized scent notes and social marking style",
+    "do not rewrite canonical body facts",
+    "do not create pheromone_affinity, mark_level, scent_ownership, or other persistent second-state variables"
+  ],
+  "mvu": {
+    "operator_detail_tab": "PHEROMONE / 气味档案",
+    "npc_detail_panel": "SCENT PROFILE / 气味档案",
+    "fields": ["SCENT SIGNATURE", "INTENSITY", "EMOTION SHIFT", "SOCIAL MARKING", "RELATION RESPONSE"],
+    "relation_response": "derived read-only from existing meme relationship/status + profile; never persisted",
+    "floating_window_preview": "optional one-line SCENT for currently selected entity"
+  },
+  "qa": {
+    "operator_profiles_required": 463,
+    "npc_profiles_required": "all core NPCs after Doctor insertion",
+    "operator_moe_merge_required": true,
+    "npc_moe_merge_required": true,
+    "template_duplication_audit": true,
+    "age_boundary_audit": true,
+    "mechanical_signature_audit": true,
+    "second_state_forbidden": true
+  },
+  "design_spec": "docs/pheromone-moe-mvu-spec-v1.md"
+}
