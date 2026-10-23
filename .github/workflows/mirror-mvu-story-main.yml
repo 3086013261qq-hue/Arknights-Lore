@@ -2,10 +2,6 @@ name: mirror-mvu-story-main
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/mirror-mvu-story-main.yml'
 
 permissions:
   contents: write
@@ -21,26 +17,48 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install --disable-pip-version-check pillow
-      - run: python tools/mirror_mvu_story_covers.py --apply --only main
-      - name: Mark main covers ready
+      - name: Mirror main story covers from PRTS
+        run: python tools/mirror_mvu_story_covers.py --apply --only main
+      - name: Update media manifest counts
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           p=Path('manifest/mvu-story-media.v1.json')
           d=json.loads(p.read_text('utf-8'))
-          ready=sum(Path(f'media/mvu/story/main/main-{i:02d}.webp').is_file() for i in range(18))
-          d['summary']['binary_ready']=int(ready)
-          d['summary']['main_binary_ready']=int(ready)
-          d['status']='main-binary-ready-side-pending' if ready==18 else 'main-binary-partial'
+          main_ready=sum(Path(f'media/mvu/story/main/main-{i:02d}.webp').is_file() for i in range(18))
+          side_ready=sum(Path(f'media/mvu/story/side/{slug}.webp').is_file() for _,slug,_ in d['side'])
+          d['summary']['main_binary_ready']=int(main_ready)
+          d['summary']['side_binary_ready']=int(side_ready)
+          d['summary']['binary_ready']=int(main_ready+side_ready)
+          if main_ready==18 and side_ready==55:
+              d['status']='binary-ready-73-of-73'
+          elif main_ready==18:
+              d['status']='main-binary-ready-side-pending'
+          else:
+              d['status']=f'binary-partial-main-{main_ready}-side-{side_ready}'
           p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n','utf-8')
-          if ready!=18: raise SystemExit(f'expected 18 main covers, got {ready}')
+          print({'main_ready':main_ready,'side_ready':side_ready,'total':main_ready+side_ready})
           PY
-      - name: Commit mirrored covers
+      - name: Commit mirrored covers and report
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add media/mvu/story/main QA/mvu-story-media-mirror-report.json manifest/mvu-story-media.v1.json
-          git diff --cached --quiet && exit 0
-          git commit -m 'media: mirror 18 main story covers'
-          git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo 'No new main cover files to commit.'
+          else
+            git commit -m 'media: mirror main story covers'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Validate main cover completeness
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          ready=[i for i in range(18) if Path(f'media/mvu/story/main/main-{i:02d}.webp').is_file()]
+          print(f'Main story covers ready: {len(ready)}/18')
+          missing=[i for i in range(18) if i not in ready]
+          if missing:
+              raise SystemExit(f'missing main covers: {missing}; rerun workflow to retry only missing files')
+          PY
