@@ -1,7 +1,7 @@
 {
-  "schema_version": "arknights-mvu-main-autoadvance-v1.1",
+  "schema_version": "arknights-mvu-main-autoadvance-v1.2",
   "status": "design-frozen",
-  "trigger": "current active MAIN volume enters sandbox transition or sandbox mode",
+  "trigger": "current active MAIN enters sandbox transition or sandbox mode",
   "source_priority": [
     "Mvu.getMvuData current message",
     "getVariables current message",
@@ -24,7 +24,22 @@
     "zero_or_multiple_enabled_forbidden": true,
     "side_story_forbidden": true
   },
-  "transaction": "reuse existing disable-all-then-enable-target single-writeback",
+  "handoff_latch": {
+    "enabled": true,
+    "marker": "【ARKNIGHTS_MAIN_HANDOFF】",
+    "source": "worldbook/runtime/main-handoff.md",
+    "counts_as_timeline": false,
+    "enable_in_same_switch_writeback": true,
+    "state_after_switch": "DISARMED_AWAITING_EVENT_A",
+    "next_generation_must_start_at": "Event A of unique enabled target MAIN",
+    "inherit_previous_sandbox": false,
+    "inherit_previous_infinite_time": false,
+    "target_event_time_policy": "use target MAIN Event A own date/time anchor",
+    "release_condition": "latest assistant world-main confirms target MAIN Event A and is non-sandbox",
+    "release_action": "disable handoff marker only; keep target MAIN enabled; rearm auto-advance",
+    "sandbox_while_latched": "never advance again; keep target MAIN and continue requiring Event A"
+  },
+  "transaction": "same serial worldbook transaction switches MAIN and enables handoff control entry",
   "side_story_auto_advance": false,
   "main_final_sandbox": "MAIN-17",
   "sequence": [
@@ -51,8 +66,11 @@
     "sandbox evidence must come from current latest message",
     "historical sandbox text must not trigger",
     "one transition per chat/context + message_id + active MAIN",
-    "current worldbook must have exactly one enabled MAIN timeline entry",
+    "current worldbook must have exactly one enabled timeline entry",
     "native explicit MAIN must match enabled MAIN",
+    "handoff marker enabled forbids any further auto-advance",
+    "target MAIN must confirm Event A before auto-advance is rearmed",
+    "previous volume sandbox cannot be reinterpreted as target volume completion",
     "write success before UI ACTIVE update",
     "MAIN-17 never auto-advances",
     "SideStory never auto-advances",
