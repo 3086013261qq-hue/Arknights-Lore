@@ -34,8 +34,6 @@ jobs:
           d['summary']['binary_ready']=int(main_ready+side_ready)
           if main_ready==18 and side_ready==55:
               d['status']='binary-ready-73-of-73'
-          elif side_ready==55:
-              d['status']='side-binary-ready-main-pending'
           else:
               d['status']=f'binary-partial-main-{main_ready}-side-{side_ready}'
           p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n','utf-8')
@@ -53,17 +51,20 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Summary
+      - name: Validate and summarize
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           d=json.loads(Path('manifest/mvu-story-media.v1.json').read_text('utf-8'))
           s=d['summary']
-          print(f"SideStory covers ready: {s.get('side_binary_ready',0)}/55")
+          side=int(s.get('side_binary_ready',0))
+          print(f'SideStory covers ready: {side}/55')
           print(f"All story covers ready: {s.get('binary_ready',0)}/73")
           report=Path('QA/mvu-story-media-side-mirror-report.json')
           if report.is_file():
               r=json.loads(report.read_text('utf-8'))
               print('Unresolved/error:', r.get('summary',{}).get('unresolved_or_error',0))
+          if side == 0:
+              raise SystemExit('SideStory mirror produced 0 files; refusing false green success')
           PY
