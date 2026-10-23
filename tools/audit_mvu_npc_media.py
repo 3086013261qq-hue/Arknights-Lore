@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit official story-character portraits for the 19 core NPCs from PRTS.
 
-This script deliberately does NOT publish portrait binaries.  It resolves the
+This script deliberately does NOT publish portrait binaries. It resolves the
 剧情角色一览 row for every core NPC, ranks official story-art candidates and
 writes an auditable report + selected source metadata back into the manifest.
 A later mirror step may download only selections that pass this audit.
@@ -23,7 +23,7 @@ MANIFEST = ROOT / "manifest/npc-media.v1.json"
 REPORT = ROOT / "QA/mvu-npc-media-audit-v1.json"
 API = "https://prts.wiki/api.php"
 PAGE = "剧情角色一览"
-UA = "Arknights-Lore-MVU-NPC-Audit/1.0 (+https://github.com/3086013261qq-hue/Arknights-Lore)"
+UA = "Arknights-Lore-MVU-NPC-Audit/1.1 (+https://github.com/3086013261qq-hue/Arknights-Lore)"
 TIMEOUT = 15
 
 BAD = (
@@ -46,7 +46,7 @@ def request_json(params: dict, retries: int = 2) -> dict:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                 return json.load(r)
-        except Exception as exc:  # noqa: BLE001 - report exact network failure
+        except Exception as exc:
             last = exc
             if attempt < retries:
                 time.sleep(1 + attempt)
@@ -82,7 +82,6 @@ def file_from_url(url: str) -> str | None:
     parts = [p for p in path.split("/") if p]
     for part in reversed(parts):
         if EXT_RE.search(part):
-            # MediaWiki thumbnails end in e.g. 300px-Avg_avg_npc_078.png.
             part = re.sub(r"^\d+px-", "", part)
             return part
     return None
@@ -124,7 +123,6 @@ def candidate_files_from_row(row) -> list[str]:
         if value not in ordered:
             ordered.append(value)
 
-    # Explicit file links are the most trustworthy source.
     for a in row.find_all("a"):
         href = a.get("href") or ""
         decoded = urllib.parse.unquote(href)
@@ -138,7 +136,6 @@ def candidate_files_from_row(row) -> list[str]:
                 tail = tail.split("Image:", 1)[1]
             add(tail.split("#", 1)[0].split("?", 1)[0])
 
-    # Rendered/lazy images often expose the original filename in alt/src attrs.
     for img in row.find_all("img"):
         for key in ("alt", "src", "data-src", "data-original", "data-lazy-src"):
             raw = img.get(key)
@@ -154,7 +151,6 @@ def candidate_files_from_row(row) -> list[str]:
             if from_url:
                 add(from_url)
 
-    # PRTS story-art widgets may hide image names in data/style attributes.
     raw_html = str(row)
     for match in URL_RE.findall(raw_html):
         add(file_from_url(match))
@@ -207,7 +203,6 @@ def score(index: int, name: str, info: dict) -> float | None:
         if token.casefold() in low:
             value += 6000.0 - rank * 450.0
             break
-    # Transparent story art is normally PNG and should beat incidental JPGs.
     if low.endswith(".png"):
         value += 900.0
     return value
@@ -247,7 +242,11 @@ def audit_entry(entry: dict, soup: BeautifulSoup) -> dict:
         s = score(idx, file_name, info)
         if s is not None:
             ranked.append((s, idx, file_name, info))
-    ranked.sort(key=lambda x: (-x[0], x[1]))
+
+    # PRTS' own Ver.1 / Ver.2 / ... order is authoritative for the default
+    # portrait. Resolution is only a quality gate; it must not make a later
+    # expression/costume difference outrank the first valid standard version.
+    ranked.sort(key=lambda x: (x[1], -x[0]))
 
     result["candidate_file_count"] = len(names)
     result["candidates"] = [
@@ -294,9 +293,9 @@ def main() -> int:
     selected = sum(x["status"] == "selected-for-review" for x in items)
     row_found = sum(bool(x["row_found"]) for x in items)
     report = {
-        "schema_version": "mvu-npc-media-audit-v1.0",
+        "schema_version": "mvu-npc-media-audit-v1.1",
         "source_page": PAGE,
-        "policy": "audit only; no portrait binaries are published by this script",
+        "policy": "audit only; no portrait binaries are published by this script; first valid PRTS story-art version is preferred",
         "summary": {
             "target": len(items),
             "row_found": row_found,
