@@ -1,9 +1,9 @@
 {
   "schema_version": "location-worldbook-v1.0",
-  "status": "batch01-complete",
+  "status": "batch02-complete",
   "format": "mie-mie-fullstack-core-setting",
   "planned_total": 85,
-  "completed": 25,
+  "completed": 55,
   "source_of_truth": "worldbook/locations/*.md",
   "production_spec": "docs/location-production-spec-v1.md",
   "source_policy": ["game/official", "PRTS", "sealed repo timeline/context"],
@@ -15,11 +15,8 @@
     "deep_or_future_state": "story-stage-gated"
   },
   "batches": {
-    "batch01": {
-      "status": "complete",
-      "count": 25,
-      "range": "A01-A15 + B01-B10"
-    }
+    "batch01": {"status":"complete","count":25,"range":"A01-A15 + B01-B10","qa":"QA/location-worldbook-batch01-v1.md"},
+    "batch02": {"status":"complete","count":30,"range":"B11-B40","qa":"QA/location-worldbook-batch02-v1.md"}
   },
   "entries": [
     {"id":"A01","name":"罗德岛本舰·舰内空间","priority":"A","file":"worldbook/locations/A01_罗德岛本舰·舰内空间.md","parent":"罗德岛本舰","triggers":["罗德岛本舰","罗德岛舰内","本舰","医疗舱"]},
@@ -46,7 +43,37 @@
     {"id":"B07","name":"萨迪恩区","priority":"B","file":"worldbook/locations/B07_萨迪恩区.md","parent":"伦蒂尼姆","triggers":["萨迪恩区","萨迪恩","萨迪恩高墙"]},
     {"id":"B08","name":"海布里区","priority":"B","file":"worldbook/locations/B08_海布里区.md","parent":"伦蒂尼姆","triggers":["海布里区","海布里","伦蒂尼姆军工区"]},
     {"id":"B09","name":"诺伯特区","priority":"B","file":"worldbook/locations/B09_诺伯特区.md","parent":"伦蒂尼姆","triggers":["诺伯特区","诺伯特","伦蒂尼姆脱离地块"]},
-    {"id":"B10","name":"圣王会西部大堂","priority":"B","file":"worldbook/locations/B10_圣王会西部大堂.md","parent":"伦蒂尼姆","triggers":["圣王会西部大堂","圣王会大堂","西部大堂","王座厅"]}
+    {"id":"B10","name":"圣王会西部大堂","priority":"B","file":"worldbook/locations/B10_圣王会西部大堂.md","parent":"伦蒂尼姆","triggers":["圣王会西部大堂","圣王会大堂","西部大堂","王座厅"]},
+    {"id":"B11","name":"布伦特伍德镇","priority":"B","file":"worldbook/locations/B11_布伦特伍德镇.md","parent":"伦蒂尼姆周边地区","triggers":["布伦特伍德镇","布伦特伍德"]},
+    {"id":"B12","name":"切特雷镇","priority":"B","file":"worldbook/locations/B12_切特雷镇.md","parent":"伦蒂尼姆周边地区","triggers":["切特雷镇","切特雷"]},
+    {"id":"B13","name":"圣骏堡·卡托加区","priority":"B","file":"worldbook/locations/B13_圣骏堡·卡托加区.md","parent":"圣骏堡","triggers":["卡托加区","圣骏堡卡托加区","卡托加封锁区"]},
+    {"id":"B14","name":"布列斯克","priority":"B","file":"worldbook/locations/B14_布列斯克.md","parent":"乌萨斯北原","triggers":["布列斯克","乌萨斯布列斯克"]},
+    {"id":"B15","name":"远北中心矿区","priority":"B","file":"worldbook/locations/B15_远北中心矿区.md","parent":"乌萨斯北原","triggers":["远北中心矿区","远北矿区","第九矿场"]},
+    {"id":"B16","name":"泽尔格勒","priority":"B","file":"worldbook/locations/B16_泽尔格勒.md","parent":"乌萨斯","triggers":["泽尔格勒","乌萨斯泽尔格勒"]},
+    {"id":"B17","name":"沃伦姆德","priority":"B","file":"worldbook/locations/B17_沃伦姆德.md","parent":"莱塔尼亚","triggers":["沃伦姆德","Wolumonde","十二音街道"]},
+    {"id":"B18","name":"滴水村","priority":"B","file":"worldbook/locations/B18_滴水村.md","parent":"卡西米尔","triggers":["滴水村","骑士宝藏村庄"]},
+    {"id":"B19","name":"阿卡胡拉","priority":"B","file":"worldbook/locations/B19_阿卡胡拉.md","parent":"萨尔贡","triggers":["阿卡胡拉","Acahualla","嘉维尔故乡"]},
+    {"id":"B20","name":"际崖城","priority":"B","file":"worldbook/locations/B20_际崖城.md","parent":"阿卡胡拉地下区域","triggers":["际崖城","地下际崖城","杜林城市"]},
+    {"id":"B21","name":"维谢海姆","priority":"B","file":"worldbook/locations/B21_维谢海姆.md","parent":"莱塔尼亚","triggers":["维谢海姆","莱塔尼亚维谢海姆"]},
+    {"id":"B22","name":"崔林特尔梅","priority":"B","file":"worldbook/locations/B22_崔林特尔梅.md","parent":"莱塔尼亚","triggers":["崔林特尔梅","女皇庆典"]},
+    {"id":"B23","name":"雅赛努斯","priority":"B","file":"worldbook/locations/B23_雅赛努斯.md","parent":"米诺斯","triggers":["雅赛努斯","第一神庙"]},
+    {"id":"B24","name":"曼斯菲尔德监狱","priority":"B","file":"worldbook/locations/B24_曼斯菲尔德监狱.md","parent":"哥伦比亚","triggers":["曼斯菲尔德监狱","曼斯菲尔德","Mansfield"]},
+    {"id":"B25","name":"长泉镇","priority":"B","file":"worldbook/locations/B25_长泉镇.md","parent":"萨尔贡荒漠地区","triggers":["长泉镇","感染者社区","源石尘行动"]},
+    {"id":"B26","name":"达维镇","priority":"B","file":"worldbook/locations/B26_达维镇.md","parent":"哥伦比亚东部","triggers":["达维镇","达维地块"]},
+    {"id":"B27","name":"苍暮山地·露华村","priority":"B","file":"worldbook/locations/B27_苍暮山地·露华村.md","parent":"苍暮山地","triggers":["苍暮山地","露华村","火龙"]},
+    {"id":"B28","name":"纳斯尔纱","priority":"B","file":"worldbook/locations/B28_纳斯尔纱.md","parent":"塔拉地区","triggers":["纳斯尔纱","塔拉纳斯尔纱"]},
+    {"id":"B29","name":"螺旋桨天堂","priority":"B","file":"worldbook/locations/B29_螺旋桨天堂.md","parent":"哥伦比亚","triggers":["螺旋桨天堂","天空宜居博览会","博览园区"]},
+    {"id":"B30","name":"雅隆镇","priority":"B","file":"worldbook/locations/B30_雅隆镇.md","parent":"盐漠边缘","triggers":["雅隆镇","盐漠边镇"]},
+    {"id":"B31","name":"盐漠","priority":"B","file":"worldbook/locations/B31_盐漠.md","parent":"伊比利亚边缘地区","triggers":["盐漠","伊比利亚盐漠","盐鳞"]},
+    {"id":"B32","name":"盐风城","priority":"B","file":"worldbook/locations/B32_盐风城.md","parent":"伊比利亚沿海","triggers":["盐风城","伊比利亚盐风城","安妮塔"]},
+    {"id":"B33","name":"格兰法洛","priority":"B","file":"worldbook/locations/B33_格兰法洛.md","parent":"伊比利亚沿海","triggers":["格兰法洛","伊比利亚旧港"]},
+    {"id":"B34","name":"愚人号","priority":"B","file":"worldbook/locations/B34_愚人号.md","parent":"伊比利亚海域","triggers":["愚人号","Stultifera Navis","主舰桥"]},
+    {"id":"B35","name":"雷亚—伊比利亚中心城区打捞区","priority":"B","file":"worldbook/locations/B35_雷亚—伊比利亚中心城区打捞区.md","parent":"伊比利亚沿海","triggers":["雷亚-伊比利亚","雷亚—伊比利亚","中心城区打捞","打捞中心"]},
+    {"id":"B36","name":"尚蜀","priority":"B","file":"worldbook/locations/B36_尚蜀.md","parent":"炎","triggers":["尚蜀","尚蜀城","将进酒"]},
+    {"id":"B37","name":"灰齐山","priority":"B","file":"worldbook/locations/B37_灰齐山.md","parent":"炎国山地","triggers":["灰齐山","画中人","画境入口"]},
+    {"id":"B38","name":"大荒城","priority":"B","file":"worldbook/locations/B38_大荒城.md","parent":"炎","triggers":["大荒城","神农祭","大荒农田"]},
+    {"id":"B39","name":"百灶","priority":"B","file":"worldbook/locations/B39_百灶.md","parent":"炎","triggers":["百灶","百珍宴","鼎丰楼"]},
+    {"id":"B40","name":"御机","priority":"B","file":"worldbook/locations/B40_御机.md","parent":"东国","triggers":["御机","东国御机","锻冶町"]}
   ],
   "rules": {
     "core_setting_tag_required": true,
@@ -63,5 +90,5 @@
     "world_settings_modified": false,
     "media_modified": false
   },
-  "qa": "QA/location-worldbook-batch01-v1.md"
+  "qa": "QA/location-worldbook-batch02-v1.md"
 }
