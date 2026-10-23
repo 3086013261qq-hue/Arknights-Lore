@@ -1,32 +1,40 @@
-# 《明日方舟》MVU 主线沙盒自动衔接规范 v1.1
+# 《明日方舟》MVU 主线沙盒自动衔接规范 v1.2
 
-> 本文件只定义主线 MAIN-00～MAIN-17 的“进入沙盒后自动切下一卷”。
-> SideStory 默认禁用自动串联。
+> 本文件只定义 MAIN-00～MAIN-17 的自动衔接。
+> SideStory 全部禁止自动串联。
+> v1.2 新增：**切卷后一次性 Event A 交接锁（MAIN_HANDOFF）**，防止上一卷沙盒状态污染下一卷并产生连续跳卷。
 
 ## 1. 目标
 
-主线每卷最后都有 `沙盒模式`。当咩咩当前状态明确表明当前主线卷已进入“沙盒模式过渡”或“沙盒模式”时，MVU 自动把世界书切到下一主线卷，实现无缝衔接。
+主线每卷最后都有 `沙盒模式`。当前 MAIN 进入“沙盒模式过渡 / 沙盒模式”后，MVU自动切到下一 MAIN。
 
+但切卷成功不等于新卷已经开始。切卷后必须进入一次性交接阶段：
+
+1. 下一轮剧情**必须从新卷事件A开始**；
+2. 上一卷的沙盒 / wlog / current stage 立即视为过期，不得继承；
+3. 在新卷事件A真正出现之前，自动切卷保持 DISARMED；
+4. 只有确认新卷已经进入正式事件后，才重新 ARMED。
+
+序列：
 - MAIN-00 -> MAIN-01
 - MAIN-01 -> MAIN-02
 - ...
 - MAIN-16 -> MAIN-17
-- MAIN-17 -> 不再切卷，进入主线最终沙盒
+- MAIN-17 -> 最终沙盒，不再自动切卷
 
-## 2. 触发来源优先级
+---
 
-触发证据必须来自**当前最新消息**，按以下优先级读取：
+## 2. 沙盒触发来源
 
-1. 咩咩原生消息变量：`Mvu.getMvuData({type:'message', message_id})`；
-2. fallback：`getVariables({type:'message', message_id})`；
-3. 若原生对象不存在/没有可用沙盒阶段字段，则允许使用**同一当前消息中的咩咩世界运行报告 / `<wlog>` / 当前剧情阶段文本**；
-4. 普通历史正文、旧楼层、任意更早消息中的“沙盒模式”绝不能作为触发源。
+只允许当前最新消息作为触发证据，优先级：
 
-原生变量优先，不代表世界运行报告无资格触发。只要世界运行报告来自当前最新消息、且内容明确，它就是咩咩当前状态的可信 fallback。
+1. `Mvu.getMvuData({type:'message', message_id})`
+2. `getVariables({type:'message', message_id})`
+3. 当前最新消息中的咩咩世界运行报告 / `<wlog>` / 当前剧情阶段文本
 
-## 3. 可触发状态
+普通历史正文、旧楼层、旧 assistant message 中的沙盒字样一律无资格触发。
 
-以下状态均视为主线卷已经结束并允许无缝衔接：
+### 可触发状态
 
 - `沙盒模式过渡`
 - `至 沙盒模式过渡`
@@ -35,102 +43,162 @@
 - `本卷已完成`
 - `SANDBOX`
 
-匹配采用“包含明确结束标志”的语义/正则判断，不得要求整段字段与 `沙盒模式` 四字完全相等。
-
-例如以下两条都必须触发：
-
-- `0-11《突围》·行动后 至 沙盒模式过渡 | 进行中`
-- `沙盒模式（接续上一事件时间起 - ∞） | 进行中`
-
-推荐识别核心：
+推荐识别：
 
 `/(?:至\s*)?沙盒模式(?:过渡)?|进入沙盒模式|本卷已完成|SANDBOX/i`
 
-## 4. 自动切换必须同时满足
+---
 
-1. 当前世界书中恰好只有 1 个 `ARKNIGHTS_TIMELINE:*` 条目 enabled；
-2. 该条目属于 `MAIN-00`～`MAIN-16`；
-3. 沙盒证据来自**当前最新消息ID**，不是历史楼层；
-4. 当前阶段文本命中第3节的明确沙盒/过渡状态；
-5. 当前消息 / 当前 active volume 尚未执行过自动衔接；
-6. 当前聊天上下文在检查与写回期间没有变化。
+## 3. 第一次自动切换条件
 
-### 4.1 关于卷归属
+必须同时满足：
 
-- 若原生对象明确包含 `MAIN-XX`，它必须与当前 enabled MAIN 一致；不一致时拒绝切卷。
-- 若当前世界运行报告没有显式写 `MAIN-XX`，但世界书中恰好只有一个 MAIN enabled，则允许以这个唯一 enabled MAIN 作为卷归属。
-- 这不是建立 `_current_volume`；只是读取现有世界书唯一真值。
-- 若当前 enabled 是 SideStory、0条、或多于1条，一律禁止自动切换。
+1. 73条 `ARKNIGHTS_TIMELINE:*` 中恰好1条 enabled；
+2. enabled 条目是 MAIN-00～MAIN-16；
+3. 当前最新消息明确命中沙盒/过渡状态；
+4. 若原生对象明确给出 MAIN-XX，必须与 enabled MAIN 一致；
+5. 若报告未写 MAIN-XX，可用唯一 enabled MAIN 确认归属；
+6. 当前 `(chat/context, message_id, active MAIN)` 尚未消费；
+7. **MAIN_HANDOFF 当前必须为 disabled**。
 
-这条规则专门解决当前咩咩世界运行报告能明确给出“沙盒模式”，但未重复输出 `MAIN-XX` 的实机情况。
+MAIN_HANDOFF 开启期间，任何沙盒文本都不能再次触发自动切卷。
 
-## 5. 防历史误触发
+---
 
-必须同时使用以下保护：
+## 4. 切卷事务 + MAIN_HANDOFF
 
-- 只读最新 assistant message / 当前 message_id；
-- `MESSAGE_UPDATED` / `CHARACTER_MESSAGE_RENDERED` / `mag_variable_update_ended` 等事件触发时重新读取当前消息；
-- 不遍历历史消息寻找“最近一个沙盒”；
-- Swipe到旧楼层不触发；
-- 页面初始化时若只是打开一条历史已保存沙盒消息，不得重复切卷；
-- 对 `(chat/context, message_id, active MAIN)` 做一次性消费锁；
-- 世界书切换成功后旧MAIN不再enabled，自然阻止二次切换。
+自动从 MAIN-X 切至 MAIN-Y 时，复用现有成熟世界书串行事务，并在**同一次 writeback**中完成：
 
-## 6. 切换事务
-
-触发后直接复用成熟卷切换事务：
-
-1. 读取 `manifest/mvu-timeline-switch.v1.json`；
-2. 在内存把 73 条 `ARKNIGHTS_TIMELINE:*` 全部置为 disabled；
-3. 只启用 `next_main` 对应 marker；
+1. 73条时间线全部 disabled；
+2. 只启用目标 `MAIN-Y`；
+3. 启用非时间线控制条目 `【ARKNIGHTS_MAIN_HANDOFF】`；
 4. 一次性写回；
-5. 写回成功后重新读取世界书真值；
-6. 成功后刷新 ACTIVE、封面与当前卷；
-7. 写回失败则保留旧卷，不伪装成功。
+5. 写回成功后重读世界书；
+6. 必须仍然恰好1/73时间线 enabled；
+7. UI ACTIVE 更新为 MAIN-Y；
+8. 自动切卷状态进入 `DISARMED_AWAITING_EVENT_A`。
 
-自动衔接只是触发来源变化，底层事务不得另写一套。
+`ARKNIGHTS_MAIN_HANDOFF`：
 
-## 7. 时间衔接
+- 不属于73条时间线；
+- 不代表剧情事实；
+- 不属于咩咩游戏状态；
+- 不建立 `_current_volume`；
+- 只是一枚一次性、模型可见的“新卷起始握手”控制标记。
 
-进入下一主线卷后：
+其源文件：`worldbook/runtime/main-handoff.md`。
 
-- 不继承上一卷沙盒中的 `∞` 作为真实日期；
-- 直接以新卷事件A/A1中已经核定的时间锚点作为下一段剧情时间；
-- 若新卷首事件只提供相对时间，则由咩咩按该卷前置规则推进；
-- 不让旧沙盒阶段继续覆盖下一卷正式事件。
+---
 
-## 8. SideStory 策略
+## 5. 下一轮必须从 Event A 开始
 
-55 个 SideStory **全部禁用自动下一卷**。
+只要 `ARKNIGHTS_MAIN_HANDOFF` enabled，下一次模型生成必须遵守：
 
-SideStory沙盒结束后：
+1. 当前唯一 enabled `ARKNIGHTS_TIMELINE:MAIN-Y` 就是新卷事实源；
+2. 上一条消息中的 `沙盒模式 / 沙盒模式过渡 / ∞` 全部属于上一卷，立即失效；
+3. **世界主线必须从当前 MAIN-Y 的第一个正式事件 `事件A` 开始**；
+4. 不得继续输出上一卷 `事件L/I/...: 沙盒模式`；
+5. 不得跳过事件A直接进入B/C/沙盒；
+6. 当前时间必须采用 MAIN-Y 事件A自身已经核定的时间锚点；
+7. 若事件A只有相对时间，则按该事件前置规则推进，不继承旧沙盒无限时间；
+8. `<wlog>` 的【世界主线】必须写成新卷事件A，而不是旧沙盒；
+9. `<story_driver>` 的【世界主线】必须与同一事件A一致。
 
-- 保持当前 SideStory enabled；
-- MVU 显示 `SANDBOX / 本卷自由行动`；
-- 玩家手动进入 OPERATIONS 选择下一卷；
-- 不根据数组顺序自动切到下一 SideStory。
+这是硬规则，不允许“为了连续性”保留上一卷沙盒。
 
-## 9. MAIN-17 最终状态
+### 示例
 
-`MAIN-17` 进入沙盒/沙盒过渡后：
+上一条：
+`MAIN-00 / 事件L: 沙盒模式`
 
-- 不再自动切卷；
-- 保持 MAIN-17 为唯一 enabled；
-- MVU 显示 `MAIN STORY COMPLETE / SANDBOX`；
-- 玩家可继续自由行动或手动进入任一 SideStory/其他卷。
+MVU切卷：
+`MAIN-00 disabled -> MAIN-01 enabled + MAIN_HANDOFF enabled`
+
+下一轮必须：
+`MAIN-01 / 事件A: 1-1《孤岛》·行动前 ...`
+
+禁止：
+`MAIN-01 ACTIVE + 事件L: 沙盒模式`
+
+---
+
+## 6. Event A 确认与重新武装
+
+MVU在后续最新 assistant message 中确认以下条件后，才允许结束交接：
+
+1. MAIN_HANDOFF 仍 enabled；
+2. 当前唯一 enabled MAIN 与切换后的目标卷一致；
+3. 当前最新消息的世界主线明确是该卷的 `事件A`（允许 `事件A1` 仅在同一轮已经明确先进入A的情况下出现）；
+4. 当前阶段**不包含** `沙盒模式 / 沙盒模式过渡 / 本卷已完成 / SANDBOX`。
+
+确认成功后：
+
+1. 仅把 `ARKNIGHTS_MAIN_HANDOFF` disabled；
+2. 不改当前 MAIN；
+3. 不改剧情变量；
+4. 自动切卷重新进入 `ARMED`。
+
+如果下一轮仍错误输出沙盒：
+
+- MAIN_HANDOFF 保持 enabled；
+- 当前 MAIN 保持不变；
+- 自动切卷继续 DISARMED；
+- 绝不允许继续跳到下一 MAIN；
+- 下一轮仍要求从事件A开始。
+
+---
+
+## 7. 防连续跳卷硬规则
+
+以下情况全部禁止自动切卷：
+
+- MAIN_HANDOFF enabled；
+- 当前 active MAIN 是刚刚自动切换得到的新卷，但尚未确认事件A；
+- 最新 wlog 仍在复述上一卷沙盒；
+- 最新消息只是重新渲染 / Swipe / 历史消息；
+- 当前 MAIN 与原生显式 MAIN 不一致；
+- 0条或多于1条时间线 enabled；
+- SideStory；
+- MAIN-17。
+
+**不得因为“当前 enabled MAIN 已经变成下一卷”就把同一个/下一条遗留沙盒报告解释为新卷已完成。**
+
+---
+
+## 8. SideStory
+
+55个 SideStory 全部保持手动切换。
+
+- 沙盒后不自动下一卷；
+- 不使用 MAIN_HANDOFF 自动串联；
+- manifest数组顺序不等于时间顺序。
+
+---
+
+## 9. MAIN-17
+
+MAIN-17进入沙盒/过渡后：
+
+- 不自动切卷；
+- MAIN-17保持唯一 enabled；
+- 显示 `MAIN STORY COMPLETE / SANDBOX`；
+- 不启用 MAIN_HANDOFF。
+
+---
 
 ## 10. QA
 
-- [ ] MAIN-00～MAIN-16 的 `沙盒模式过渡` 能触发 next_main；
-- [ ] MAIN-00～MAIN-16 的正式 `沙盒模式` 能触发 next_main；
-- [ ] 世界运行报告 fallback 可以触发，不要求 `native=true`；
-- [ ] 原生变量存在时仍优先使用原生变量；
-- [ ] 报告未写 MAIN-XX 时，可用唯一 enabled MAIN 确认卷归属；
-- [ ] 历史消息中的沙盒字样不触发；
-- [ ] 同一消息/同一卷只触发一次；
-- [ ] 自动切换后恰好 1/73 enabled；
-- [ ] 新卷 ACTIVE 与世界书真实状态一致；
-- [ ] 写入失败时不更新 UI；
-- [ ] SideStory 沙盒绝不自动切下一卷；
-- [ ] MAIN-17 沙盒不自动切卷；
-- [ ] 自动切换复用成熟事务，不新增第二套 `_current_volume`。
+- [ ] MAIN-00沙盒可切到MAIN-01；
+- [ ] 切到MAIN-01的同一次writeback启用MAIN_HANDOFF；
+- [ ] MAIN_HANDOFF期间自动切卷为DISARMED；
+- [ ] 上一卷沙盒wlog不能把MAIN-01继续切到MAIN-02；
+- [ ] 下一轮强制从MAIN-01事件A开始；
+- [ ] Event A使用自身时间锚点，不继承旧沙盒∞；
+- [ ] Event A确认后MAIN_HANDOFF自动关闭；
+- [ ] 关闭HANDOFF后才重新ARMED；
+- [ ] 如果模型错误继续输出沙盒，保持当前卷并继续要求A，不连跳；
+- [ ] 自动切换后始终恰好1/73时间线enabled；
+- [ ] 历史沙盒、Swipe、重绘不触发；
+- [ ] SideStory不自动切；
+- [ ] MAIN-17不自动切；
+- [ ] 不新增持久 `_current_volume` 或第二套剧情状态。
