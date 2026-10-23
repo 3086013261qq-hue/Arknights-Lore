@@ -1,15 +1,22 @@
 {
-  "schema_version": "npc-worldbook-v1.1",
+  "schema_version": "npc-worldbook-v1.2",
   "status": "complete",
-  "count": 18,
+  "count": 19,
   "source_of_truth": "worldbook/npcs/<npc>.md",
   "format_baseline": "worldbook/operators/<operator>.md",
-  "selection_policy": "高人气 / 高剧情权重 / 未作为正式干员主体重复收录",
+  "selection_policy": "高人气 / 高剧情权重 / 未作为正式干员主体重复收录；博士作为原作关键独立人物强制收录",
   "source_policy": ["PRTS","萌娘百科","repo timeline/context"],
   "dialogue_policy": "未统一纳入可靠原文时不杜撰",
   "weapon_audit_pending": false,
   "weapon_audit_complete": true,
   "weapon_audit_manifest": "manifest/character-weapon-audit.v1.json",
+  "identity_policy": {
+    "doctor_is_independent_npc": true,
+    "user_is_doctor": false,
+    "doctor_token_targets": ["博士","Doctor","预言家"],
+    "never_auto_alias_to_user": true,
+    "spec": "docs/player-doctor-identity-separation-v1.md"
+  },
   "entries": [
     {"index":1,"name":"普瑞赛斯","path":"worldbook/npcs/普瑞赛斯.md"},
     {"index":2,"name":"霜星","path":"worldbook/npcs/霜星.md"},
@@ -28,6 +35,7 @@
     {"index":15,"name":"ACE","path":"worldbook/npcs/ACE.md"},
     {"index":16,"name":"Scout","path":"worldbook/npcs/Scout.md"},
     {"index":17,"name":"Outcast","path":"worldbook/npcs/Outcast.md"},
-    {"index":18,"name":"克丽斯腾·莱特","path":"worldbook/npcs/克丽斯腾·莱特.md"}
+    {"index":18,"name":"克丽斯腾·莱特","path":"worldbook/npcs/克丽斯腾·莱特.md"},
+    {"index":19,"name":"博士","path":"worldbook/npcs/博士.md"}
   ]
 }
