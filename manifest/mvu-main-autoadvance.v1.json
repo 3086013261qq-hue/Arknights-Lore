@@ -1,0 +1,37 @@
+{
+  "schema_version": "arknights-mvu-main-autoadvance-v1.0",
+  "status": "design-frozen",
+  "trigger": "current active MAIN volume enters explicit sandbox mode",
+  "source_of_truth": "unique enabled ARKNIGHTS_TIMELINE entry + current meme <status>",
+  "transaction": "reuse existing disable-all-then-enable-target single-writeback",
+  "side_story_auto_advance": false,
+  "main_final_sandbox": "MAIN-17",
+  "sequence": [
+    {"current":"MAIN-00","next":"MAIN-01"},
+    {"current":"MAIN-01","next":"MAIN-02"},
+    {"current":"MAIN-02","next":"MAIN-03"},
+    {"current":"MAIN-03","next":"MAIN-04"},
+    {"current":"MAIN-04","next":"MAIN-05"},
+    {"current":"MAIN-05","next":"MAIN-06"},
+    {"current":"MAIN-06","next":"MAIN-07"},
+    {"current":"MAIN-07","next":"MAIN-08"},
+    {"current":"MAIN-08","next":"MAIN-09"},
+    {"current":"MAIN-09","next":"MAIN-10"},
+    {"current":"MAIN-10","next":"MAIN-11"},
+    {"current":"MAIN-11","next":"MAIN-12"},
+    {"current":"MAIN-12","next":"MAIN-13"},
+    {"current":"MAIN-13","next":"MAIN-14"},
+    {"current":"MAIN-14","next":"MAIN-15"},
+    {"current":"MAIN-15","next":"MAIN-16"},
+    {"current":"MAIN-16","next":"MAIN-17"},
+    {"current":"MAIN-17","next":null}
+  ],
+  "guards": [
+    "sandbox must belong to current active volume",
+    "historical message sandbox text must not trigger",
+    "one transition per active volume",
+    "write success before UI ACTIVE update",
+    "no persistent _current_volume state"
+  ],
+  "side_policy": "manual selection only; manifest list order is not chronology"
+}
