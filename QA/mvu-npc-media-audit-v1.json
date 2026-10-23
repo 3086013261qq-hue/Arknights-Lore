@@ -1,0 +1,684 @@
+{
+  "schema_version": "mvu-npc-media-audit-v1.0",
+  "source_page": "剧情角色一览",
+  "policy": "audit only; no portrait binaries are published by this script",
+  "summary": {
+    "target": 19,
+    "row_found": 19,
+    "selected_for_review": 19,
+    "unresolved": 0
+  },
+  "items": [
+    {
+      "index": 1,
+      "name": "普瑞赛斯",
+      "aliases": [
+        "普瑞赛斯"
+      ],
+      "target": "media/mvu/npcs/普瑞赛斯/portrait.webp",
+      "row_found": true,
+      "matched_label": "普瑞赛斯",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_083.png",
+          "url": "https://media.prts.wiki/b/b8/Avg_avg_npc_083.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_083.png",
+      "selected_url": "https://media.prts.wiki/b/b8/Avg_avg_npc_083.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 2,
+      "name": "霜星",
+      "aliases": [
+        "霜星",
+        "叶莲娜"
+      ],
+      "target": "media/mvu/npcs/霜星/portrait.webp",
+      "row_found": true,
+      "matched_label": "霜星",
+      "candidate_file_count": 3,
+      "candidates": [
+        {
+          "score": 10043.2,
+          "dom_index": 0,
+          "file": "Avg_char_1505_frstar_1.png",
+          "url": "https://media.prts.wiki/b/b5/Avg_char_1505_frstar_1.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 9963.2,
+          "dom_index": 1,
+          "file": "Avg_char_1505_frstar_4.png",
+          "url": "https://media.prts.wiki/6/64/Avg_char_1505_frstar_4.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 9883.2,
+          "dom_index": 2,
+          "file": "Avg_avg_1505_frstar_1$1.png",
+          "url": "https://media.prts.wiki/f/fa/Avg_avg_1505_frstar_1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_char_1505_frstar_1.png",
+      "selected_url": "https://media.prts.wiki/b/b5/Avg_char_1505_frstar_1.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10043.2
+    },
+    {
+      "index": 3,
+      "name": "塔露拉",
+      "aliases": [
+        "塔露拉",
+        "塔露拉·雅特利亚斯"
+      ],
+      "target": "media/mvu/npcs/塔露拉/portrait.webp",
+      "row_found": true,
+      "matched_label": "塔露拉",
+      "candidate_file_count": 3,
+      "candidates": [
+        {
+          "score": 11140.0,
+          "dom_index": 2,
+          "file": "Avg_avg_npc_1968_1-1$1.png",
+          "url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
+          "width": 1348,
+          "height": 1348,
+          "mime": "image/png"
+        },
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_078_2.png",
+          "url": "https://media.prts.wiki/e/ec/Avg_avg_npc_078_2.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 9963.2,
+          "dom_index": 1,
+          "file": "Avg_char_011_talula_1.png",
+          "url": "https://media.prts.wiki/2/22/Avg_char_011_talula_1.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_1968_1-1$1.png",
+      "selected_url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
+      "selected_width": 1348,
+      "selected_height": 1348,
+      "selected_score": 11140.0
+    },
+    {
+      "index": 4,
+      "name": "爱国者",
+      "aliases": [
+        "爱国者",
+        "博卓卡斯替"
+      ],
+      "target": "media/mvu/npcs/爱国者/portrait.webp",
+      "row_found": true,
+      "matched_label": "爱国者",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_025_1.png",
+          "url": "https://media.prts.wiki/3/3f/Avg_avg_npc_025_1.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_025_1.png",
+      "selected_url": "https://media.prts.wiki/3/3f/Avg_avg_npc_025_1.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 5,
+      "name": "特雷西斯",
+      "aliases": [
+        "特雷西斯"
+      ],
+      "target": "media/mvu/npcs/特雷西斯/portrait.webp",
+      "row_found": true,
+      "matched_label": "特雷西斯",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 11220.0,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_1724_1$1.png",
+          "url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
+          "width": 1380,
+          "height": 1380,
+          "mime": "image/png"
+        },
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_062.png",
+          "url": "https://media.prts.wiki/a/a1/Avg_avg_npc_062.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_1724_1$1.png",
+      "selected_url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
+      "selected_width": 1380,
+      "selected_height": 1380,
+      "selected_score": 11220.0
+    },
+    {
+      "index": 6,
+      "name": "安多恩",
+      "aliases": [
+        "安多恩"
+      ],
+      "target": "media/mvu/npcs/安多恩/portrait.webp",
+      "row_found": true,
+      "matched_label": "安多恩·雅迦坦哲罗思",
+      "candidate_file_count": 4,
+      "candidates": [
+        {
+          "score": 11220.0,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_1800_1-1$1.png",
+          "url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1800_1-1%241.png",
+          "width": 1624,
+          "height": 1624,
+          "mime": "image/png"
+        },
+        {
+          "score": 11140.0,
+          "dom_index": 2,
+          "file": "Avg_avg_npc_1800_1-5$3.png",
+          "url": "https://media.prts.wiki/3/37/Avg_avg_npc_1800_1-5%243.png",
+          "width": 1624,
+          "height": 1624,
+          "mime": "image/png"
+        },
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_351_1-1$1.png",
+          "url": "https://media.prts.wiki/e/e6/Avg_avg_npc_351_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 10703.2,
+          "dom_index": 3,
+          "file": "Avg_avg_npc_1809_1-1$1.png",
+          "url": "https://media.prts.wiki/3/3d/Avg_avg_npc_1809_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_1800_1-1$1.png",
+      "selected_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1800_1-1%241.png",
+      "selected_width": 1624,
+      "selected_height": 1624,
+      "selected_score": 11220.0
+    },
+    {
+      "index": 7,
+      "name": "曼弗雷德",
+      "aliases": [
+        "曼弗雷德"
+      ],
+      "target": "media/mvu/npcs/曼弗雷德/portrait.webp",
+      "row_found": true,
+      "matched_label": "曼弗雷德",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_404_1-1$1.png",
+          "url": "https://media.prts.wiki/9/95/Avg_avg_npc_404_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 10863.2,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_1302_1-1$1.png",
+          "url": "https://media.prts.wiki/f/fd/Avg_avg_npc_1302_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_404_1-1$1.png",
+      "selected_url": "https://media.prts.wiki/9/95/Avg_avg_npc_404_1-1%241.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 8,
+      "name": "杜卡雷（血魔大君）",
+      "aliases": [
+        "杜卡雷",
+        "血魔大君",
+        "杜卡雷，“君主之红”"
+      ],
+      "target": "media/mvu/npcs/杜卡雷（血魔大君）/portrait.webp",
+      "row_found": true,
+      "matched_label": "血魔大君",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_410_1-1$1.png",
+          "url": "https://media.prts.wiki/6/6d/Avg_avg_npc_410_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_410_1-1$1.png",
+      "selected_url": "https://media.prts.wiki/6/6d/Avg_avg_npc_410_1-1%241.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 9,
+      "name": "赫尔昏佐伦（巫王）",
+      "aliases": [
+        "赫尔昏佐伦",
+        "巫王",
+        "赫尔昏佐伦，“巫王”"
+      ],
+      "target": "media/mvu/npcs/赫尔昏佐伦（巫王）/portrait.webp",
+      "row_found": true,
+      "matched_label": "赫尔昏佐伦，“巫王”",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_1116_1-3$2.png",
+          "url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1116_1-3%242.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 10863.2,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_1116_1-1$1.png",
+          "url": "https://media.prts.wiki/f/fc/Avg_avg_npc_1116_1-1%241.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_1116_1-3$2.png",
+      "selected_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1116_1-3%242.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 10,
+      "name": "坎诺特",
+      "aliases": [
+        "坎诺特"
+      ],
+      "target": "media/mvu/npcs/坎诺特/portrait.webp",
+      "row_found": true,
+      "matched_label": "坎诺特·古德英纳夫",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_208.png",
+          "url": "https://media.prts.wiki/6/68/Avg_avg_npc_208.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_208.png",
+      "selected_url": "https://media.prts.wiki/6/68/Avg_avg_npc_208.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 11,
+      "name": "林舸瑞（鼠王）",
+      "aliases": [
+        "林舸瑞",
+        "鼠王"
+      ],
+      "target": "media/mvu/npcs/林舸瑞（鼠王）/portrait.webp",
+      "row_found": true,
+      "matched_label": "鼠王",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_034.png",
+          "url": "https://media.prts.wiki/3/3d/Avg_avg_npc_034.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 10863.2,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_034_2.png",
+          "url": "https://media.prts.wiki/d/d4/Avg_avg_npc_034_2.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_034.png",
+      "selected_url": "https://media.prts.wiki/3/3d/Avg_avg_npc_034.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 12,
+      "name": "阿丽娜",
+      "aliases": [
+        "阿丽娜"
+      ],
+      "target": "media/mvu/npcs/阿丽娜/portrait.webp",
+      "row_found": true,
+      "matched_label": "阿丽娜",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_079.png",
+          "url": "https://media.prts.wiki/b/b1/Avg_avg_npc_079.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_079.png",
+      "selected_url": "https://media.prts.wiki/b/b1/Avg_avg_npc_079.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 13,
+      "name": "梅菲斯特",
+      "aliases": [
+        "梅菲斯特",
+        "伊诺"
+      ],
+      "target": "media/mvu/npcs/梅菲斯特/portrait.webp",
+      "row_found": true,
+      "matched_label": "梅菲斯特",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_084.png",
+          "url": "https://media.prts.wiki/4/43/Avg_avg_npc_084.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 9963.2,
+          "dom_index": 1,
+          "file": "Avg_char_1507_Mephisto_1.png",
+          "url": "https://media.prts.wiki/3/36/Avg_char_1507_Mephisto_1.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_084.png",
+      "selected_url": "https://media.prts.wiki/4/43/Avg_avg_npc_084.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 14,
+      "name": "浮士德",
+      "aliases": [
+        "浮士德",
+        "萨沙"
+      ],
+      "target": "media/mvu/npcs/浮士德/portrait.webp",
+      "row_found": true,
+      "matched_label": "浮士德",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_085.png",
+          "url": "https://media.prts.wiki/1/12/Avg_avg_npc_085.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 9963.2,
+          "dom_index": 1,
+          "file": "Avg_char_1508_Faust_1.png",
+          "url": "https://media.prts.wiki/1/1d/Avg_char_1508_Faust_1.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_085.png",
+      "selected_url": "https://media.prts.wiki/1/12/Avg_avg_npc_085.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 15,
+      "name": "ACE",
+      "aliases": [
+        "Ace",
+        "ACE"
+      ],
+      "target": "media/mvu/npcs/ACE/portrait.webp",
+      "row_found": true,
+      "matched_label": "Ace",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10043.2,
+          "dom_index": 0,
+          "file": "Avg_char_014_riope.png",
+          "url": "https://media.prts.wiki/9/95/Avg_char_014_riope.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_char_014_riope.png",
+      "selected_url": "https://media.prts.wiki/9/95/Avg_char_014_riope.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10043.2
+    },
+    {
+      "index": 16,
+      "name": "Scout",
+      "aliases": [
+        "Scout"
+      ],
+      "target": "media/mvu/npcs/Scout/portrait.webp",
+      "row_found": true,
+      "matched_label": "Scout",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_026.png",
+          "url": "https://media.prts.wiki/0/06/Avg_avg_npc_026.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_026.png",
+      "selected_url": "https://media.prts.wiki/0/06/Avg_avg_npc_026.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 17,
+      "name": "Outcast",
+      "aliases": [
+        "Outcast"
+      ],
+      "target": "media/mvu/npcs/Outcast/portrait.webp",
+      "row_found": true,
+      "matched_label": "Outcast",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 10943.2,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_245_1-1.png",
+          "url": "https://media.prts.wiki/2/24/Avg_avg_npc_245_1-1.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_245_1-1.png",
+      "selected_url": "https://media.prts.wiki/2/24/Avg_avg_npc_245_1-1.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10943.2
+    },
+    {
+      "index": 18,
+      "name": "克丽斯腾·莱特",
+      "aliases": [
+        "克丽斯腾",
+        "克丽斯腾·莱特",
+        "Kristen"
+      ],
+      "target": "media/mvu/npcs/克丽斯腾·莱特/portrait.webp",
+      "row_found": true,
+      "matched_label": "克丽斯腾·莱特",
+      "candidate_file_count": 1,
+      "candidates": [
+        {
+          "score": 11300.0,
+          "dom_index": 0,
+          "file": "Avg_avg_npc_537_1-1$1.png",
+          "url": "https://media.prts.wiki/2/27/Avg_avg_npc_537_1-1%241.png",
+          "width": 1328,
+          "height": 1328,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_537_1-1$1.png",
+      "selected_url": "https://media.prts.wiki/2/27/Avg_avg_npc_537_1-1%241.png",
+      "selected_width": 1328,
+      "selected_height": 1328,
+      "selected_score": 11300.0
+    },
+    {
+      "index": 19,
+      "name": "博士",
+      "aliases": [
+        "博士"
+      ],
+      "target": "media/mvu/npcs/博士/portrait.webp",
+      "row_found": true,
+      "matched_label": "博士",
+      "candidate_file_count": 2,
+      "candidates": [
+        {
+          "score": 10863.2,
+          "dom_index": 1,
+          "file": "Avg_avg_npc_048.png",
+          "url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        },
+        {
+          "score": 4943.2,
+          "dom_index": 0,
+          "file": "Npc_doctor.png",
+          "url": "https://media.prts.wiki/a/aa/Npc_doctor.png",
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/png"
+        }
+      ],
+      "status": "selected-for-review",
+      "selected_file": "Avg_avg_npc_048.png",
+      "selected_url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
+      "selected_width": 1024,
+      "selected_height": 1024,
+      "selected_score": 10863.2
+    }
+  ]
+}

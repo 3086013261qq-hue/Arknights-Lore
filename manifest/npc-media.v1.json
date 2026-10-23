@@ -1,6 +1,6 @@
 {
   "schema_version": "arknights-mvu-npc-media-v1.0",
-  "status": "audit-pending",
+  "status": "audit-selected-19-of-19",
   "source_policy": "PRTS 剧情角色一览 official in-game story artwork; prefer standard/default story portrait; no fan art; enemy model only as last-resort explicit fallback",
   "source_page": "剧情角色一览",
   "cdn_base": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/Arknights-Lore@main/",
@@ -13,28 +13,288 @@
   },
   "summary": {
     "target": 19,
-    "audit_selected": 0,
+    "audit_selected": 19,
     "binary_ready": 0
   },
   "entries": [
-    {"index":1,"name":"普瑞赛斯","aliases":["普瑞赛斯"],"target":"media/mvu/npcs/普瑞赛斯/portrait.webp"},
-    {"index":2,"name":"霜星","aliases":["霜星","叶莲娜"],"target":"media/mvu/npcs/霜星/portrait.webp"},
-    {"index":3,"name":"塔露拉","aliases":["塔露拉","塔露拉·雅特利亚斯"],"target":"media/mvu/npcs/塔露拉/portrait.webp"},
-    {"index":4,"name":"爱国者","aliases":["爱国者","博卓卡斯替"],"target":"media/mvu/npcs/爱国者/portrait.webp"},
-    {"index":5,"name":"特雷西斯","aliases":["特雷西斯"],"target":"media/mvu/npcs/特雷西斯/portrait.webp"},
-    {"index":6,"name":"安多恩","aliases":["安多恩"],"target":"media/mvu/npcs/安多恩/portrait.webp"},
-    {"index":7,"name":"曼弗雷德","aliases":["曼弗雷德"],"target":"media/mvu/npcs/曼弗雷德/portrait.webp"},
-    {"index":8,"name":"杜卡雷（血魔大君）","aliases":["杜卡雷","血魔大君","杜卡雷，“君主之红”"],"target":"media/mvu/npcs/杜卡雷（血魔大君）/portrait.webp"},
-    {"index":9,"name":"赫尔昏佐伦（巫王）","aliases":["赫尔昏佐伦","巫王","赫尔昏佐伦，“巫王”"],"target":"media/mvu/npcs/赫尔昏佐伦（巫王）/portrait.webp"},
-    {"index":10,"name":"坎诺特","aliases":["坎诺特"],"target":"media/mvu/npcs/坎诺特/portrait.webp"},
-    {"index":11,"name":"林舸瑞（鼠王）","aliases":["林舸瑞","鼠王"],"target":"media/mvu/npcs/林舸瑞（鼠王）/portrait.webp"},
-    {"index":12,"name":"阿丽娜","aliases":["阿丽娜"],"target":"media/mvu/npcs/阿丽娜/portrait.webp"},
-    {"index":13,"name":"梅菲斯特","aliases":["梅菲斯特","伊诺"],"target":"media/mvu/npcs/梅菲斯特/portrait.webp"},
-    {"index":14,"name":"浮士德","aliases":["浮士德","萨沙"],"target":"media/mvu/npcs/浮士德/portrait.webp"},
-    {"index":15,"name":"ACE","aliases":["Ace","ACE"],"target":"media/mvu/npcs/ACE/portrait.webp"},
-    {"index":16,"name":"Scout","aliases":["Scout"],"target":"media/mvu/npcs/Scout/portrait.webp"},
-    {"index":17,"name":"Outcast","aliases":["Outcast"],"target":"media/mvu/npcs/Outcast/portrait.webp"},
-    {"index":18,"name":"克丽斯腾·莱特","aliases":["克丽斯腾","克丽斯腾·莱特","Kristen"],"target":"media/mvu/npcs/克丽斯腾·莱特/portrait.webp"},
-    {"index":19,"name":"博士","aliases":["博士"],"target":"media/mvu/npcs/博士/portrait.webp"}
+    {
+      "index": 1,
+      "name": "普瑞赛斯",
+      "aliases": [
+        "普瑞赛斯"
+      ],
+      "target": "media/mvu/npcs/普瑞赛斯/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_083.png",
+      "source_url": "https://media.prts.wiki/b/b8/Avg_avg_npc_083.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 2,
+      "name": "霜星",
+      "aliases": [
+        "霜星",
+        "叶莲娜"
+      ],
+      "target": "media/mvu/npcs/霜星/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_char_1505_frstar_1.png",
+      "source_url": "https://media.prts.wiki/b/b5/Avg_char_1505_frstar_1.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 3,
+      "name": "塔露拉",
+      "aliases": [
+        "塔露拉",
+        "塔露拉·雅特利亚斯"
+      ],
+      "target": "media/mvu/npcs/塔露拉/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_1968_1-1$1.png",
+      "source_url": "https://media.prts.wiki/4/4f/Avg_avg_npc_1968_1-1%241.png",
+      "source_width": 1348,
+      "source_height": 1348
+    },
+    {
+      "index": 4,
+      "name": "爱国者",
+      "aliases": [
+        "爱国者",
+        "博卓卡斯替"
+      ],
+      "target": "media/mvu/npcs/爱国者/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_025_1.png",
+      "source_url": "https://media.prts.wiki/3/3f/Avg_avg_npc_025_1.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 5,
+      "name": "特雷西斯",
+      "aliases": [
+        "特雷西斯"
+      ],
+      "target": "media/mvu/npcs/特雷西斯/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_1724_1$1.png",
+      "source_url": "https://media.prts.wiki/8/86/Avg_avg_npc_1724_1%241.png",
+      "source_width": 1380,
+      "source_height": 1380
+    },
+    {
+      "index": 6,
+      "name": "安多恩",
+      "aliases": [
+        "安多恩"
+      ],
+      "target": "media/mvu/npcs/安多恩/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_1800_1-1$1.png",
+      "source_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1800_1-1%241.png",
+      "source_width": 1624,
+      "source_height": 1624
+    },
+    {
+      "index": 7,
+      "name": "曼弗雷德",
+      "aliases": [
+        "曼弗雷德"
+      ],
+      "target": "media/mvu/npcs/曼弗雷德/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_404_1-1$1.png",
+      "source_url": "https://media.prts.wiki/9/95/Avg_avg_npc_404_1-1%241.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 8,
+      "name": "杜卡雷（血魔大君）",
+      "aliases": [
+        "杜卡雷",
+        "血魔大君",
+        "杜卡雷，“君主之红”"
+      ],
+      "target": "media/mvu/npcs/杜卡雷（血魔大君）/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_410_1-1$1.png",
+      "source_url": "https://media.prts.wiki/6/6d/Avg_avg_npc_410_1-1%241.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 9,
+      "name": "赫尔昏佐伦（巫王）",
+      "aliases": [
+        "赫尔昏佐伦",
+        "巫王",
+        "赫尔昏佐伦，“巫王”"
+      ],
+      "target": "media/mvu/npcs/赫尔昏佐伦（巫王）/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_1116_1-3$2.png",
+      "source_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1116_1-3%242.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 10,
+      "name": "坎诺特",
+      "aliases": [
+        "坎诺特"
+      ],
+      "target": "media/mvu/npcs/坎诺特/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_208.png",
+      "source_url": "https://media.prts.wiki/6/68/Avg_avg_npc_208.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 11,
+      "name": "林舸瑞（鼠王）",
+      "aliases": [
+        "林舸瑞",
+        "鼠王"
+      ],
+      "target": "media/mvu/npcs/林舸瑞（鼠王）/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_034.png",
+      "source_url": "https://media.prts.wiki/3/3d/Avg_avg_npc_034.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 12,
+      "name": "阿丽娜",
+      "aliases": [
+        "阿丽娜"
+      ],
+      "target": "media/mvu/npcs/阿丽娜/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_079.png",
+      "source_url": "https://media.prts.wiki/b/b1/Avg_avg_npc_079.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 13,
+      "name": "梅菲斯特",
+      "aliases": [
+        "梅菲斯特",
+        "伊诺"
+      ],
+      "target": "media/mvu/npcs/梅菲斯特/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_084.png",
+      "source_url": "https://media.prts.wiki/4/43/Avg_avg_npc_084.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 14,
+      "name": "浮士德",
+      "aliases": [
+        "浮士德",
+        "萨沙"
+      ],
+      "target": "media/mvu/npcs/浮士德/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_085.png",
+      "source_url": "https://media.prts.wiki/1/12/Avg_avg_npc_085.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 15,
+      "name": "ACE",
+      "aliases": [
+        "Ace",
+        "ACE"
+      ],
+      "target": "media/mvu/npcs/ACE/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_char_014_riope.png",
+      "source_url": "https://media.prts.wiki/9/95/Avg_char_014_riope.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 16,
+      "name": "Scout",
+      "aliases": [
+        "Scout"
+      ],
+      "target": "media/mvu/npcs/Scout/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_026.png",
+      "source_url": "https://media.prts.wiki/0/06/Avg_avg_npc_026.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 17,
+      "name": "Outcast",
+      "aliases": [
+        "Outcast"
+      ],
+      "target": "media/mvu/npcs/Outcast/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_245_1-1.png",
+      "source_url": "https://media.prts.wiki/2/24/Avg_avg_npc_245_1-1.png",
+      "source_width": 1024,
+      "source_height": 1024
+    },
+    {
+      "index": 18,
+      "name": "克丽斯腾·莱特",
+      "aliases": [
+        "克丽斯腾",
+        "克丽斯腾·莱特",
+        "Kristen"
+      ],
+      "target": "media/mvu/npcs/克丽斯腾·莱特/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_537_1-1$1.png",
+      "source_url": "https://media.prts.wiki/2/27/Avg_avg_npc_537_1-1%241.png",
+      "source_width": 1328,
+      "source_height": 1328
+    },
+    {
+      "index": 19,
+      "name": "博士",
+      "aliases": [
+        "博士"
+      ],
+      "target": "media/mvu/npcs/博士/portrait.webp",
+      "audit_status": "selected-for-review",
+      "source_page": "剧情角色一览",
+      "source_file": "Avg_avg_npc_048.png",
+      "source_url": "https://media.prts.wiki/0/09/Avg_avg_npc_048.png",
+      "source_width": 1024,
+      "source_height": 1024
+    }
   ]
 }
