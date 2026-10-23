@@ -1,6 +1,6 @@
 {
   "schema_version": "arknights-mvu-npc-media-v1.0",
-  "status": "audit-selected-19-of-19",
+  "status": "binary-ready-19-of-19",
   "source_policy": "PRTS 剧情角色一览 official in-game story artwork; prefer standard/default story portrait; no fan art; enemy model only as last-resort explicit fallback",
   "source_page": "剧情角色一览",
   "cdn_base": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/Arknights-Lore@main/",
@@ -14,7 +14,7 @@
   "summary": {
     "target": 19,
     "audit_selected": 19,
-    "binary_ready": 0
+    "binary_ready": 19
   },
   "entries": [
     {
@@ -29,7 +29,12 @@
       "source_file": "Avg_avg_npc_083.png",
       "source_url": "https://media.prts.wiki/b/b8/Avg_avg_npc_083.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 57788,
+      "binary_sha256": "60ee30f72106bf3c3f2f33fdc2f122648c592ee9c118cbe0bc45909292e1a89d"
     },
     {
       "index": 2,
@@ -44,7 +49,12 @@
       "source_file": "Avg_char_1505_frstar_1.png",
       "source_url": "https://media.prts.wiki/b/b5/Avg_char_1505_frstar_1.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 74490,
+      "binary_sha256": "e9a4248fc85fc5079c6bc7e36a2368b3763a62b5c0c886be959f5018f15de12b"
     },
     {
       "index": 3,
@@ -59,7 +69,12 @@
       "source_file": "Avg_avg_npc_078_2.png",
       "source_url": "https://media.prts.wiki/e/ec/Avg_avg_npc_078_2.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 71104,
+      "binary_sha256": "c8a5fdc5fe8bef70e425e43cd25c9403d9134c6358e3dd0b20e5a9151d324d96"
     },
     {
       "index": 4,
@@ -74,7 +89,12 @@
       "source_file": "Avg_avg_npc_025_1.png",
       "source_url": "https://media.prts.wiki/3/3f/Avg_avg_npc_025_1.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 124274,
+      "binary_sha256": "eb1c46c05b4055dd89d57a15a4cea9d6104bc2797f93dd57b7f05337381f5f9f"
     },
     {
       "index": 5,
@@ -88,7 +108,12 @@
       "source_file": "Avg_avg_npc_062.png",
       "source_url": "https://media.prts.wiki/a/a1/Avg_avg_npc_062.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 76596,
+      "binary_sha256": "22e307e77bc131c2fcdaf81650bf33f36320bd70dd29a50686d70aac3292b35a"
     },
     {
       "index": 6,
@@ -102,7 +127,12 @@
       "source_file": "Avg_avg_npc_351_1-1$1.png",
       "source_url": "https://media.prts.wiki/e/e6/Avg_avg_npc_351_1-1%241.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 121650,
+      "binary_sha256": "fb4bc3590b3079b57a2ec36f29a83bfe21a7f159f6e8d1c290582d0e78277705"
     },
     {
       "index": 7,
@@ -116,7 +146,12 @@
       "source_file": "Avg_avg_npc_404_1-1$1.png",
       "source_url": "https://media.prts.wiki/9/95/Avg_avg_npc_404_1-1%241.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 89190,
+      "binary_sha256": "4a7de13c64d5af8f1110a2c79aed28eafaef90b8975982b08f062ed87e9e6a88"
     },
     {
       "index": 8,
@@ -132,7 +167,12 @@
       "source_file": "Avg_avg_npc_410_1-1$1.png",
       "source_url": "https://media.prts.wiki/6/6d/Avg_avg_npc_410_1-1%241.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 112906,
+      "binary_sha256": "8cc7a89ec7e06b0251ee241a42eb306e53073b6679ca5aef955b0da96e519717"
     },
     {
       "index": 9,
@@ -148,7 +188,12 @@
       "source_file": "Avg_avg_npc_1116_1-3$2.png",
       "source_url": "https://media.prts.wiki/c/cf/Avg_avg_npc_1116_1-3%242.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 151692,
+      "binary_sha256": "e3553454d2b763188de3e83ef6e1512f06fff9a1551b0ecc2ba7f290590c1de7"
     },
     {
       "index": 10,
@@ -162,7 +207,12 @@
       "source_file": "Avg_avg_npc_208.png",
       "source_url": "https://media.prts.wiki/6/68/Avg_avg_npc_208.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 80842,
+      "binary_sha256": "bdb184664885fa2614dfc89596160730136e9f7092d01c4fe36f5107b7cb86ba"
     },
     {
       "index": 11,
@@ -177,7 +227,12 @@
       "source_file": "Avg_avg_npc_034.png",
       "source_url": "https://media.prts.wiki/3/3d/Avg_avg_npc_034.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 112918,
+      "binary_sha256": "04d68e824d86db2a0760c4bfeaa4c27253cf3cda28c578473bc5a6967529a00a"
     },
     {
       "index": 12,
@@ -191,7 +246,12 @@
       "source_file": "Avg_avg_npc_079.png",
       "source_url": "https://media.prts.wiki/b/b1/Avg_avg_npc_079.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 54034,
+      "binary_sha256": "c2a4caf9708b986cb72d81dc0e247ef206848a82f9cd7e1548a302d665f748e3"
     },
     {
       "index": 13,
@@ -206,7 +266,12 @@
       "source_file": "Avg_avg_npc_084.png",
       "source_url": "https://media.prts.wiki/4/43/Avg_avg_npc_084.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 35496,
+      "binary_sha256": "b521991231c2c698e46299597b9e6733592b0db471b649d27266d333a3fbb5a6"
     },
     {
       "index": 14,
@@ -221,7 +286,12 @@
       "source_file": "Avg_avg_npc_085.png",
       "source_url": "https://media.prts.wiki/1/12/Avg_avg_npc_085.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 44206,
+      "binary_sha256": "eb39c5ea824c20dccd98ab8451a10e5409c66c9892b9f2c95e69d5aa7edd7c69"
     },
     {
       "index": 15,
@@ -236,7 +306,12 @@
       "source_file": "Avg_char_014_riope.png",
       "source_url": "https://media.prts.wiki/9/95/Avg_char_014_riope.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 68618,
+      "binary_sha256": "f6dc280c865a0aa7d98eef3bcda7e3690b394322bc4d9f0516ab2b8ef6bbb394"
     },
     {
       "index": 16,
@@ -250,7 +325,12 @@
       "source_file": "Avg_avg_npc_026.png",
       "source_url": "https://media.prts.wiki/0/06/Avg_avg_npc_026.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 58876,
+      "binary_sha256": "d6be10c50b2dad73df6b237a64c999b459251c61dcf6330b30fd039a0b91f549"
     },
     {
       "index": 17,
@@ -264,7 +344,12 @@
       "source_file": "Avg_avg_npc_245_1-1.png",
       "source_url": "https://media.prts.wiki/2/24/Avg_avg_npc_245_1-1.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 69372,
+      "binary_sha256": "92258c16ebf68b18a670f449b642b075c29e673c3088208e72a1cb57a0048870"
     },
     {
       "index": 18,
@@ -280,7 +365,12 @@
       "source_file": "Avg_avg_npc_537_1-1$1.png",
       "source_url": "https://media.prts.wiki/2/27/Avg_avg_npc_537_1-1%241.png",
       "source_width": 1328,
-      "source_height": 1328
+      "source_height": 1328,
+      "binary_status": "ready",
+      "binary_width": 1328,
+      "binary_height": 1328,
+      "binary_bytes": 171584,
+      "binary_sha256": "81260a56c80adba53dc0fb82600232b1449fcc5d05164263ee5c391a8a0a2c8f"
     },
     {
       "index": 19,
@@ -294,7 +384,12 @@
       "source_file": "Npc_doctor.png",
       "source_url": "https://media.prts.wiki/a/aa/Npc_doctor.png",
       "source_width": 1024,
-      "source_height": 1024
+      "source_height": 1024,
+      "binary_status": "ready",
+      "binary_width": 1024,
+      "binary_height": 1024,
+      "binary_bytes": 50836,
+      "binary_sha256": "c66acad6fdebc06af0f1084e29337b8a4e06a012edaa1575a1b8d5ad81a09f95"
     }
   ]
 }
