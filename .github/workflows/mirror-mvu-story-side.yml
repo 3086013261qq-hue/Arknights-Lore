@@ -9,6 +9,7 @@ permissions:
 jobs:
   mirror-side-covers:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -45,10 +46,13 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add media/mvu/story/side QA/mvu-story-media-side-mirror-report.json manifest/mvu-story-media.v1.json
-          git diff --cached --quiet && exit 0
-          git commit -m 'media: mirror SideStory covers'
-          git pull --rebase origin main
-          git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo 'No new SideStory files to commit.'
+          else
+            git commit -m 'media: mirror SideStory covers'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - name: Summary
         run: |
           python - <<'PY'
@@ -58,5 +62,8 @@ jobs:
           s=d['summary']
           print(f"SideStory covers ready: {s.get('side_binary_ready',0)}/55")
           print(f"All story covers ready: {s.get('binary_ready',0)}/73")
-          print('Resolver audit: QA/mvu-story-media-side-mirror-report.json')
+          report=Path('QA/mvu-story-media-side-mirror-report.json')
+          if report.is_file():
+              r=json.loads(report.read_text('utf-8'))
+              print('Unresolved/error:', r.get('summary',{}).get('unresolved_or_error',0))
           PY
