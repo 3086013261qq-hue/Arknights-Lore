@@ -1,0 +1,65 @@
+name: mirror-mvu-story-side
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror-side-covers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check pillow
+      - name: Mirror SideStory covers from PRTS
+        id: mirror
+        continue-on-error: true
+        run: python tools/mirror_mvu_story_covers.py --apply --only side
+      - name: Update media manifest counts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('manifest/mvu-story-media.v1.json')
+          d=json.loads(p.read_text('utf-8'))
+          main_ready=sum(Path(f'media/mvu/story/main/main-{i:02d}.webp').is_file() for i in range(18))
+          side_ready=sum(Path(f'media/mvu/story/side/{slug}.webp').is_file() for _,slug,_ in d['side'])
+          d['summary']['main_binary_ready']=int(main_ready)
+          d['summary']['side_binary_ready']=int(side_ready)
+          d['summary']['binary_ready']=int(main_ready+side_ready)
+          if main_ready==18 and side_ready==55:
+              d['status']='binary-ready-73-of-73'
+          elif side_ready==55:
+              d['status']='side-binary-ready-main-pending'
+          else:
+              d['status']=f'binary-partial-main-{main_ready}-side-{side_ready}'
+          p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n','utf-8')
+          print({'main_ready':main_ready,'side_ready':side_ready,'total':main_ready+side_ready})
+          PY
+      - name: Commit mirrored SideStory covers
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add media/mvu/story/side QA/mvu-story-media-mirror-report.json manifest/mvu-story-media.v1.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'media: mirror SideStory covers'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('manifest/mvu-story-media.v1.json').read_text('utf-8'))
+          s=d['summary']
+          print(f"SideStory covers ready: {s.get('side_binary_ready',0)}/55")
+          print(f"All story covers ready: {s.get('binary_ready',0)}/73")
+          if s.get('side_binary_ready',0) < 55:
+              print('Some SideStory covers remain unresolved; inspect QA/mvu-story-media-mirror-report.json and rerun after resolver updates.')
+          PY
