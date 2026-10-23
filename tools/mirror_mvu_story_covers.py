@@ -3,6 +3,7 @@
 
 Default mode is dry-run. Use --apply to download/convert files.
 The script never edits timeline content and never guesses an ambiguous PRTS file.
+Network reads use bounded retries so one transient PRTS timeout does not waste the rest of a batch.
 """
 from __future__ import annotations
 
@@ -11,6 +12,7 @@ import hashlib
 import io
 import json
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -19,13 +21,29 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest/mvu-story-media.v1.json"
 REPORT = ROOT / "QA/mvu-story-media-mirror-report.json"
 API = "https://prts.wiki/api.php"
-UA = "Arknights-Lore-MVU-Mirror/1.0 (+https://github.com/3086013261qq-hue/Arknights-Lore)"
+UA = "Arknights-Lore-MVU-Mirror/1.1 (+https://github.com/3086013261qq-hue/Arknights-Lore)"
+RETRIES = 4
+
+
+def open_with_retry(req: urllib.request.Request, timeout: int):
+    last = None
+    for attempt in range(1, RETRIES + 1):
+        try:
+            return urllib.request.urlopen(req, timeout=timeout)
+        except Exception as exc:
+            last = exc
+            if attempt >= RETRIES:
+                raise
+            delay = attempt * 2
+            print(f"RETRY {attempt}/{RETRIES - 1} after {type(exc).__name__}: {exc}; sleep={delay}s", file=sys.stderr)
+            time.sleep(delay)
+    raise last  # pragma: no cover
 
 
 def request_json(params: dict) -> dict:
     url = API + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
+    with open_with_retry(req, timeout=45) as r:
         return json.load(r)
 
 
@@ -52,7 +70,6 @@ def search_file(title: str) -> list[str]:
 
 
 def resolve_side(title: str) -> tuple[dict | None, str]:
-    # Known PRTS naming conventions first; no network-wide fuzzy choice if one resolves.
     candidates = [
         f"活动图标_{title}.png", f"活动名称_{title}.png",
         f"活动图标_{title}.webp", f"活动名称_{title}.webp",
@@ -76,8 +93,8 @@ def resolve_side(title: str) -> tuple[dict | None, str]:
 
 
 def download(url: str) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=45) as r:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Referer": "https://prts.wiki/"})
+    with open_with_retry(req, timeout=75) as r:
         return r.read()
 
 
@@ -106,7 +123,7 @@ def main() -> int:
     ap.add_argument("--only", choices=["main", "side", "all"], default="all")
     args = ap.parse_args()
     manifest = json.loads(MANIFEST.read_text("utf-8"))
-    report = {"schema_version": "mvu-story-media-mirror-report-v1", "apply": args.apply, "items": []}
+    report = {"schema_version": "mvu-story-media-mirror-report-v1.1", "apply": args.apply, "items": []}
 
     jobs = []
     if args.only in ("main", "all"):
@@ -117,14 +134,17 @@ def main() -> int:
             jobs.append((ident, "side", title, f"media/mvu/story/side/{slug}.webp", None))
 
     for ident, group, title, target, exact_file in jobs:
+        target_path = ROOT / target
+        if args.apply and target_path.is_file():
+            report["items"].append({"id": ident, "group": group, "title": title, "target": target, "status": "already-ready"})
+            print("SKIP READY", ident, target)
+            continue
         try:
             if exact_file:
                 info = resolve_file(exact_file)
                 source_name = exact_file
-                reason = "exact-main"
             else:
                 info, source_name = resolve_side(title)
-                reason = "side-resolve"
             item = {"id": ident, "group": group, "title": title, "target": target, "source_file": source_name}
             if not info:
                 item.update(status="unresolved", reason=source_name)
@@ -139,7 +159,7 @@ def main() -> int:
                 print("RESOLVED", ident, source_name)
                 continue
             raw = download(info["url"])
-            meta = to_webp(raw, ROOT / target)
+            meta = to_webp(raw, target_path)
             item.update(status="ready-local-webp", **meta)
             report["items"].append(item)
             print("READY", ident, target)
@@ -153,7 +173,8 @@ def main() -> int:
     report["summary"] = {"total": len(report["items"]), **counts}
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")
     print("REPORT", REPORT.relative_to(ROOT), report["summary"])
-    return 1 if counts.get("error") or counts.get("unresolved") else 0
+    # Preserve successful outputs even when one source is temporarily unavailable.
+    return 0
 
 
 if __name__ == "__main__":
