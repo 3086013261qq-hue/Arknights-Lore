@@ -1,14 +1,17 @@
-# 《明日方舟》MVU 最终设计 → 咩咩全栈装配交接 QA v1.1
+# 《明日方舟》MVU 最终设计 → 咩咩全栈装配交接 QA v1.2
 
 ## A. 设计冻结状态
 
 - [x] MVU 最终视觉基线：`docs/mvu-final-ui-spec-v1.md`
-- [x] 机器可读布局：`manifest/mvu-ui-layout.v1.json`（v1.3）
+- [x] 机器可读布局：`manifest/mvu-ui-layout.v1.json`（v1.4）
 - [x] 73 卷切换规范：`docs/mvu-timeline-switch-spec-v1.md`
 - [x] 73 卷切换 manifest：`manifest/mvu-timeline-switch.v1.json`
 - [x] MAIN 沙盒自动衔接：`docs/mvu-main-sandbox-autoadvance-v1.md` + `manifest/mvu-main-autoadvance.v1.json`
 - [x] 73 / 73 剧情封面完成：`manifest/mvu-story-media.v1.json`
 - [x] 干员媒体路径核验：`media/mvu/operators/<干员名>/elite1.png` + `idle.gif`
+- [x] 19 / 19 核心 NPC 官方剧情立绘完成：`manifest/npc-media.v1.json` + `media/mvu/npcs/<NPC名>/portrait.webp`
+- [x] NPC 立绘来源审计完成：`QA/mvu-npc-media-audit-v1.json`
+- [x] NPC 立绘镜像 QA 完成：`QA/mvu-npc-media-mirror-report-v1.json`
 - [x] 费洛蒙 / 气味签名设计：`docs/pheromone-moe-mvu-spec-v1.md` + `manifest/pheromone-profile-spec.v1.json`
 - [x] 博士独立 NPC：`worldbook/npcs/博士.md`
 - [x] {{user}} / 博士身份隔离：`docs/player-doctor-identity-separation-v1.md`
@@ -64,7 +67,14 @@
 - [ ] 只预加载当前卷 + 相邻卷。
 - [ ] 干员默认只加载 `elite1.png`。
 - [ ] 只有点击 DYNAMIC 才加载 `idle.gif`。
-- [ ] 不预载 463×2 媒体。
+- [ ] 不预载 463×2 干员媒体。
+- [ ] 19名核心NPC立绘只从 `manifest/npc-media.v1.json` 派生，不手写PRTS或GitHub URL。
+- [ ] 进入某名 NPC 详情时才加载其 `media/mvu/npcs/<NPC名>/portrait.webp`。
+- [ ] 不预载19张 NPC 立绘。
+- [ ] NPC 正式媒体不得在运行时请求 PRTS；运行时只走 GitHub → jsDelivr。
+- [ ] NPC 图片失败显示统一 PRTS 风格 fallback，不能影响文字档案。
+- [ ] 博士使用 `media/mvu/npcs/博士/portrait.webp`，不得使用{{user}}头像、玩家自设媒体或任意临时占位图代替。
+- [ ] 不得把 NPC 官方剧情立绘替换为同人图、AI图、敌人头像、技能图标或论坛二传图。
 - [ ] 无 Base64。
 - [ ] 无 PRTS 运行时依赖。
 - [ ] 图片失败有 fallback，不得白屏。
@@ -98,6 +108,8 @@
 - [ ] 不重写 463 干员 canonical 正文；费洛蒙只进入萌点 overlay。
 - [ ] 不重写 19 NPC canonical 正文；气味只进入 NPC 萌点 overlay。
 - [ ] 不改 85 地点、57 核心设定的事实内容；博士身份隔离属于现有设定的运行边界修正。
+- [ ] 不回退或覆盖 `manifest/npc-media.v1.json` 的19/19已审计来源与正式镜像路径。
+- [ ] 不用同人图、AI生成图或临时网络URL覆盖正式NPC立绘。
 - [ ] 不复制 lore 进 UI 数据文件。
 - [ ] 不新建地图引擎、关系图谱、服务器、数据库、WebSocket。
 - [ ] 不让 MVU 成为第二剧情事实源。
@@ -118,14 +130,16 @@
 8. 73 / 73 封面可远程加载；
 9. 干员静态 / 动态媒体按需工作；
 10. 动态 GIF 未点击前无网络请求；
-11. 463干员 + 19 NPC 气味档案可查，且不建立第二关系状态；
-12. 博士NPC可独立搜索，{{user}}不被识别成博士；
-13. 一个网易云 outchain iframe实例；
-14. PRTS正式悬浮窗全功能正常；
-15. 360px Android 无整体横溢；
-16. 所有本地 UI 状态清空后，剧情事实不受影响；
-17. `<world_timeline>` 从未被 UI 修改；
-18. 无 Base64、无运行时 PRTS；
-19. 视觉明显属于罗德岛 / PRTS / 《明日方舟》终端体系。
+11. 19 / 19 NPC 官方剧情立绘可从 jsDelivr 按需加载，未打开 NPC 详情时不得批量请求；
+12. 博士立绘来自独立 NPC 媒体路径，且与{{user}}头像/媒体完全隔离；
+13. 463干员 + 19 NPC 气味档案可查，且不建立第二关系状态；
+14. 博士NPC可独立搜索，{{user}}不被识别成博士；
+15. 一个网易云 outchain iframe实例；
+16. PRTS正式悬浮窗全功能正常；
+17. 360px Android 无整体横溢；
+18. 所有本地 UI 状态清空后，剧情事实不受影响；
+19. `<world_timeline>` 从未被 UI 修改；
+20. 无 Base64、无运行时 PRTS；
+21. 视觉明显属于罗德岛 / PRTS / 《明日方舟》终端体系。
 
 全部 PASS 后才能输出正式成品 PNG / JSON / 完整工程与 QA 报告。
