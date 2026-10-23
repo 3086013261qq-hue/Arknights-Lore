@@ -1,0 +1,40 @@
+{
+  "schema_version": "arknights-mvu-npc-media-v1.0",
+  "status": "audit-pending",
+  "source_policy": "PRTS 剧情角色一览 official in-game story artwork; prefer standard/default story portrait; no fan art; enemy model only as last-resort explicit fallback",
+  "source_page": "剧情角色一览",
+  "cdn_base": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/Arknights-Lore@main/",
+  "target_pattern": "media/mvu/npcs/<name>/portrait.webp",
+  "runtime": {
+    "embed": false,
+    "base64": false,
+    "load": "on-demand NPC detail only",
+    "fallback_required": true
+  },
+  "summary": {
+    "target": 19,
+    "audit_selected": 0,
+    "binary_ready": 0
+  },
+  "entries": [
+    {"index":1,"name":"普瑞赛斯","aliases":["普瑞赛斯"],"target":"media/mvu/npcs/普瑞赛斯/portrait.webp"},
+    {"index":2,"name":"霜星","aliases":["霜星","叶莲娜"],"target":"media/mvu/npcs/霜星/portrait.webp"},
+    {"index":3,"name":"塔露拉","aliases":["塔露拉","塔露拉·雅特利亚斯"],"target":"media/mvu/npcs/塔露拉/portrait.webp"},
+    {"index":4,"name":"爱国者","aliases":["爱国者","博卓卡斯替"],"target":"media/mvu/npcs/爱国者/portrait.webp"},
+    {"index":5,"name":"特雷西斯","aliases":["特雷西斯"],"target":"media/mvu/npcs/特雷西斯/portrait.webp"},
+    {"index":6,"name":"安多恩","aliases":["安多恩"],"target":"media/mvu/npcs/安多恩/portrait.webp"},
+    {"index":7,"name":"曼弗雷德","aliases":["曼弗雷德"],"target":"media/mvu/npcs/曼弗雷德/portrait.webp"},
+    {"index":8,"name":"杜卡雷（血魔大君）","aliases":["杜卡雷","血魔大君","杜卡雷，“君主之红”"],"target":"media/mvu/npcs/杜卡雷（血魔大君）/portrait.webp"},
+    {"index":9,"name":"赫尔昏佐伦（巫王）","aliases":["赫尔昏佐伦","巫王","赫尔昏佐伦，“巫王”"],"target":"media/mvu/npcs/赫尔昏佐伦（巫王）/portrait.webp"},
+    {"index":10,"name":"坎诺特","aliases":["坎诺特"],"target":"media/mvu/npcs/坎诺特/portrait.webp"},
+    {"index":11,"name":"林舸瑞（鼠王）","aliases":["林舸瑞","鼠王"],"target":"media/mvu/npcs/林舸瑞（鼠王）/portrait.webp"},
+    {"index":12,"name":"阿丽娜","aliases":["阿丽娜"],"target":"media/mvu/npcs/阿丽娜/portrait.webp"},
+    {"index":13,"name":"梅菲斯特","aliases":["梅菲斯特","伊诺"],"target":"media/mvu/npcs/梅菲斯特/portrait.webp"},
+    {"index":14,"name":"浮士德","aliases":["浮士德","萨沙"],"target":"media/mvu/npcs/浮士德/portrait.webp"},
+    {"index":15,"name":"ACE","aliases":["Ace","ACE"],"target":"media/mvu/npcs/ACE/portrait.webp"},
+    {"index":16,"name":"Scout","aliases":["Scout"],"target":"media/mvu/npcs/Scout/portrait.webp"},
+    {"index":17,"name":"Outcast","aliases":["Outcast"],"target":"media/mvu/npcs/Outcast/portrait.webp"},
+    {"index":18,"name":"克丽斯腾·莱特","aliases":["克丽斯腾","克丽斯腾·莱特","Kristen"],"target":"media/mvu/npcs/克丽斯腾·莱特/portrait.webp"},
+    {"index":19,"name":"博士","aliases":["博士"],"target":"media/mvu/npcs/博士/portrait.webp"}
+  ]
+}
