@@ -1,8 +1,29 @@
 {
-  "schema_version": "arknights-mvu-main-autoadvance-v1.0",
+  "schema_version": "arknights-mvu-main-autoadvance-v1.1",
   "status": "design-frozen",
-  "trigger": "current active MAIN volume enters explicit sandbox mode",
-  "source_of_truth": "unique enabled ARKNIGHTS_TIMELINE entry + current meme <status>",
+  "trigger": "current active MAIN volume enters sandbox transition or sandbox mode",
+  "source_priority": [
+    "Mvu.getMvuData current message",
+    "getVariables current message",
+    "current-message meme wlog/status/stage fallback"
+  ],
+  "fallback_can_trigger": true,
+  "report_requires_latest_message": true,
+  "trigger_patterns": [
+    "沙盒模式过渡",
+    "至 沙盒模式过渡",
+    "进入沙盒模式",
+    "沙盒模式",
+    "本卷已完成",
+    "SANDBOX"
+  ],
+  "recommended_regex": "(?:至\\s*)?沙盒模式(?:过渡)?|进入沙盒模式|本卷已完成|SANDBOX",
+  "volume_binding": {
+    "native_explicit_main_must_match_enabled": true,
+    "report_without_main_may_use_unique_enabled_main": true,
+    "zero_or_multiple_enabled_forbidden": true,
+    "side_story_forbidden": true
+  },
   "transaction": "reuse existing disable-all-then-enable-target single-writeback",
   "side_story_auto_advance": false,
   "main_final_sandbox": "MAIN-17",
@@ -27,11 +48,16 @@
     {"current":"MAIN-17","next":null}
   ],
   "guards": [
-    "sandbox must belong to current active volume",
-    "historical message sandbox text must not trigger",
-    "one transition per active volume",
+    "sandbox evidence must come from current latest message",
+    "historical sandbox text must not trigger",
+    "one transition per chat/context + message_id + active MAIN",
+    "current worldbook must have exactly one enabled MAIN timeline entry",
+    "native explicit MAIN must match enabled MAIN",
     "write success before UI ACTIVE update",
+    "MAIN-17 never auto-advances",
+    "SideStory never auto-advances",
     "no persistent _current_volume state"
   ],
-  "side_policy": "manual selection only; manifest list order is not chronology"
+  "side_policy": "manual selection only; manifest list order is not chronology",
+  "spec": "docs/mvu-main-sandbox-autoadvance-v1.md"
 }
