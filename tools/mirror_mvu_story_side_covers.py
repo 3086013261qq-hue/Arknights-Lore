@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest/mvu-story-media.v1.json"
 REPORT = ROOT / "QA/mvu-story-media-side-mirror-report.json"
 API = "https://prts.wiki/api.php"
-UA = "Arknights-Lore-MVU-SideStory-Mirror/2.0 (+https://github.com/3086013261qq-hue/Arknights-Lore)"
+UA = "Arknights-Lore-MVU-SideStory-Mirror/2.1 (+https://github.com/3086013261qq-hue/Arknights-Lore)"
 WORKERS = 8
 TIMEOUT = 15
 
@@ -30,6 +30,11 @@ BAD = (
     "logo_prts", "favicon", "wiki", "sprite", "音乐", "技能图标", "职业分支",
 )
 GOOD = ("活动", "主视觉", "宣传", "封面", "banner", "keyart", "key_art", "kv", "主题")
+
+
+def norm_name(value: str) -> str:
+    """Match MediaWiki-normalized file titles (underscores become spaces)."""
+    return " ".join(value.replace("_", " ").split()).casefold()
 
 
 def request_json(params: dict, retries: int = 2) -> dict:
@@ -93,8 +98,9 @@ def batch_imageinfo(indexed: list[tuple[int, str]]) -> dict[str, dict]:
             ii = (page.get("imageinfo") or [None])[0]
             if not ii or not ii.get("url"):
                 continue
-            title = (page.get("title") or "").removeprefix("File:")
-            result[title] = {"title": page.get("title"), **ii}
+            returned = (page.get("title") or "").removeprefix("File:")
+            info = {"title": page.get("title"), **ii}
+            result[norm_name(returned)] = info
     return result
 
 
@@ -128,7 +134,7 @@ def resolve_activity_cover(title: str) -> tuple[dict | None, dict]:
     infos = batch_imageinfo(indexed)
     ranked = []
     for idx, name in indexed:
-        info = infos.get(name)
+        info = infos.get(norm_name(name))
         if not info:
             continue
         score = score_candidate(idx, name, info, title)
@@ -225,7 +231,7 @@ def main() -> int:
     ready = sum(1 for x in items if x["status"] in ("ready", "already-ready"))
     unresolved = sum(1 for x in items if x["status"] in ("unresolved", "error"))
     report = {
-        "schema_version": "mvu-story-media-side-mirror-report-v2",
+        "schema_version": "mvu-story-media-side-mirror-report-v2.1",
         "summary": {"total": len(items), "ready": ready, "unresolved_or_error": unresolved},
         "items": items,
     }
