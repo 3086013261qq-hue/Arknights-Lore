@@ -1,9 +1,9 @@
 {
-  "schema_version": "mvu-story-media-side-mirror-report-v2.1",
+  "schema_version": "mvu-story-media-side-mirror-report-v2.2",
   "summary": {
     "total": 55,
-    "ready": 0,
-    "unresolved_or_error": 55
+    "ready": 55,
+    "unresolved_or_error": 0
   },
   "items": [
     {
@@ -12,13 +12,17 @@
       "title": "落叶逐火",
       "target": "media/mvu/story/side/a-flurry-to-the-flame.webp",
       "resolver": {
-        "page": "落叶逐火",
-        "image_count": 71,
-        "metadata_checked": 9,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_落叶逐火.png",
+        "page": "落叶逐火"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/2/29/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E8%90%BD%E5%8F%B6%E9%80%90%E7%81%AB.png",
+      "source_file": "活动名称_落叶逐火.png",
+      "width": 463,
+      "height": 226,
+      "bytes": 33212,
+      "sha256": "82c2a875252232825e624d4907fc8c155d9a593189aa835b9b0679565b8181af"
     },
     {
       "id": "SIDE:BABEL",
@@ -26,13 +30,17 @@
       "title": "巴别塔",
       "target": "media/mvu/story/side/babel.webp",
       "resolver": {
-        "page": "巴别塔",
-        "image_count": 69,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_巴别塔.png",
+        "page": "巴别塔"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/0/02/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%B7%B4%E5%88%AB%E5%A1%94.png",
+      "source_file": "活动图标_巴别塔.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 19068,
+      "sha256": "9dcc75507e1fb78874a9f4f57152087dd58832e5c33dc2f1c727f9bd8a7e88c8"
     },
     {
       "id": "SIDE:BREAK_THE_ICE",
@@ -40,13 +48,17 @@
       "title": "风雪过境",
       "target": "media/mvu/story/side/break-the-ice.webp",
       "resolver": {
-        "page": "风雪过境",
-        "image_count": 56,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_风雪过境.png",
+        "page": "风雪过境"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/62/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%A3%8E%E9%9B%AA%E8%BF%87%E5%A2%83.png",
+      "source_file": "活动图标_风雪过境.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 53422,
+      "sha256": "2de1628c572b5adff83748214fe3c9d93a444db8f7b17da51e2ea9b7858b32f5"
     },
     {
       "id": "SIDE:CISUI_XING",
@@ -54,13 +66,17 @@
       "title": "辞岁行",
       "target": "media/mvu/story/side/cisui-xing.webp",
       "resolver": {
-        "page": "辞岁行",
-        "image_count": 76,
-        "metadata_checked": 3,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_辞岁行.png",
+        "page": "辞岁行"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/d/d5/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E8%BE%9E%E5%B2%81%E8%A1%8C.png",
+      "source_file": "活动图标_辞岁行.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 34960,
+      "sha256": "8bc4f6750f29a3c24e058165b6210d64ebf7f5449e35ad4b3f5880dd046a8758"
     },
     {
       "id": "SIDE:CODE_OF_BRAWL",
@@ -68,13 +84,17 @@
       "title": "喧闹法则",
       "target": "media/mvu/story/side/code-of-brawl.webp",
       "resolver": {
-        "page": "喧闹法则",
-        "image_count": 34,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_喧闹法则.png",
+        "page": "喧闹法则"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/a/aa/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%96%A7%E9%97%B9%E6%B3%95%E5%88%99.png",
+      "source_file": "活动图标_喧闹法则.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 14554,
+      "sha256": "763a10210af770a28e1e979f6d76cc60c6c37b2506337996c65900d173ff669e"
     },
     {
       "id": "SIDE:COME_CATASTROPHES_OR_WAKES_OF_VULTURES",
@@ -82,13 +102,17 @@
       "title": "不义之财",
       "target": "media/mvu/story/side/come-catastrophes-or-wakes-of-vultures.webp",
       "resolver": {
-        "page": "不义之财",
-        "image_count": 57,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_不义之财.png",
+        "page": "不义之财"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/9/97/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E4%B8%8D%E4%B9%89%E4%B9%8B%E8%B4%A2.png",
+      "source_file": "活动图标_不义之财.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 15688,
+      "sha256": "656fe868a3c418bf8659ba8ebc86c3b5545bdfead93f4bd146f1ff381f11e071"
     },
     {
       "id": "SIDE:DARKNIGHTS_MEMOIR",
@@ -96,13 +120,17 @@
       "title": "生于黑夜",
       "target": "media/mvu/story/side/darknights-memoir.webp",
       "resolver": {
-        "page": "生于黑夜",
-        "image_count": 59,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_生于黑夜.png",
+        "page": "生于黑夜"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/f/f3/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%94%9F%E4%BA%8E%E9%BB%91%E5%A4%9C.png",
+      "source_file": "活动图标_生于黑夜.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 40824,
+      "sha256": "034d23ccb641503100ce3f8e4ac7efeda2ee17b1c7a53c7ef9be22805cc0b032"
     },
     {
       "id": "SIDE:DOROTHYS_VISION",
@@ -110,13 +138,17 @@
       "title": "绿野幻梦",
       "target": "media/mvu/story/side/dorothys-vision.webp",
       "resolver": {
-        "page": "绿野幻梦",
-        "image_count": 62,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_绿野幻梦.png",
+        "page": "绿野幻梦"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/1/1f/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%BB%BF%E9%87%8E%E5%B9%BB%E6%A2%A6.png",
+      "source_file": "活动图标_绿野幻梦.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 26648,
+      "sha256": "31f0ce2285c2d61dd2f4cb304a647488df9a7ab3976211c96b8586a370f542da"
     },
     {
       "id": "SIDE:DOSSOLES_HOLIDAY",
@@ -124,13 +156,17 @@
       "title": "多索雷斯假日",
       "target": "media/mvu/story/side/dossoles-holiday.webp",
       "resolver": {
-        "page": "多索雷斯假日",
-        "image_count": 77,
-        "metadata_checked": 10,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_多索雷斯假日.png",
+        "page": "多索雷斯假日"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/5/59/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%A4%9A%E7%B4%A2%E9%9B%B7%E6%96%AF%E5%81%87%E6%97%A5.png",
+      "source_file": "活动图标_多索雷斯假日.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 30232,
+      "sha256": "fe6dad11539805ba62c239a9f9cad2a7d1efd6e02206a063ced225a7bf645111"
     },
     {
       "id": "SIDE:GRANI_AND_THE_KNIGHTS_TREASURE",
@@ -138,13 +174,17 @@
       "title": "骑兵与猎人",
       "target": "media/mvu/story/side/grani-and-the-knights-treasure.webp",
       "resolver": {
-        "page": "骑兵与猎人",
-        "image_count": 41,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_骑兵与猎人.png",
+        "page": "骑兵与猎人"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/63/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%AA%91%E5%85%B5%E4%B8%8E%E7%8C%8E%E4%BA%BA.png",
+      "source_file": "活动图标_骑兵与猎人.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 39254,
+      "sha256": "d6d526f57b9d15298c6af3a9414f5c8e6309c192d88f2460d5f388bf404ecbef"
     },
     {
       "id": "SIDE:GUIDING_AHEAD",
@@ -152,13 +192,17 @@
       "title": "吾导先路",
       "target": "media/mvu/story/side/guiding-ahead.webp",
       "resolver": {
-        "page": "吾导先路",
-        "image_count": 55,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_吾导先路.png",
+        "page": "吾导先路"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/1/14/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%90%BE%E5%AF%BC%E5%85%88%E8%B7%AF.png",
+      "source_file": "活动图标_吾导先路.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 34250,
+      "sha256": "eeebeebccca070f72a09b9c20d05ff141f112da10831b99e27c07c002d724b6b"
     },
     {
       "id": "SIDE:HEART_OF_SURGING_FLAME",
@@ -166,13 +210,17 @@
       "title": "火蓝之心",
       "target": "media/mvu/story/side/heart-of-surging-flame.webp",
       "resolver": {
-        "page": "火蓝之心",
-        "image_count": 105,
-        "metadata_checked": 7,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_火蓝之心.png",
+        "page": "火蓝之心"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/6f/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%81%AB%E8%93%9D%E4%B9%8B%E5%BF%83.png",
+      "source_file": "活动图标_火蓝之心.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 24248,
+      "sha256": "9a15b5720ac9549a9c2483f36d7f1fd7f0a6479c13fa576de4e0f9eab727e9a2"
     },
     {
       "id": "SIDE:HERE_A_PEOPLE_SOWS",
@@ -180,13 +228,17 @@
       "title": "怀黍离",
       "target": "media/mvu/story/side/here-a-people-sows.webp",
       "resolver": {
-        "page": "怀黍离",
-        "image_count": 72,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_怀黍离.png",
+        "page": "怀黍离"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/2/2b/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E6%80%80%E9%BB%8D%E7%A6%BB.png",
+      "source_file": "活动图标_怀黍离.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 18782,
+      "sha256": "6ceae7c478076d80c9a4805f4cc42870d25381044597d25fc1b25ad0a3522fbe"
     },
     {
       "id": "SIDE:HONG_SIRONG",
@@ -194,13 +246,17 @@
       "title": "红丝绒",
       "target": "media/mvu/story/side/hong-sirong.webp",
       "resolver": {
-        "page": "红丝绒",
-        "image_count": 62,
-        "metadata_checked": 6,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_红丝绒.png",
+        "page": "红丝绒"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/7/75/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%BA%A2%E4%B8%9D%E7%BB%92.png",
+      "source_file": "活动图标_红丝绒.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 20044,
+      "sha256": "3982604807af13eea75072e3ca6d058e029c570abab5a2f1584b43a05bc99c96"
     },
     {
       "id": "SIDE:HORTUS_DE_ESCAPISMO",
@@ -208,13 +264,17 @@
       "title": "空想花庭",
       "target": "media/mvu/story/side/hortus-de-escapismo.webp",
       "resolver": {
-        "page": "空想花庭",
-        "image_count": 59,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_空想花庭.png",
+        "page": "空想花庭"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/3/33/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%A9%BA%E6%83%B3%E8%8A%B1%E5%BA%AD.png",
+      "source_file": "活动图标_空想花庭.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 44150,
+      "sha256": "8144f74555a9867308560f25475c7f2fdc00ae420ecee04f6f3804a362822a5a"
     },
     {
       "id": "SIDE:IDEAL_CITY",
@@ -222,13 +282,17 @@
       "title": "理想城：长夏狂欢季",
       "target": "media/mvu/story/side/ideal-city.webp",
       "resolver": {
-        "page": "理想城长夏狂欢季",
-        "image_count": 74,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_理想城：长夏狂欢季.png",
+        "page": "理想城：长夏狂欢季"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/a/a2/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%90%86%E6%83%B3%E5%9F%8E%EF%BC%9A%E9%95%BF%E5%A4%8F%E7%8B%82%E6%AC%A2%E5%AD%A3.png",
+      "source_file": "活动图标_理想城：长夏狂欢季.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 30688,
+      "sha256": "b4375b12b874320f7b36facce729dfc7f60f7136adc009b3146e94b5f7cc86c2"
     },
     {
       "id": "SIDE:IL_SIRACUSANO",
@@ -236,13 +300,17 @@
       "title": "叙拉古人",
       "target": "media/mvu/story/side/il-siracusano.webp",
       "resolver": {
-        "page": "叙拉古人",
-        "image_count": 103,
-        "metadata_checked": 18,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_叙拉古人.png",
+        "page": "叙拉古人"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/0/03/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%8F%99%E6%8B%89%E5%8F%A4%E4%BA%BA.png",
+      "source_file": "活动图标_叙拉古人.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 49616,
+      "sha256": "f694441883dde03d99419dce5fa89ef94f9550609b41b927b5fca210b5fbf5da"
     },
     {
       "id": "SIDE:INUDI_HAREK_HORAKHET",
@@ -250,13 +318,17 @@
       "title": "太阳甩在身后",
       "target": "media/mvu/story/side/inudi-harek-horakhet.webp",
       "resolver": {
-        "page": "太阳甩在身后",
-        "image_count": 96,
-        "metadata_checked": 20,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_太阳甩在身后.png",
+        "page": "太阳甩在身后"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/b/b0/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%A4%AA%E9%98%B3%E7%94%A9%E5%9C%A8%E8%BA%AB%E5%90%8E.png",
+      "source_file": "活动图标_太阳甩在身后.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 32420,
+      "sha256": "506873c84c66f11ce3604e7a89cedcc12b5fd1db9e4174e1784e9b732e18c0d6"
     },
     {
       "id": "SIDE:INVITATION_TO_WINE",
@@ -264,13 +336,17 @@
       "title": "将进酒",
       "target": "media/mvu/story/side/invitation-to-wine.webp",
       "resolver": {
-        "page": "将进酒",
-        "image_count": 80,
-        "metadata_checked": 2,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_将进酒.png",
+        "page": "将进酒"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/6e/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%B0%86%E8%BF%9B%E9%85%92.png",
+      "source_file": "活动图标_将进酒.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 28842,
+      "sha256": "b9aae035b59c4be7a1622546bef4403e3e86bd42b514dcc91a3a87cc9a7e7483"
     },
     {
       "id": "SIDE:LINGERING_ECHOES",
@@ -278,13 +354,17 @@
       "title": "尘影余音",
       "target": "media/mvu/story/side/lingering-echoes.webp",
       "resolver": {
-        "page": "尘影余音",
-        "image_count": 60,
-        "metadata_checked": 6,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_尘影余音.png",
+        "page": "尘影余音"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/1/11/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%B0%98%E5%BD%B1%E4%BD%99%E9%9F%B3.png",
+      "source_file": "活动图标_尘影余音.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 38802,
+      "sha256": "1f7b5896a8cfe7815c312900ba272aece555a680058ef238e4f951d3afe68427"
     },
     {
       "id": "SIDE:LONE_TRAIL",
@@ -292,13 +372,17 @@
       "title": "孤星",
       "target": "media/mvu/story/side/lone-trail.webp",
       "resolver": {
-        "page": "孤星",
-        "image_count": 80,
-        "metadata_checked": 13,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_孤星.png",
+        "page": "孤星"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/5/5c/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%AD%A4%E6%98%9F.png",
+      "source_file": "活动图标_孤星.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 6880,
+      "sha256": "c9a6489027630af8b81b248cb24f1f86958eb6b230ad0d7bd524321f0cfb5051"
     },
     {
       "id": "SIDE:MANSFIELD_BREAK",
@@ -306,13 +390,17 @@
       "title": "孤岛风云",
       "target": "media/mvu/story/side/mansfield-break.webp",
       "resolver": {
-        "page": "孤岛风云",
-        "image_count": 50,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_孤岛风云.png",
+        "page": "孤岛风云"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/e/e0/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%AD%A4%E5%B2%9B%E9%A3%8E%E4%BA%91.png",
+      "source_file": "活动图标_孤岛风云.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 30332,
+      "sha256": "95041d0a1a0eb89ca84fcf81823a4f5bdcf53da08ddd9b1b25d362ff60ffddef"
     },
     {
       "id": "SIDE:MARIA_NEARL",
@@ -320,13 +408,17 @@
       "title": "玛莉娅·临光",
       "target": "media/mvu/story/side/maria-nearl.webp",
       "resolver": {
-        "page": "玛莉娅临光",
-        "image_count": 58,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_玛莉娅·临光.png",
+        "page": "玛莉娅·临光"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/60/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%8E%9B%E8%8E%89%E5%A8%85%C2%B7%E4%B8%B4%E5%85%89.png",
+      "source_file": "活动图标_玛莉娅·临光.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 17432,
+      "sha256": "705b1053a60b9d16ef4081030a73f9d7d4a9161d79d05ebcce96f667cc6f1807"
     },
     {
       "id": "SIDE:NEAR_LIGHT",
@@ -334,13 +426,17 @@
       "title": "长夜临光",
       "target": "media/mvu/story/side/near-light.webp",
       "resolver": {
-        "page": "长夜临光",
-        "image_count": 65,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_长夜临光.png",
+        "page": "长夜临光"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/0/0a/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%95%BF%E5%A4%9C%E4%B8%B4%E5%85%89.png",
+      "source_file": "活动图标_长夜临光.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 29766,
+      "sha256": "67a110ef993bff8900d7cfe336522cb7913e04f77025188d30461eef7cf88263"
     },
     {
       "id": "SIDE:OPERATION_LUCENT_ARROW",
@@ -348,13 +444,17 @@
       "title": "水晶箭行动",
       "target": "media/mvu/story/side/operation-lucent-arrow.webp",
       "resolver": {
-        "page": "水晶箭行动",
-        "image_count": 65,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_水晶箭行动.png",
+        "page": "水晶箭行动"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/1/12/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%B0%B4%E6%99%B6%E7%AE%AD%E8%A1%8C%E5%8A%A8.png",
+      "source_file": "活动名称_水晶箭行动.png",
+      "width": 463,
+      "height": 226,
+      "bytes": 40494,
+      "sha256": "cecd77b0b473187ea8df838bf13943b326d2f0be0f01fd3af276dda6f02f4992"
     },
     {
       "id": "SIDE:OPERATION_ORIGINIUM_DUST",
@@ -362,13 +462,17 @@
       "title": "源石尘行动",
       "target": "media/mvu/story/side/operation-originium-dust.webp",
       "resolver": {
-        "page": "源石尘行动",
-        "image_count": 56,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_源石尘行动.png",
+        "page": "源石尘行动"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/d/db/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%BA%90%E7%9F%B3%E5%B0%98%E8%A1%8C%E5%8A%A8.png",
+      "source_file": "活动名称_源石尘行动.png",
+      "width": 471,
+      "height": 224,
+      "bytes": 22666,
+      "sha256": "aa62a9cdf94b3b120e25aa482d8c7b717e7cc815d2fccc161456a953662701f4"
     },
     {
       "id": "SIDE:OUT_OF_THE_PALE_SEA",
@@ -376,13 +480,17 @@
       "title": "出苍白海",
       "target": "media/mvu/story/side/out-of-the-pale-sea.webp",
       "resolver": {
-        "page": "出苍白海",
-        "image_count": 62,
-        "metadata_checked": 6,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_出苍白海.png",
+        "page": "出苍白海"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/b/ba/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%87%BA%E8%8B%8D%E7%99%BD%E6%B5%B7.png",
+      "source_file": "活动图标_出苍白海.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 44582,
+      "sha256": "45357112b15383a0885f8387d25db9ea8607cd091db83f21b0b83141c7d6558c"
     },
     {
       "id": "SIDE:PAOYING_CANGTING",
@@ -390,13 +498,17 @@
       "title": "泡影苍霆",
       "target": "media/mvu/story/side/paoying-cangting.webp",
       "resolver": {
-        "page": "泡影苍霆",
-        "image_count": 63,
-        "metadata_checked": 8,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_泡影苍霆.png",
+        "page": "泡影苍霆"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/e/ee/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%B3%A1%E5%BD%B1%E8%8B%8D%E9%9C%86.png",
+      "source_file": "活动名称_泡影苍霆.png",
+      "width": 463,
+      "height": 226,
+      "bytes": 39128,
+      "sha256": "05bd3d166be006282b85809701db4d65a946bfa28a6af430ad8b0aab273acea2"
     },
     {
       "id": "SIDE:PATH_OF_LIFE",
@@ -404,13 +516,17 @@
       "title": "生路",
       "target": "media/mvu/story/side/path-of-life.webp",
       "resolver": {
-        "page": "生路",
-        "image_count": 62,
-        "metadata_checked": 7,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_生路.png",
+        "page": "生路"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/c/c2/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%94%9F%E8%B7%AF.png",
+      "source_file": "活动图标_生路.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 32824,
+      "sha256": "ae586fd25f3c5894f99c00a2157f16a655a3bb2fcf20d355a9a21767dd7d1fcc"
     },
     {
       "id": "SIDE:RENMEN_WOMEN",
@@ -418,13 +534,17 @@
       "title": "人们，我们",
       "target": "media/mvu/story/side/renmen-women.webp",
       "resolver": {
-        "page": "人们，我们",
-        "image_count": 65,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_人们，我们.png",
+        "page": "人们，我们"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/1/1d/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E4%BA%BA%E4%BB%AC%EF%BC%8C%E6%88%91%E4%BB%AC.png",
+      "source_file": "活动图标_人们，我们.png",
+      "width": 479,
+      "height": 256,
+      "bytes": 33618,
+      "sha256": "44b115cb99aa59423deef9d8b49a5253e8f18e58662cc4446674c9f2a7862b9d"
     },
     {
       "id": "SIDE:SO_LONG_ADELE",
@@ -432,13 +552,17 @@
       "title": "火山旅梦",
       "target": "media/mvu/story/side/so-long-adele.webp",
       "resolver": {
-        "page": "火山旅梦",
-        "image_count": 89,
-        "metadata_checked": 20,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_火山旅梦.png",
+        "page": "火山旅梦"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/f/fc/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%81%AB%E5%B1%B1%E6%97%85%E6%A2%A6.png",
+      "source_file": "活动图标_火山旅梦.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 53528,
+      "sha256": "03a23dcda04c1fc348239c937b506e0c4c72fb3747f142cc87c445746748b2f2"
     },
     {
       "id": "SIDE:STULTIFERA_NAVIS",
@@ -446,13 +570,17 @@
       "title": "愚人号",
       "target": "media/mvu/story/side/stultifera-navis.webp",
       "resolver": {
-        "page": "愚人号",
-        "image_count": 97,
-        "metadata_checked": 24,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_愚人号.png",
+        "page": "愚人号"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/f/f5/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E6%84%9A%E4%BA%BA%E5%8F%B7.png",
+      "source_file": "活动图标_愚人号.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 47046,
+      "sha256": "5182622e39d4b5efecc27af1d04d609c5b4965010d22be8e3f49172981f2e029"
     },
     {
       "id": "SIDE:TERRA_MEAL",
@@ -460,13 +588,17 @@
       "title": "泰拉饭",
       "target": "media/mvu/story/side/terra-meal.webp",
       "resolver": {
-        "page": "泰拉饭",
-        "image_count": 61,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_泰拉饭.png",
+        "page": "泰拉饭"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/0/0b/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%B3%B0%E6%8B%89%E9%A5%AD.png",
+      "source_file": "活动名称_泰拉饭.png",
+      "width": 463,
+      "height": 224,
+      "bytes": 39734,
+      "sha256": "386c7f39e41f9bc22d1ff2a8f408b0bf8ef7a13f1f17022c0756eb1b45c90b09"
     },
     {
       "id": "SIDE:THE_GREAT_CHIEF_RETURNS",
@@ -474,13 +606,17 @@
       "title": "密林悍将归来",
       "target": "media/mvu/story/side/the-great-chief-returns.webp",
       "resolver": {
-        "page": "密林悍将归来",
-        "image_count": 55,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_密林悍将归来.png",
+        "page": "密林悍将归来"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/f/f7/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%AF%86%E6%9E%97%E6%82%8D%E5%B0%86%E5%BD%92%E6%9D%A5.png",
+      "source_file": "活动图标_密林悍将归来.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 25566,
+      "sha256": "1d1006fb750930c6903db77558a47c2ff418e4c54fc2e9f5a6b15fe646f674a3"
     },
     {
       "id": "SIDE:THE_REVEALERS",
@@ -488,13 +624,17 @@
       "title": "揭幕者们",
       "target": "media/mvu/story/side/the-revealers.webp",
       "resolver": {
-        "page": "揭幕者们",
-        "image_count": 94,
-        "metadata_checked": 23,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_揭幕者们.png",
+        "page": "揭幕者们"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/3/3c/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E6%8F%AD%E5%B9%95%E8%80%85%E4%BB%AC.png",
+      "source_file": "活动图标_揭幕者们.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 31680,
+      "sha256": "0cc72b2747f601331d0fb000a94d7ed97ce4ba1a4d8da6626ab616b2864f012e"
     },
     {
       "id": "SIDE:THE_RIDES_TO_LAKE_SILBERNEHERZE",
@@ -502,13 +642,17 @@
       "title": "银心湖列车",
       "target": "media/mvu/story/side/the-rides-to-lake-silberneherze.webp",
       "resolver": {
-        "page": "银心湖列车",
-        "image_count": 60,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_银心湖列车.png",
+        "page": "银心湖列车"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/7/78/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%93%B6%E5%BF%83%E6%B9%96%E5%88%97%E8%BD%A6.png",
+      "source_file": "活动图标_银心湖列车.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 32304,
+      "sha256": "d3e303d2512cc7e5eb014f5d36203776f7648212b5f996e83114f858e6f04129"
     },
     {
       "id": "SIDE:TWILIGHT_OF_WOLUMONDE",
@@ -516,13 +660,17 @@
       "title": "沃伦姆德的薄暮",
       "target": "media/mvu/story/side/twilight-of-wolumonde.webp",
       "resolver": {
-        "page": "沃伦姆德的薄暮",
-        "image_count": 57,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_沃伦姆德的薄暮.png",
+        "page": "沃伦姆德的薄暮"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/b/be/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E6%B2%83%E4%BC%A6%E5%A7%86%E5%BE%B7%E7%9A%84%E8%96%84%E6%9A%AE.png",
+      "source_file": "活动图标_沃伦姆德的薄暮.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 46224,
+      "sha256": "279dcd296c6e9d81d138551ee0afe209cad62b045e971d360bae215b91eb0753"
     },
     {
       "id": "SIDE:UNDER_TIDES",
@@ -530,13 +678,17 @@
       "title": "覆潮之下",
       "target": "media/mvu/story/side/under-tides.webp",
       "resolver": {
-        "page": "覆潮之下",
-        "image_count": 55,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_覆潮之下.png",
+        "page": "覆潮之下"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/61/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E8%A6%86%E6%BD%AE%E4%B9%8B%E4%B8%8B.png",
+      "source_file": "活动图标_覆潮之下.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 33216,
+      "sha256": "eedb4a9e01838cc35b37d2c81fad1fd1cb6484b31e935b65ffc750949508eb17"
     },
     {
       "id": "SIDE:WALK_IN_THE_DUST",
@@ -544,13 +696,17 @@
       "title": "遗尘漫步",
       "target": "media/mvu/story/side/walk-in-the-dust.webp",
       "resolver": {
-        "page": "遗尘漫步",
-        "image_count": 52,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_遗尘漫步.png",
+        "page": "遗尘漫步"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/6/67/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%81%97%E5%B0%98%E6%BC%AB%E6%AD%A5.png",
+      "source_file": "活动图标_遗尘漫步.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 60520,
+      "sha256": "a8097b2846f8063b45b370e7d0c0c06083f9650b3df6bab319256d545565732e"
     },
     {
       "id": "SIDE:WANGE_RANSHAO_DAIJIN",
@@ -558,13 +714,17 @@
       "title": "挽歌燃烧殆尽",
       "target": "media/mvu/story/side/wange-ranshao-daijin.webp",
       "resolver": {
-        "page": "挽歌燃烧殆尽",
-        "image_count": 62,
-        "metadata_checked": 6,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_挽歌燃烧殆尽.png",
+        "page": "挽歌燃烧殆尽"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/a/a1/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E6%8C%BD%E6%AD%8C%E7%87%83%E7%83%A7%E6%AE%86%E5%B0%BD.png",
+      "source_file": "活动图标_挽歌燃烧殆尽.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 54650,
+      "sha256": "37ebfbff7983fcec848e17cf535d328881379e430df1ec2867c1b3c938fba1e3"
     },
     {
       "id": "SIDE:WEIXU_ZHIDI",
@@ -572,13 +732,17 @@
       "title": "未许之地",
       "target": "media/mvu/story/side/weixu-zhidi.webp",
       "resolver": {
-        "page": "未许之地",
-        "image_count": 63,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_未许之地.png",
+        "page": "未许之地"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/3/3b/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E6%9C%AA%E8%AE%B8%E4%B9%8B%E5%9C%B0.png",
+      "source_file": "活动图标_未许之地.png",
+      "width": 336,
+      "height": 256,
+      "bytes": 37448,
+      "sha256": "df1e91bbe42fc1ad5db779990d8b1c84ed436564bee11f166c960ef64421f11c"
     },
     {
       "id": "SIDE:WHAT_THE_FIRELIGHT_CASTS",
@@ -586,13 +750,17 @@
       "title": "照我以火",
       "target": "media/mvu/story/side/what-the-firelight-casts.webp",
       "resolver": {
-        "page": "照我以火",
-        "image_count": 60,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_照我以火.png",
+        "page": "照我以火"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/0/05/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%85%A7%E6%88%91%E4%BB%A5%E7%81%AB.png",
+      "source_file": "活动图标_照我以火.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 50310,
+      "sha256": "a4ec2b01d546b28db19a4aead5d0e2ec0ed03e67347b832d5cb287ed0b9d24fd"
     },
     {
       "id": "SIDE:WHERE_VERNAL_WINDS_WILL_NEVER_BLOW",
@@ -600,13 +768,17 @@
       "title": "登临意",
       "target": "media/mvu/story/side/where-vernal-winds-will-never-blow.webp",
       "resolver": {
-        "page": "登临意",
-        "image_count": 58,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_登临意.png",
+        "page": "登临意"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/d/d6/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%99%BB%E4%B8%B4%E6%84%8F.png",
+      "source_file": "活动图标_登临意.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 22360,
+      "sha256": "7e673de7d5279690e8beca271a447d56d0a47c6ee1ac393f7e62f295ccbe82e2"
     },
     {
       "id": "SIDE:WHO_IS_REAL",
@@ -614,13 +786,17 @@
       "title": "画中人",
       "target": "media/mvu/story/side/who-is-real.webp",
       "resolver": {
-        "page": "画中人",
-        "image_count": 56,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_画中人.png",
+        "page": "画中人"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/a/a0/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%94%BB%E4%B8%AD%E4%BA%BA.png",
+      "source_file": "活动图标_画中人.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 44422,
+      "sha256": "ae2df76abc73693cd5dac07f611e1b090c76cee1d1739f93a4551134ef1832a7"
     },
     {
       "id": "SIDE:WUYOU_MENGYI",
@@ -628,13 +804,17 @@
       "title": "无忧梦呓",
       "target": "media/mvu/story/side/wuyou-mengyi.webp",
       "resolver": {
-        "page": "无忧梦呓",
-        "image_count": 69,
-        "metadata_checked": 9,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_无忧梦呓.png",
+        "page": "无忧梦呓"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/7/7a/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%97%A0%E5%BF%A7%E6%A2%A6%E5%91%93.png",
+      "source_file": "活动名称_无忧梦呓.png",
+      "width": 463,
+      "height": 226,
+      "bytes": 27600,
+      "sha256": "9c75312a50d9aff2ab39e301a7225cea4d72ccb8b4c964e2674814261ba6db11"
     },
     {
       "id": "SIDE:XIANG_JIAN_HUAN",
@@ -642,13 +822,17 @@
       "title": "相见欢",
       "target": "media/mvu/story/side/xiang-jian-huan.webp",
       "resolver": {
-        "page": "相见欢",
-        "image_count": 75,
-        "metadata_checked": 3,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_相见欢.png",
+        "page": "相见欢"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/3/38/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%9B%B8%E8%A7%81%E6%AC%A2.png",
+      "source_file": "活动图标_相见欢.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 39478,
+      "sha256": "2b7df6e12e3d52d490909906fed74471475bae33469310046dfc812098a4a323"
     },
     {
       "id": "SIDE:XU",
@@ -656,13 +840,17 @@
       "title": "墟",
       "target": "media/mvu/story/side/xu.webp",
       "resolver": {
-        "page": "墟",
-        "image_count": 82,
-        "metadata_checked": 7,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_墟.png",
+        "page": "墟"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/5/58/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%A2%9F.png",
+      "source_file": "活动图标_墟.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 18514,
+      "sha256": "d13d0b6c3b82bb685fb24be9211cef28bd98a758a47e367549d4e66012e292f0"
     },
     {
       "id": "SIDE:XUESHAN_JIANGLIN_1101",
@@ -670,13 +858,17 @@
       "title": "雪山降临1101",
       "target": "media/mvu/story/side/xueshan-jianglin-1101.webp",
       "resolver": {
-        "page": "雪山降临1101",
-        "image_count": 89,
-        "metadata_checked": 10,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_雪山降临1101.png",
+        "page": "雪山降临1101"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/d/df/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%9B%AA%E5%B1%B1%E9%99%8D%E4%B8%B41101.png",
+      "source_file": "活动图标_雪山降临1101.png",
+      "width": 512,
+      "height": 256,
+      "bytes": 58822,
+      "sha256": "1e187574a74a2ce60e2f87893b0103b1ad094ca1f126d1c8fa23031e30f30202"
     },
     {
       "id": "SIDE:YASAINUSI_FUCHOUJI",
@@ -684,13 +876,17 @@
       "title": "雅赛努斯复仇记",
       "target": "media/mvu/story/side/yasainusi-fuchouji.webp",
       "resolver": {
-        "page": "雅赛努斯复仇记",
-        "image_count": 67,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_雅赛努斯复仇记.png",
+        "page": "雅赛努斯复仇记"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/4/42/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E9%9B%85%E8%B5%9B%E5%8A%AA%E6%96%AF%E5%A4%8D%E4%BB%87%E8%AE%B0.png",
+      "source_file": "活动图标_雅赛努斯复仇记.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 46338,
+      "sha256": "adf847be2fa755f1fadb055b4158736fbc6634e4df298121792c56ace407dfec"
     },
     {
       "id": "SIDE:YUEXING_SHUISHANG",
@@ -698,13 +894,17 @@
       "title": "月行水上",
       "target": "media/mvu/story/side/yuexing-shuishang.webp",
       "resolver": {
-        "page": "月行水上",
-        "image_count": 67,
-        "metadata_checked": 3,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_月行水上.png",
+        "page": "月行水上"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/2/25/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%9C%88%E8%A1%8C%E6%B0%B4%E4%B8%8A.png",
+      "source_file": "活动名称_月行水上.png",
+      "width": 463,
+      "height": 226,
+      "bytes": 44046,
+      "sha256": "926cd947461738440dbb0d13fe9248d55bc40929eb147d042c8960e6371f730e"
     },
     {
       "id": "SIDE:ZHIDAO_DADI_BIANCHENG_YIKE_SUANCHENG",
@@ -712,13 +912,17 @@
       "title": "直到大地变成一颗酸橙",
       "target": "media/mvu/story/side/zhidao-dadi-biancheng-yike-suancheng.webp",
       "resolver": {
-        "page": "直到大地变成一颗酸橙",
-        "image_count": 88,
-        "metadata_checked": 4,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_直到大地变成一颗酸橙.png",
+        "page": "直到大地变成一颗酸橙"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/8/82/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E7%9B%B4%E5%88%B0%E5%A4%A7%E5%9C%B0%E5%8F%98%E6%88%90%E4%B8%80%E9%A2%97%E9%85%B8%E6%A9%99.png",
+      "source_file": "活动图标_直到大地变成一颗酸橙.png",
+      "width": 804,
+      "height": 421,
+      "bytes": 36048,
+      "sha256": "85442c51cf0f4ca8b058fbf07c15f11d27e55b0c801314bdf8d2e0d46d605791"
     },
     {
       "id": "SIDE:ZHONGSHENG_XINGJI",
@@ -726,13 +930,17 @@
       "title": "众生行记",
       "target": "media/mvu/story/side/zhongsheng-xingji.webp",
       "resolver": {
-        "page": "众生行记",
-        "image_count": 83,
-        "metadata_checked": 6,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_众生行记.png",
+        "page": "众生行记"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/b/b5/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E4%BC%97%E7%94%9F%E8%A1%8C%E8%AE%B0.png",
+      "source_file": "活动图标_众生行记.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 63160,
+      "sha256": "cfa48fc2d3e054b355c970595ce257b0b53e738e62365d5d3f299321ab326a03"
     },
     {
       "id": "SIDE:ZHUIJI_RILUO_YIXI",
@@ -740,13 +948,17 @@
       "title": "追迹日落以西",
       "target": "media/mvu/story/side/zhuiji-riluo-yixi.webp",
       "resolver": {
-        "page": "追迹日落以西",
-        "image_count": 61,
-        "metadata_checked": 6,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_追迹日落以西.png",
+        "page": "追迹日落以西"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/9/98/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E8%BF%BD%E8%BF%B9%E6%97%A5%E8%90%BD%E4%BB%A5%E8%A5%BF.png",
+      "source_file": "活动图标_追迹日落以西.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 56512,
+      "sha256": "67f06ba0c2b53db41e46228e80630ceacee4d293c1f77049d173c5e1ebe4e861"
     },
     {
       "id": "SIDE:ZUORI_HAI",
@@ -754,13 +966,17 @@
       "title": "昨日海",
       "target": "media/mvu/story/side/zuori-hai.webp",
       "resolver": {
-        "page": "昨日海",
-        "image_count": 66,
-        "metadata_checked": 5,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动名称_昨日海.png",
+        "page": "昨日海"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/b/bc/%E6%B4%BB%E5%8A%A8%E5%90%8D%E7%A7%B0_%E6%98%A8%E6%97%A5%E6%B5%B7.png",
+      "source_file": "活动名称_昨日海.png",
+      "width": 463,
+      "height": 226,
+      "bytes": 23756,
+      "sha256": "d5af3db1855df8a429a1fe04dbd714b060f754ee6a53da7125f724ce5d894c41"
     },
     {
       "id": "SIDE:ZWILLINGSTURME_IM_HERBST",
@@ -768,13 +984,17 @@
       "title": "崔林特尔梅之金",
       "target": "media/mvu/story/side/zwillingsturme-im-herbst.webp",
       "resolver": {
-        "page": "崔林特尔梅之金",
-        "image_count": 83,
-        "metadata_checked": 13,
-        "candidates": [],
-        "decision": "no-candidate"
+        "decision": "selected-exact",
+        "selected_file": "活动图标_崔林特尔梅之金.png",
+        "page": "崔林特尔梅之金"
       },
-      "status": "unresolved"
+      "status": "ready",
+      "source_url": "https://media.prts.wiki/7/77/%E6%B4%BB%E5%8A%A8%E5%9B%BE%E6%A0%87_%E5%B4%94%E6%9E%97%E7%89%B9%E5%B0%94%E6%A2%85%E4%B9%8B%E9%87%91.png",
+      "source_file": "活动图标_崔林特尔梅之金.png",
+      "width": 516,
+      "height": 260,
+      "bytes": 57260,
+      "sha256": "02ff8c0d125d78b0eb5803e9980adfbd1b2bb51e3780c6156519928375efe5f0"
     }
   ]
 }
