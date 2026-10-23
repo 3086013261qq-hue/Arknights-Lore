@@ -1,0 +1,67 @@
+{
+  "schema_version": "location-worldbook-v1.0",
+  "status": "batch01-complete",
+  "format": "mie-mie-fullstack-core-setting",
+  "planned_total": 85,
+  "completed": 25,
+  "source_of_truth": "worldbook/locations/*.md",
+  "production_spec": "docs/location-production-spec-v1.md",
+  "source_policy": ["game/official", "PRTS", "sealed repo timeline/context"],
+  "activation_policy": {
+    "default": "keyword",
+    "keyword_scope": "<story_scene>",
+    "time_state_required": true,
+    "knowledge_fog_required": true,
+    "deep_or_future_state": "story-stage-gated"
+  },
+  "batches": {
+    "batch01": {
+      "status": "complete",
+      "count": 25,
+      "range": "A01-A15 + B01-B10"
+    }
+  },
+  "entries": [
+    {"id":"A01","name":"罗德岛本舰·舰内空间","priority":"A","file":"worldbook/locations/A01_罗德岛本舰·舰内空间.md","parent":"罗德岛本舰","triggers":["罗德岛本舰","罗德岛舰内","本舰","医疗舱"]},
+    {"id":"A02","name":"切尔诺伯格","priority":"A","file":"worldbook/locations/A02_切尔诺伯格.md","parent":"乌萨斯","triggers":["切尔诺伯格","切城","Chernobog"]},
+    {"id":"A03","name":"龙门","priority":"A","file":"worldbook/locations/A03_龙门.md","parent":"炎","triggers":["龙门","Lungmen","龙门市区"]},
+    {"id":"A04","name":"伦蒂尼姆","priority":"A","file":"worldbook/locations/A04_伦蒂尼姆.md","parent":"维多利亚","triggers":["伦蒂尼姆","Londinium","伦蒂尼姆战役"]},
+    {"id":"A05","name":"大骑士领","priority":"A","file":"worldbook/locations/A05_大骑士领.md","parent":"卡西米尔","triggers":["大骑士领","卡瓦莱利亚基","骑士竞技"]},
+    {"id":"A06","name":"特里蒙","priority":"A","file":"worldbook/locations/A06_特里蒙.md","parent":"哥伦比亚","triggers":["特里蒙","Trimounts","特里蒙之夜"]},
+    {"id":"A07","name":"汐斯塔","priority":"A","file":"worldbook/locations/A07_汐斯塔.md","parent":"泰拉南方海滨地区","triggers":["汐斯塔","Siesta","黑曜石音乐节"]},
+    {"id":"A08","name":"多索雷斯","priority":"A","file":"worldbook/locations/A08_多索雷斯.md","parent":"玻利瓦尔","triggers":["多索雷斯","Dossoles","多索雷斯假日"]},
+    {"id":"A09","name":"拉特兰圣城","priority":"A","file":"worldbook/locations/A09_拉特兰圣城.md","parent":"拉特兰","triggers":["拉特兰圣城","拉特兰城","Laterano","公证所"]},
+    {"id":"A10","name":"谢拉格圣山","priority":"A","file":"worldbook/locations/A10_谢拉格圣山.md","parent":"谢拉格","triggers":["谢拉格圣山","卡兰圣山","圣山","耶拉冈德"]},
+    {"id":"A11","name":"卡兹戴尔移动城市","priority":"A","file":"worldbook/locations/A11_卡兹戴尔移动城市.md","parent":"卡兹戴尔","triggers":["卡兹戴尔移动城市","卡兹戴尔城","Kazdel"]},
+    {"id":"A12","name":"圣骏堡","priority":"A","file":"worldbook/locations/A12_圣骏堡.md","parent":"乌萨斯","triggers":["圣骏堡","乌萨斯首都","帝国议会"]},
+    {"id":"A13","name":"玉门","priority":"A","file":"worldbook/locations/A13_玉门.md","parent":"炎","triggers":["玉门","炎国玉门","玉门城"]},
+    {"id":"A14","name":"弥利亚留姆","priority":"A","file":"worldbook/locations/A14_弥利亚留姆.md","parent":"阿戈尔","triggers":["弥利亚留姆","阿戈尔城市","水下城市"]},
+    {"id":"A15","name":"沃尔西尼","priority":"A","file":"worldbook/locations/A15_沃尔西尼.md","parent":"叙拉古","triggers":["沃尔西尼","新沃尔西尼","Volsinii"]},
+    {"id":"B01","name":"切尔诺伯格核心城","priority":"B","file":"worldbook/locations/B01_切尔诺伯格核心城.md","parent":"切尔诺伯格","triggers":["切尔诺伯格核心城","切城核心城","核心城"]},
+    {"id":"B02","name":"龙门贫民区","priority":"B","file":"worldbook/locations/B02_龙门贫民区.md","parent":"龙门","triggers":["龙门贫民区","贫民区","龙门感染者社区"]},
+    {"id":"B03","name":"龙门近卫局大楼","priority":"B","file":"worldbook/locations/B03_龙门近卫局大楼.md","parent":"龙门","triggers":["龙门近卫局大楼","近卫局大楼","LGD总部"]},
+    {"id":"B04","name":"小丘郡","priority":"B","file":"worldbook/locations/B04_小丘郡.md","parent":"维多利亚","triggers":["小丘郡","County Hillock","维多利亚小丘郡"]},
+    {"id":"B05","name":"碎片大厦","priority":"B","file":"worldbook/locations/B05_碎片大厦.md","parent":"伦蒂尼姆","triggers":["碎片大厦","The Shard","伦蒂尼姆碎片大厦"]},
+    {"id":"B06","name":"奥克特里格区","priority":"B","file":"worldbook/locations/B06_奥克特里格区.md","parent":"伦蒂尼姆","triggers":["奥克特里格区","奥克特里格"]},
+    {"id":"B07","name":"萨迪恩区","priority":"B","file":"worldbook/locations/B07_萨迪恩区.md","parent":"伦蒂尼姆","triggers":["萨迪恩区","萨迪恩","萨迪恩高墙"]},
+    {"id":"B08","name":"海布里区","priority":"B","file":"worldbook/locations/B08_海布里区.md","parent":"伦蒂尼姆","triggers":["海布里区","海布里","伦蒂尼姆军工区"]},
+    {"id":"B09","name":"诺伯特区","priority":"B","file":"worldbook/locations/B09_诺伯特区.md","parent":"伦蒂尼姆","triggers":["诺伯特区","诺伯特","伦蒂尼姆脱离地块"]},
+    {"id":"B10","name":"圣王会西部大堂","priority":"B","file":"worldbook/locations/B10_圣王会西部大堂.md","parent":"伦蒂尼姆","triggers":["圣王会西部大堂","圣王会大堂","西部大堂","王座厅"]}
+  ],
+  "rules": {
+    "core_setting_tag_required": true,
+    "one_location_per_file": true,
+    "knowledge_fog_required": true,
+    "time_state_required": true,
+    "game_mechanics_are_not_world_facts": true,
+    "preset_modified": false,
+    "timeline_modified": false,
+    "operator_files_modified": false,
+    "operator_moe_modified": false,
+    "npc_files_modified": false,
+    "weapon_audit_modified": false,
+    "world_settings_modified": false,
+    "media_modified": false
+  },
+  "qa": "QA/location-worldbook-batch01-v1.md"
+}
